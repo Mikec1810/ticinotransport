@@ -8,7 +8,7 @@ const TRANSLATIONS = {
 
     // ===== HERO =====
     hero_badge: { it:'Trasporti &middot;Noleggio &middot;Pratiche', en:'Transport &middot;Rental &middot;Services', de:'Transport &middot;Vermietung &middot;Dienste', fr:'Transport &middot;Location &middot;Services', ru:'Транспорт &middot;Аренда &middot;Услуги', ar:'نقل &middot;تأجير &middot;خدمات' },
-    hero_h1: { it:'Noleggio Furgoni e Trasporto Veicoli in Ticino', en:'Van Rental & Vehicle Transport in Ticino', de:'Transportervermietung & Fahrzeugtransport im Tessin', fr:'Location de Fourgons & Transport de Véhicules au Tessin', ru:'Аренда фургонов и перевозка транспорта в Тичино', ar:'تأجير الشاحنات ونقل المركبات في تيتشينو' },
+    hero_h1: { it:'Trasporto veicoli, noleggio furgoni, pratiche doganali. Svizzera e estero.', en:'Vehicle transport, van rental, customs procedures. Switzerland and abroad.', de:'Fahrzeugtransport, Transportervermietung, Zollformalit&auml;ten. Schweiz und Ausland.', fr:'Transport de v&eacute;hicules, location de fourgons, formalit&eacute;s douani&egrave;res. Suisse et &eacute;tranger.', ru:'Перевозка транспорта, аренда фургонов, таможенные процедуры. Швейцария и за рубежом.', ar:'نقل المركبات، تأجير الشاحنات، الإجراءات الجمركية. سويسرا والخارج.' },
     hero_title_1: { it:'Auto, moto, furgoni.', en:'Cars, bikes, vans.', de:'Autos, Motorräder, Transporter.', fr:'Voitures, motos, fourgons.', ru:'Авто, мото, фургоны.', ar:'سيارات، دراجات، شاحنات.' },
     hero_title_2: { it:'Ci pensiamo noi.', en:'We handle it.', de:'Wir kümmern uns.', fr:'On s\'en occupe.', ru:'Мы позаботимся.', ar:'نحن نتولى الأمر.' },
     hero_desc: {
