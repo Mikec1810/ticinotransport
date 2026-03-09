@@ -51,6 +51,7 @@ const TRANSLATIONS = {
     rent_jumpy_desc: { it:'Ideale per piccoli trasporti e consegne in citta.', en:'Ideal for small transport and city deliveries.', de:'Ideal für kleine Transporte und Stadtlieferungen.', fr:'Idéal pour petits transports et livraisons en ville.', ru:'Идеален для небольших перевозок и доставок по городу.', ar:'مثالي للنقل الصغير والتوصيل داخل المدينة.' },
     rent_ducato_desc: { it:'Perfetto per traslochi e carichi voluminosi.', en:'Perfect for moving and bulky loads.', de:'Perfekt für Umzüge und sperrige Ladungen.', fr:'Parfait pour déménagements et charges volumineuses.', ru:'Идеален для переездов и крупных грузов.', ar:'مثالي للنقل والأحمال الضخمة.' },
     rent_day: { it:'/giorno', en:'/day', de:'/Tag', fr:'/jour', ru:'/день', ar:'/يوم' },
+    van_specs_show: { it:'Dimensioni', en:'Dimensions', de:'Abmessungen', fr:'Dimensions', ru:'Размеры', ar:'الأبعاد' },
     rent_book: { it:'Prenota', en:'Book', de:'Buchen', fr:'Réserver', ru:'Забронировать', ar:'احجز' },
 
     // ===== PRENOTA =====

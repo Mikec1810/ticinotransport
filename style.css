@@ -2041,7 +2041,8 @@ img {
     }
 
     .hero-top {
-        top: 100px;
+        top: auto;
+        bottom: 55%;
     }
 
     .hero-top .hero-slogan {
@@ -2192,6 +2193,10 @@ img {
 @media (max-width: 480px) {
     .hero-logo {
         width: 150px;
+    }
+
+    .hero-top {
+        bottom: 52%;
     }
 
     .hero-top .hero-slogan {
@@ -2412,16 +2417,52 @@ img {
     color: var(--red);
 }
 
-.van-specs {
+.van-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    background: none;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 4px 12px;
+    font-size: 0.72rem;
+    color: var(--accent);
+    cursor: pointer;
+    margin-top: 4px;
+    transition: var(--transition);
+}
+
+.van-toggle:hover {
+    background: var(--accent-light);
+    border-color: var(--accent);
+}
+
+.van-toggle svg {
+    transition: transform 0.3s ease;
+}
+
+.specs-open .van-toggle svg {
+    transform: rotate(180deg);
+}
+
+.van-details .van-specs {
     list-style: none;
     padding: 0;
-    margin: 4px 0 0;
+    margin: 6px 0 0;
     font-size: 0.72rem;
     color: var(--text-muted);
     line-height: 1.5;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease, margin 0.35s ease;
 }
 
-.van-specs li::before {
+.van-details.specs-open .van-specs {
+    max-height: 300px;
+    margin: 8px 0 0;
+}
+
+.van-details .van-specs li::before {
     content: '';
     display: inline-block;
     width: 4px;
