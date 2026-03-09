@@ -771,6 +771,9 @@
 
     <script src="i18n.js" charset="UTF-8"></script>
     <script>
+        // Google Sheets URL - sostituisci con il tuo dopo il deploy dello script
+        window.SHEETS_URL = ''; // Incolla qui l'URL del tuo Google Apps Script
+
         // Mobile menu
         const menuToggle = document.getElementById('menuToggle');
         const nav = document.getElementById('nav');
@@ -946,6 +949,28 @@
                     if(!phone){alert(typeof t==='function'?t('form_phone'):'Inserisci il telefono');return;}
                     if(!startDate||!endDate){alert(typeof t==='function'?t('book_step2'):'Seleziona le date');return;}
                     const days=countDays(), total=days*VANS[van].price;
+
+                    // Salva su Google Sheets
+                    if(window.SHEETS_URL) {
+                        fetch(window.SHEETS_URL, {
+                            method:'POST', mode:'no-cors',
+                            headers:{'Content-Type':'application/json'},
+                            body: JSON.stringify({
+                                furgone: VANS[van].name,
+                                dataRitiro: formatDateLocale(startDate),
+                                dataRiconsegna: formatDateLocale(endDate),
+                                oraRitiro: timeStart,
+                                oraRiconsegna: timeEnd,
+                                giorni: days,
+                                totale: 'CHF '+total+'.-',
+                                nome: name, nascita: dob, nazionalita: nationality,
+                                indirizzo: address, telefono: phone, email: email,
+                                documento: docId, patente: license, note: notes
+                            })
+                        }).catch(()=>{});
+                    }
+
+                    // Invia su WhatsApp
                     let msg='--- PRENOTAZIONE NOLEGGIO ---\n\nFurgone: '+VANS[van].name+'\nRitiro: '+formatDateLocale(startDate)+' ore '+timeStart+'\nRiconsegna: '+formatDateLocale(endDate)+' ore '+timeEnd+'\nDurata: '+days+' '+getDayWord(days)+'\nTotale: CHF '+total+'.-\n\n--- DATI ---\nNome: '+name+'\n';
                     if(dob) msg+='Nascita: '+dob+'\n'; if(nationality) msg+='Nazionalita: '+nationality+'\n'; if(address) msg+='Indirizzo: '+address+'\n';
                     msg+='Tel: '+phone+'\n'; if(email) msg+='Email: '+email+'\n'; if(docId) msg+='Documento: '+docId+'\n'; if(license) msg+='Patente: '+license+'\n'; if(notes) msg+='\nNote: '+notes+'\n';
