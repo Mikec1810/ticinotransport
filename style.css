@@ -1497,12 +1497,16 @@ img {
 .booking-submit {
     text-align: center;
     padding-top: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .booking-submit .btn {
     width: 100%;
     max-width: 500px;
     justify-content: center;
+    margin: 0 auto;
 }
 
 .booking-disclaimer {
