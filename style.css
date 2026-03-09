@@ -1499,6 +1499,12 @@ img {
     padding-top: 8px;
 }
 
+.booking-submit .btn {
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
+}
+
 .booking-disclaimer {
     margin-top: 12px;
     font-size: 0.8rem;
