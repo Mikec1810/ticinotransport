@@ -2044,8 +2044,8 @@ img {
     }
 
     .hero-top {
-        top: auto;
-        bottom: 52%;
+        top: 100px;
+        bottom: auto;
     }
 
     .hero-top .hero-slogan {
@@ -2199,7 +2199,8 @@ img {
     }
 
     .hero-top {
-        bottom: 50%;
+        top: 90px;
+        bottom: auto;
     }
 
     .hero-top .hero-slogan {
