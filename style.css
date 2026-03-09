@@ -233,14 +233,18 @@ img {
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(13,27,42,0.5) 0%, rgba(13,27,42,0.05) 30%, rgba(13,27,42,0.05) 55%, rgba(13,27,42,0.8) 75%);
+    background: linear-gradient(180deg, rgba(13,27,42,0.6) 0%, rgba(13,27,42,0.1) 25%, rgba(13,27,42,0.0) 40%, rgba(13,27,42,0.0) 60%, rgba(13,27,42,0.7) 78%, rgba(13,27,42,0.9) 100%);
 }
 
 .hero-top {
     position: relative;
     z-index: 1;
-    padding-top: 140px;
+    padding-top: 130px;
     text-align: center;
+}
+
+.hero-top .hero-slogan {
+    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
 }
 
 .hero-bottom {
@@ -248,6 +252,10 @@ img {
     z-index: 1;
     max-width: 700px;
     padding-bottom: 48px;
+}
+
+.hero-bottom h1 {
+    text-shadow: 0 1px 10px rgba(0,0,0,0.5);
 }
 
 .hero-logo {
@@ -2008,20 +2016,21 @@ img {
     }
 
     .hero-overlay {
-        background: linear-gradient(180deg, rgba(13,27,42,0.5) 0%, rgba(13,27,42,0) 25%, rgba(13,27,42,0) 50%, rgba(13,27,42,0.85) 70%);
+        background: linear-gradient(180deg, rgba(13,27,42,0.65) 0%, rgba(13,27,42,0.1) 20%, rgba(13,27,42,0.0) 35%, rgba(13,27,42,0.0) 55%, rgba(13,27,42,0.75) 72%, rgba(13,27,42,0.95) 100%);
     }
 
     .hero-top {
-        padding-top: 120px;
+        padding-top: 110px;
         text-align: center;
     }
 
     .hero-top .hero-slogan {
-        font-size: 1.6rem;
+        font-size: 1.5rem;
+        text-shadow: 0 2px 16px rgba(0,0,0,0.7);
     }
 
     .hero-bottom {
-        padding-bottom: 24px;
+        padding-bottom: 20px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -2031,6 +2040,7 @@ img {
     .hero-bottom h1 {
         font-size: 0.8rem;
         text-align: center;
+        text-shadow: 0 1px 8px rgba(0,0,0,0.7);
     }
 
     .hero-buttons {
@@ -2164,11 +2174,16 @@ img {
     }
 
     .hero-top .hero-slogan {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     .hero-bottom h1 {
-        font-size: 0.75rem;
+        font-size: 0.7rem;
+    }
+
+    .hero-bottom .hero-buttons .btn {
+        font-size: 0.85rem;
+        padding: 12px 20px;
     }
 
     .stat-num {
@@ -2352,9 +2367,10 @@ img {
 }
 
 .booking-vans-compact .booking-van-card img {
-    width: 160px;
-    height: auto;
+    width: 280px;
+    height: 180px;
     object-fit: cover;
+    object-position: center;
     flex-shrink: 0;
 }
 
