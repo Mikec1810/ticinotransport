@@ -100,7 +100,7 @@ img {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 84px;
+    height: 100px;
 }
 
 .logo {
@@ -109,7 +109,7 @@ img {
 }
 
 .logo-img {
-    height: 90px;
+    height: 140px;
     width: auto;
 }
 
