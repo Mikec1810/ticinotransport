@@ -221,10 +221,8 @@ img {
 /* ===== HERO ===== */
 .hero {
     position: relative;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    height: 100vh;
+    min-height: 700px;
     overflow: hidden;
 }
 
@@ -237,35 +235,52 @@ img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center;
+    object-position: center 40%;
 }
 
 .hero-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, rgba(13,27,42,0.6) 0%, rgba(13,27,42,0.1) 25%, rgba(13,27,42,0.0) 40%, rgba(13,27,42,0.0) 60%, rgba(13,27,42,0.7) 78%, rgba(13,27,42,0.9) 100%);
+    background: linear-gradient(180deg,
+        rgba(13,27,42,0.75) 0%,
+        rgba(13,27,42,0.15) 15%,
+        rgba(13,27,42,0.0) 25%,
+        rgba(13,27,42,0.0) 55%,
+        rgba(13,27,42,0.4) 70%,
+        rgba(13,27,42,0.85) 85%,
+        rgba(13,27,42,0.95) 95%);
 }
 
 .hero-top {
-    position: relative;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
     z-index: 1;
-    padding-top: 130px;
     text-align: center;
 }
 
 .hero-top .hero-slogan {
-    text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    text-shadow: 0 2px 30px rgba(0,0,0,0.8), 0 0 60px rgba(0,0,0,0.4);
 }
 
 .hero-bottom {
-    position: relative;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
     z-index: 1;
-    max-width: 700px;
-    padding-bottom: 48px;
+    padding: 0 5% 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    gap: 0 40px;
 }
 
 .hero-bottom h1 {
-    text-shadow: 0 1px 10px rgba(0,0,0,0.5);
+    text-shadow: 0 1px 16px rgba(0,0,0,0.8), 0 0 40px rgba(0,0,0,0.4);
+    width: 100%;
+    max-width: 600px;
 }
 
 .hero-logo {
@@ -325,13 +340,13 @@ img {
     display: flex;
     gap: 16px;
     flex-wrap: wrap;
-    margin-bottom: 72px;
+    margin-bottom: 24px;
 }
 
 .hero-stats {
     display: flex;
-    gap: 56px;
-    padding-top: 40px;
+    gap: 40px;
+    padding-top: 20px;
     border-top: 1px solid rgba(255,255,255,0.1);
 }
 
@@ -2025,37 +2040,32 @@ img {
         min-height: 100vh;
     }
 
-    .hero-overlay {
-        background: linear-gradient(180deg, rgba(13,27,42,0.65) 0%, rgba(13,27,42,0.1) 20%, rgba(13,27,42,0.0) 35%, rgba(13,27,42,0.0) 55%, rgba(13,27,42,0.75) 72%, rgba(13,27,42,0.95) 100%);
-    }
-
     .hero-top {
-        padding-top: 110px;
-        text-align: center;
+        top: 100px;
     }
 
     .hero-top .hero-slogan {
-        font-size: 1.8rem;
-        text-shadow: 0 2px 16px rgba(0,0,0,0.7);
+        font-size: 2rem;
+        text-shadow: 0 2px 20px rgba(0,0,0,0.9), 0 0 40px rgba(0,0,0,0.6);
     }
 
     .hero-bottom {
-        padding-bottom: 20px;
+        padding: 0 16px 16px;
         text-align: center;
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .hero-bottom h1 {
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         text-align: center;
-        text-shadow: 0 1px 8px rgba(0,0,0,0.7);
+        text-shadow: 0 1px 12px rgba(0,0,0,0.9), 0 0 30px rgba(0,0,0,0.5);
+        max-width: 100%;
     }
 
     .hero-buttons {
         flex-direction: column;
-        margin-bottom: 32px;
+        margin-bottom: 16px;
         width: 100%;
     }
 
@@ -2064,9 +2074,10 @@ img {
     }
 
     .hero-stats {
-        gap: 32px;
+        gap: 24px;
         justify-content: center;
         width: 100%;
+        padding-top: 12px;
     }
 
     .highlight-content {
@@ -2184,11 +2195,11 @@ img {
     }
 
     .hero-top .hero-slogan {
-        font-size: 1.5rem;
+        font-size: 1.6rem;
     }
 
     .hero-bottom h1 {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
 
     .hero-bottom .hero-buttons .btn {
