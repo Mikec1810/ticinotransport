@@ -1067,9 +1067,15 @@
                         docId=document.getElementById('bookingDocId').value.trim(), license=document.getElementById('bookingLicense').value.trim(),
                         timeStart=document.getElementById('bookingTimeStart').value, timeEnd=document.getElementById('bookingTimeEnd').value,
                         notes=document.getElementById('bookingNotes').value.trim(), van=getSelectedVan();
-                    if(!name){alert(typeof t==='function'?t('form_name'):'Inserisci il tuo nome');return;}
-                    if(!phone){alert(typeof t==='function'?t('form_phone'):'Inserisci il telefono');return;}
-                    if(!startDate||!endDate){alert(typeof t==='function'?t('book_step2'):'Seleziona le date');return;}
+                    if(!name){alert('Inserisci il tuo nome');return;}
+                    if(!email){alert('Inserisci la tua email');return;}
+                    if(!phone){alert('Inserisci il telefono');return;}
+                    if(!dob){alert('Inserisci la data di nascita');return;}
+                    if(!nationality){alert('Inserisci la nazionalit\u00e0');return;}
+                    if(!address){alert('Inserisci l\'indirizzo');return;}
+                    if(!docId){alert('Inserisci il numero documento');return;}
+                    if(!license){alert('Inserisci il numero patente');return;}
+                    if(!startDate||!endDate){alert('Seleziona le date di ritiro e riconsegna');return;}
                     const days=countDays(), total=days*VANS[van].price;
 
                     // Salva su Google Sheets
