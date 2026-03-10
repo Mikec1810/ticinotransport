@@ -113,13 +113,13 @@ img {
 }
 
 .logo-img {
-    height: 160px;
+    height: 200px;
     width: auto;
 }
 
 @media (max-width: 768px) {
     .logo-img {
-        height: 120px;
+        height: 140px;
     }
 }
 
@@ -221,9 +221,9 @@ img {
 /* ===== HERO ===== */
 .hero {
     position: relative;
-    height: 85vh;
-    min-height: 600px;
-    max-height: 800px;
+    height: 80vh;
+    min-height: 550px;
+    max-height: 720px;
     overflow: hidden;
 }
 
@@ -2044,7 +2044,7 @@ img {
     }
 
     .hero-top {
-        top: 100px;
+        top: 28%;
         bottom: auto;
     }
 
@@ -2199,7 +2199,7 @@ img {
     }
 
     .hero-top {
-        top: 90px;
+        top: 25%;
         bottom: auto;
     }
 
@@ -2605,6 +2605,10 @@ img {
 .lang-selector {
     display: flex;
     align-items: center;
+    position: absolute;
+    right: 200px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .lang-select {
@@ -2643,6 +2647,7 @@ img {
         position: absolute;
         top: 76px;
         right: 16px;
+        transform: none;
     }
 }
 
