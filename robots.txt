@@ -1,6 +1,6 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.ticinotransport.ch/sitemap.xml
+Sitemap: https://ticinotransport.ch/sitemap.xml
 
 User-agent: Googlebot
 Allow: /
