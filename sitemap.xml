@@ -1,83 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
-    <!-- Homepage -->
     <url>
         <loc>https://ticinotransport.ch/</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-19T10:00:00+02:00</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
-        <xhtml:link rel="alternate" hreflang="it" href="https://ticinotransport.ch/"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ticinotransport.ch/en/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://ticinotransport.ch/de/"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://ticinotransport.ch/fr/"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ticinotransport.ch/"/>
     </url>
 
-    <!-- Noleggio Furgoni -->
     <url>
         <loc>https://ticinotransport.ch/noleggio-furgoni.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-19T10:00:00+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="it" href="https://ticinotransport.ch/noleggio-furgoni.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ticinotransport.ch/en/noleggio-furgoni.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://ticinotransport.ch/de/noleggio-furgoni.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://ticinotransport.ch/fr/noleggio-furgoni.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ticinotransport.ch/noleggio-furgoni.html"/>
     </url>
 
-    <!-- Trasporto Veicoli -->
     <url>
         <loc>https://ticinotransport.ch/trasporto-veicoli.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-19T10:00:00+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="it" href="https://ticinotransport.ch/trasporto-veicoli.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ticinotransport.ch/en/trasporto-veicoli.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://ticinotransport.ch/de/trasporto-veicoli.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://ticinotransport.ch/fr/trasporto-veicoli.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ticinotransport.ch/trasporto-veicoli.html"/>
     </url>
 
-    <!-- Trasporto Moto -->
     <url>
         <loc>https://ticinotransport.ch/trasporto-moto.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-19T10:00:00+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="it" href="https://ticinotransport.ch/trasporto-moto.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ticinotransport.ch/en/trasporto-moto.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://ticinotransport.ch/de/trasporto-moto.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://ticinotransport.ch/fr/trasporto-moto.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ticinotransport.ch/trasporto-moto.html"/>
     </url>
 
-    <!-- Pratiche Doganali -->
     <url>
         <loc>https://ticinotransport.ch/pratiche-doganali.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-19T10:00:00+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
-        <xhtml:link rel="alternate" hreflang="it" href="https://ticinotransport.ch/pratiche-doganali.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ticinotransport.ch/en/pratiche-doganali.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://ticinotransport.ch/de/pratiche-doganali.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://ticinotransport.ch/fr/pratiche-doganali.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ticinotransport.ch/pratiche-doganali.html"/>
     </url>
 
-    <!-- Autosoccorso Stradale -->
     <url>
         <loc>https://ticinotransport.ch/autosoccorso-stradale.html</loc>
-        <lastmod>2026-05-19</lastmod>
+        <lastmod>2026-05-19T10:00:00+02:00</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
-        <xhtml:link rel="alternate" hreflang="it" href="https://ticinotransport.ch/autosoccorso-stradale.html"/>
-        <xhtml:link rel="alternate" hreflang="en" href="https://ticinotransport.ch/en/autosoccorso-stradale.html"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://ticinotransport.ch/de/autosoccorso-stradale.html"/>
-        <xhtml:link rel="alternate" hreflang="fr" href="https://ticinotransport.ch/fr/autosoccorso-stradale.html"/>
-        <xhtml:link rel="alternate" hreflang="x-default" href="https://ticinotransport.ch/autosoccorso-stradale.html"/>
     </url>
 
 </urlset>
