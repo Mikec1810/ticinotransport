@@ -37,14 +37,25 @@
         "description": "Noleggio furgoni Citroen Jumpy e Fiat Ducato per traslochi, trasporto moto e ogni esigenza di trasporto in Ticino e Svizzera.",
         "provider": {
             "@type": "LocalBusiness",
+            "@id": "https://ticinotransport.ch/#localbusiness",
             "name": "TicinoTransport",
+            "url": "https://ticinotransport.ch",
+            "email": "maikol.casalaro1@gmail.com",
             "telephone": "+41768301847",
+            "image": "https://ticinotransport.ch/img/fiat-ducato.webp",
+            "priceRange": "CHF 80 - CHF 120",
             "address": {
                 "@type": "PostalAddress",
                 "addressLocality": "Bioggio",
                 "addressRegion": "Ticino",
                 "postalCode": "6934",
                 "addressCountry": "CH"
+            },
+            "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+                "opens": "00:00",
+                "closes": "23:59"
             }
         },
         "areaServed": {
@@ -59,6 +70,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Product",
+        "sku": "TT-CJUMPY-L1H1",
         "name": "Noleggio Citroen Jumpy L1H1",
         "description": "Furgone Citroen Jumpy L1H1 a noleggio in Ticino. Volume 5m³, portata 1000 kg. Ideale per traslochi e trasporti urbani.",
         "image": "https://ticinotransport.ch/img/citroen-jumpy.jpg",
@@ -74,8 +86,7 @@
             "itemCondition": "https://schema.org/UsedCondition",
             "seller": {
                 "@type": "LocalBusiness",
-                "name": "Ticino Transport",
-                "url": "https://ticinotransport.ch"
+                "@id": "https://ticinotransport.ch/#localbusiness"
             }
         }
     }
@@ -86,6 +97,7 @@
     {
         "@context": "https://schema.org",
         "@type": "Product",
+        "sku": "TT-FDUCATO-L2H2",
         "name": "Noleggio Fiat Ducato L2H2",
         "description": "Furgone Fiat Ducato L2H2 a noleggio in Ticino. Volume 13m³, portata 1500 kg. Ideale per traslochi medio-grandi.",
         "image": "https://ticinotransport.ch/img/fiat-ducato.webp",
@@ -101,8 +113,7 @@
             "itemCondition": "https://schema.org/UsedCondition",
             "seller": {
                 "@type": "LocalBusiness",
-                "name": "Ticino Transport",
-                "url": "https://ticinotransport.ch"
+                "@id": "https://ticinotransport.ch/#localbusiness"
             }
         }
     }
