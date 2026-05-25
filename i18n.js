@@ -166,11 +166,34 @@ function t(key) {
     return entry[currentLang] || entry['it'] || key;
 }
 
+// PUNTO A: sostituzione (NON appendChild) di canonical, og:url, og:locale.
+// Invocata solo sulla homepage (l'unica pagina con varianti linguistiche reali).
+function updateSEOTags(lang) {
+    const path = window.location.pathname;
+    const isHomepage = path === '/' || path === '/index.html';
+    if (!isHomepage) return;
+
+    const origin = 'https://ticinotransport.ch';
+    const hasLangParam = new URLSearchParams(window.location.search).has('lang');
+    const canonicalURL = hasLangParam ? `${origin}/?lang=${lang}` : `${origin}/`;
+
+    const canonicalLink = document.querySelector('link[rel="canonical"]');
+    if (canonicalLink) canonicalLink.href = canonicalURL;
+
+    const ogUrl = document.querySelector('meta[property="og:url"]');
+    if (ogUrl) ogUrl.setAttribute('content', canonicalURL);
+
+    const localeMap = { it:'it_CH', en:'en_GB', de:'de_CH', fr:'fr_CH', ru:'ru_RU', ar:'ar_SA' };
+    const ogLocale = document.querySelector('meta[property="og:locale"]');
+    if (ogLocale) ogLocale.setAttribute('content', localeMap[lang] || 'it_CH');
+}
+
 function setLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('tt_lang', lang);
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
+    updateSEOTags(lang);
 
     // Update all data-i18n elements
     document.querySelectorAll('[data-i18n]').forEach(el => {
@@ -208,7 +231,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const langSelect = document.getElementById('langSelect');
     if (langSelect) {
         langSelect.addEventListener('change', (e) => setLanguage(e.target.value));
+        langSelect.value = currentLang;
     }
-    // Apply saved language
-    if (currentLang !== 'it') setLanguage(currentLang);
+    // Apply saved language (full re-render) OR update only SEO tags if IT (DOM already in IT)
+    if (currentLang !== 'it') {
+        setLanguage(currentLang);
+    } else {
+        updateSEOTags('it');
+    }
 });
