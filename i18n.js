@@ -206,12 +206,19 @@ function t(key) {
     return entry[currentLang] || entry['it'] || key;
 }
 
+// Detect se la pagina corrente ha varianti linguistiche reali.
+// La home / e /index.html sono multilingue per design.
+// Altre pagine (.html) sono solo IT, salvo presenza di [data-i18n].
+function pageIsMultilingual() {
+    const path = window.location.pathname;
+    if (path === '/' || path === '/index.html') return true;
+    return document.querySelectorAll('[data-i18n]').length > 0;
+}
+
 // PUNTO A: sostituzione (NON appendChild) di canonical, og:url, og:locale.
 // Invocata solo sulla homepage (l'unica pagina con varianti linguistiche reali).
 function updateSEOTags(lang) {
-    const path = window.location.pathname;
-    const isHomepage = path === '/' || path === '/index.html';
-    if (!isHomepage) return;
+    if (!pageIsMultilingual()) return;
 
     const origin = 'https://ticinotransport.ch';
     const hasLangParam = new URLSearchParams(window.location.search).has('lang');
@@ -232,10 +239,10 @@ function setLanguage(lang) {
     currentLang = lang;
     localStorage.setItem('tt_lang', lang);
 
-    // BUG 2 FIX: solo le pagine con [data-i18n] sono realmente multilingue.
-    // Pagine mono-lingua (es. noleggio-furgoni.html) non devono avere lang/dir/SEO sovrascritti.
-    const isMultilingual = !!document.querySelector('[data-i18n]');
-    if (isMultilingual) {
+    // BUG 2 FIX (v2): detection multilingue via PATH-based check (più affidabile del DOM-only)
+    // Homepage / e /index.html → sempre multilingue.
+    // Pagine .html interne → mono-lingua, NON sovrascrivere lang/dir/SEO.
+    if (pageIsMultilingual()) {
         document.documentElement.lang = lang;
         document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
         updateSEOTags(lang);
@@ -283,7 +290,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // BUG 2 FIX: updateSEOTags chiamato solo se la pagina è multilingue
     if (currentLang !== 'it') {
         setLanguage(currentLang);
-    } else if (document.querySelector('[data-i18n]')) {
+    } else if (pageIsMultilingual()) {
         updateSEOTags('it');
     }
 });
