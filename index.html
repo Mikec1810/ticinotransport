@@ -13,9 +13,25 @@
     <meta name="geo.position" content="46.02;8.89">
     <meta name="ICBM" content="46.02, 8.89">
     <link rel="canonical" href="https://ticinotransport.ch/">
+    <!-- SEO: canonical dinamico per lingua + normalizzazione /index.html (301 lato server non disponibile su GitHub Pages) -->
+    <script>
+    (function () {
+      var loc = window.location;
+      // /index.html e' un duplicato di / : redirect client-side a / conservando ?lang=
+      if (/\/index\.html$/i.test(loc.pathname)) {
+        loc.replace(loc.origin + loc.pathname.replace(/index\.html$/i, '') + loc.search + loc.hash);
+        return;
+      }
+      var lang = new URLSearchParams(loc.search).get('lang');
+      var canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) return;
+      var base = loc.origin + loc.pathname;
+      canonical.setAttribute('href', (lang && lang !== 'it') ? base + '?lang=' + lang : base);
+    })();
+    </script>
 
     <!-- Hreflang: versioni linguistiche della homepage (PUNTO B: statici nel sorgente) -->
-    <link rel="alternate" hreflang="it" href="https://ticinotransport.ch/?lang=it">
+    <link rel="alternate" hreflang="it" href="https://ticinotransport.ch/">
     <link rel="alternate" hreflang="en" href="https://ticinotransport.ch/?lang=en">
     <link rel="alternate" hreflang="de" href="https://ticinotransport.ch/?lang=de">
     <link rel="alternate" hreflang="fr" href="https://ticinotransport.ch/?lang=fr">
