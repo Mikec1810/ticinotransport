@@ -221,8 +221,9 @@ function updateSEOTags(lang) {
     if (!pageIsMultilingual()) return;
 
     const origin = 'https://ticinotransport.ch';
-    const hasLangParam = new URLSearchParams(window.location.search).has('lang');
-    const canonicalURL = hasLangParam ? `${origin}/?lang=${lang}` : `${origin}/`;
+    // Canonical sempre pulito: il sito è indicizzato in italiano (le lingue sono
+    // solo una comodità UX lato client, non versioni separate lato URL).
+    const canonicalURL = `${origin}/`;
 
     const canonicalLink = document.querySelector('link[rel="canonical"]');
     if (canonicalLink) canonicalLink.href = canonicalURL;
