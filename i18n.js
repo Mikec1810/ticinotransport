@@ -195,8 +195,28 @@ const CALENDAR_I18N = {
 function detectLang() {
     const urlParams = new URLSearchParams(window.location.search);
     const urlLang = urlParams.get('lang');
-    if (urlLang && ['it','en','de','fr','ru','ar'].includes(urlLang)) return urlLang;
+    if (urlLang && ['it','en','de','fr','ru','ar'].includes(urlLang)) {
+        // Il parametro vale come scelta una tantum: la salviamo e poi lo togliamo
+        // dall'URL (vedi stripLangParam).
+        try { localStorage.setItem('tt_lang', urlLang); } catch (e) {}
+        return urlLang;
+    }
     return localStorage.getItem('tt_lang') || 'it';
+}
+
+// Toglie ?lang= dall'URL senza ricaricare.
+// Il sito e' indicizzato in italiano e la lingua e' solo una preferenza UX lato
+// client: ?lang=en serviva lo stesso contenuto italiano a un URL diverso, e
+// Google ha finito per indicizzare autosoccorso-stradale.html?lang=en al posto
+// dell'URL pulito. Il canonical resta la difesa principale; questo evita che il
+// parametro continui a circolare ed essere condiviso.
+function stripLangParam() {
+    if (!window.history || !history.replaceState) return;
+    const url = new URL(window.location.href);
+    if (!url.searchParams.has('lang')) return;
+    url.searchParams.delete('lang');
+    const qs = url.searchParams.toString();
+    history.replaceState(null, '', url.pathname + (qs ? '?' + qs : '') + url.hash);
 }
 let currentLang = detectLang();
 
@@ -281,6 +301,8 @@ function setLanguage(lang) {
 
 // Init on load
 document.addEventListener('DOMContentLoaded', () => {
+    stripLangParam();
+
     // Language dropdown
     const langSelect = document.getElementById('langSelect');
     if (langSelect) {
