@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informativa sulla privacy e cookie | TicinoTransport</title>
+    <meta name="description" content="Informativa sulla protezione dei dati e sui cookie di TicinoTransport (Vespa Scout Sagl, Bioggio) secondo la LPD svizzera e il GDPR.">
+    <meta name="author" content="TicinoTransport - Maikol Casalaro">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://ticinotransport.ch/privacy.html">
+    <!-- SEO: canonical dinamico per lingua + normalizzazione /index.html (301 lato server non disponibile su GitHub Pages) -->
+    <script>
+    (function () {
+      var loc = window.location;
+      // /index.html e' un duplicato di / : redirect client-side a / conservando ?lang=
+      if (/\/index\.html$/i.test(loc.pathname)) {
+        loc.replace(loc.origin + loc.pathname.replace(/index\.html$/i, '') + loc.search + loc.hash);
+        return;
+      }
+      var lang = new URLSearchParams(loc.search).get('lang');
+      var canonical = document.querySelector('link[rel="canonical"]');
+      if (!canonical) return;
+      var base = loc.origin + loc.pathname;
+      canonical.setAttribute('href', base);
+    })();
+    </script>
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ticinotransport.ch/privacy.html">
+    <meta property="og:title" content="Informativa sulla privacy e cookie | TicinoTransport">
+    <meta property="og:description" content="Come TicinoTransport (Vespa Scout Sagl) tratta i dati personali e usa i cookie.">
+    <meta property="og:locale" content="it_CH">
+    <meta property="og:site_name" content="TicinoTransport">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="cookie-consent.js" defer></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">TT</span>
+                <span class="logo-text">TicinoTransport</span>
+            </a>
+            <nav class="nav" id="nav">
+                <a href="index.html#servizi">Servizi</a>
+                <a href="index.html#noleggio">Prenota</a>
+                <a href="index.html#gallery">Gallery</a>
+                <a href="index.html#contatti">Contatti</a>
+            </nav>
+            <a href="tel:+41768301847" class="header-phone">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+                +41 76 830 18 47
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <div class="breadcrumb"><a href="index.html">Home</a> / Privacy</div>
+                <h1>Informativa sulla privacy e cookie</h1>
+                <p>Privacy policy · Datenschutzerklärung · Politique de confidentialité</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container page-content">
+                <div class="privacy-langs" role="group" aria-label="Lingua / Language">
+                    <button type="button" data-privacy-switch="it" aria-pressed="true">Italiano</button>
+                    <button type="button" data-privacy-switch="en" aria-pressed="false">English</button>
+                    <button type="button" data-privacy-switch="de" aria-pressed="false">Deutsch</button>
+                    <button type="button" data-privacy-switch="fr" aria-pressed="false">Français</button>
+                </div>
+
+                <!-- ===================== ITALIANO ===================== -->
+                <article data-privacy-lang="it" lang="it">
+                    <p>Questa informativa spiega come trattiamo i dati personali quando visiti ticinotransport.ch o ci contatti. Si basa sulla legge federale svizzera sulla protezione dei dati (LPD, in particolare art. 19) e, per le persone che si trovano nell'Unione europea, sul Regolamento generale sulla protezione dei dati (GDPR, art. 13).</p>
+
+                    <h2>1. Titolare del trattamento</h2>
+                    <p><strong>Vespa Scout Sagl</strong> (TicinoTransport)<br>Via Cademario 7, 6934 Bioggio, Svizzera<br>IDI: CHE-144.001.809<br>Email: <a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a> · Telefono: <a href="tel:+41768301847">+41 76 830 18 47</a></p>
+
+                    <h2>2. Quali dati trattiamo e perché</h2>
+                    <h3>Modulo di prenotazione furgone</h3>
+                    <p>Raccogliamo: furgone scelto, date e orari, nome e cognome, data di nascita, nazionalità, indirizzo, telefono, email, tipo/numero/scadenza del documento d'identità, categoria/numero/scadenza della patente e note. Servono a verificare il conducente, preparare e concludere il contratto di noleggio e gestire la consegna del veicolo. Senza questi dati non possiamo noleggiare il furgone. Al momento dell'invio i dati vengono salvati in un foglio Google Sheets tramite Google Apps Script e si apre WhatsApp con il riepilogo della prenotazione. Le foto dei documenti non vengono caricate sul sito: le invii tu separatamente via WhatsApp.</p>
+                    <h3>Modulo richiesta trasporto / pratiche</h3>
+                    <p>Raccogliamo: tipo di servizio, dati del veicolo (tipo, marca e modello, targa, condizioni), indirizzi di ritiro e consegna, data, urgenza, nome, telefono e note. Li usiamo per prepararti un preventivo ed eseguire il servizio. Anche questi dati vengono salvati su Google Sheets e inviati via WhatsApp.</p>
+                    <h3>Contatti diretti</h3>
+                    <p>Se ci scrivi via WhatsApp, email o telefono, trattiamo i dati che ci comunichi per rispondere e, se diventi cliente, per eseguire il servizio.</p>
+                    <h3>Visita del sito</h3>
+                    <p>Quando apri il sito, il server di hosting registra dati tecnici (indirizzo IP, data e ora, pagina richiesta, browser) necessari per consegnare le pagine e per la sicurezza. Il sito carica inoltre i caratteri tipografici da Google Fonts e, nella pagina principale, il calendario delle disponibilità da Google Sheets: per farlo il tuo browser trasmette a Google l'indirizzo IP.</p>
+                    <h3>Statistiche (solo con consenso)</h3>
+                    <p>Se clicchi «Accetta» nel banner dei cookie, usiamo Google Analytics 4 per statistiche aggregate sulle visite (pagine viste, provenienza, dispositivo). Se rifiuti, Google Analytics non viene caricato.</p>
+
+                    <h2>3. Basi giuridiche (GDPR)</h2>
+                    <ul>
+                        <li>Esecuzione di un contratto o di misure precontrattuali (art. 6 cpv. 1 lett. b): prenotazioni, preventivi, servizi.</li>
+                        <li>Obbligo legale (art. 6 cpv. 1 lett. c): conservazione di contratti e documenti contabili.</li>
+                        <li>Interesse legittimo (art. 6 cpv. 1 lett. f): funzionamento e sicurezza del sito, caratteri tipografici, calendario disponibilità, risposta ai contatti.</li>
+                        <li>Consenso (art. 6 cpv. 1 lett. a): Google Analytics. Puoi revocarlo in qualsiasi momento.</li>
+                    </ul>
+                    <p>In Svizzera il trattamento avviene nel rispetto dei principi della LPD (liceità, buona fede, proporzionalità, finalità, trasparenza).</p>
+
+                    <h2>4. Destinatari e fornitori</h2>
+                    <p>Non vendiamo i tuoi dati e non li cediamo a terzi per pubblicità. Ci avvaliamo di questi fornitori:</p>
+                    <ul>
+                        <li><strong>GitHub Inc.</strong> (GitHub Pages, USA): hosting del sito.</li>
+                        <li><strong>Google</strong> (Google Ireland Ltd. / Google LLC, USA): Google Sheets e Apps Script (archiviazione delle richieste), Google Fonts, Google Analytics (solo con consenso).</li>
+                        <li><strong>WhatsApp / Meta</strong> (WhatsApp Ireland Ltd. / Meta Platforms Inc.): solo se scegli di contattarci o di inviare la richiesta via WhatsApp; vale anche l'informativa di WhatsApp.</li>
+                        <li>Instagram (Meta): solo se segui il link al nostro profilo.</li>
+                        <li>Autorità o consulenti (es. fiduciario, assicurazione del veicolo, dogana) quando necessario per il servizio o per obblighi di legge.</li>
+                    </ul>
+
+                    <h2>5. Trasferimento all'estero</h2>
+                    <p>Alcuni fornitori trattano dati negli Stati Uniti o in altri paesi. Il trasferimento avviene verso destinatari certificati nell'ambito dello Swiss-U.S. e dell'EU-U.S. Data Privacy Framework oppure sulla base delle clausole contrattuali standard riconosciute dall'Incaricato federale della protezione dei dati (IFPDT) e dalla Commissione europea.</p>
+
+                    <h2>6. Durata di conservazione</h2>
+                    <ul>
+                        <li>Contratti, fatture e documenti contabili: 10 anni (art. 958f CO).</li>
+                        <li>Richieste e preventivi che non portano a un contratto: al massimo 12 mesi.</li>
+                        <li>Dati di Google Analytics: secondo il periodo di conservazione impostato nella proprietà (massimo 14 mesi).</li>
+                        <li>Log tecnici del server: secondo le regole del fornitore di hosting.</li>
+                    </ul>
+
+                    <h2>7. I tuoi diritti</h2>
+                    <p>Puoi chiedere in qualsiasi momento l'accesso ai tuoi dati, la rettifica, la cancellazione, la limitazione del trattamento, la portabilità dei dati e opporti al trattamento basato su interesse legittimo. Puoi revocare il consenso a Google Analytics senza conseguenze sui trattamenti già effettuati. Scrivi a <a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a>.</p>
+                    <p>Hai inoltre il diritto di presentare una segnalazione all'Incaricato federale della protezione dei dati e della trasparenza (IFPDT, <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">www.edoeb.admin.ch</a>) e, se risiedi nell'UE, un reclamo all'autorità di controllo del tuo paese (in Italia il Garante per la protezione dei dati personali, <a href="https://www.garanteprivacy.it" target="_blank" rel="noopener">www.garanteprivacy.it</a>).</p>
+
+                    <h2>8. Cookie e tecnologie simili</h2>
+                    <div class="table-scroll">
+                    <table>
+                        <thead><tr><th>Nome</th><th>Tipo</th><th>Scopo</th><th>Durata</th></tr></thead>
+                        <tbody>
+                            <tr><td>tt_cookie_consent</td><td>Tecnico (localStorage)</td><td>Ricorda la tua scelta sui cookie</td><td>Finché non la cancelli</td></tr>
+                            <tr><td>tt_lang</td><td>Tecnico (localStorage)</td><td>Ricorda la lingua scelta</td><td>Finché non la cancelli</td></tr>
+                            <tr><td>_ga</td><td>Statistica, Google Analytics</td><td>Distingue i visitatori in forma pseudonima</td><td>2 anni</td></tr>
+                            <tr><td>_ga_C3ER6DN593</td><td>Statistica, Google Analytics</td><td>Mantiene lo stato della sessione</td><td>2 anni</td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <p>I cookie di statistica vengono impostati solo dopo il tuo consenso. Puoi cambiare idea in qualsiasi momento: <a href="#" data-cookie-settings>apri le impostazioni cookie</a>.</p>
+
+                    <h2>9. Modifiche</h2>
+                    <p>Possiamo aggiornare questa informativa. Vale la versione pubblicata su questa pagina. In caso di differenze tra le lingue fa fede la versione italiana.</p>
+                    <p><em>Ultimo aggiornamento: ottobre 2026</em></p>
+                </article>
+
+                <!-- ===================== ENGLISH ===================== -->
+                <article data-privacy-lang="en" lang="en" hidden>
+                    <p>This notice explains how we process personal data when you visit ticinotransport.ch or contact us. It is based on the Swiss Federal Act on Data Protection (FADP, in particular Art. 19) and, for people in the European Union, on the General Data Protection Regulation (GDPR, Art. 13).</p>
+
+                    <h2>1. Controller</h2>
+                    <p><strong>Vespa Scout Sagl</strong> (TicinoTransport)<br>Via Cademario 7, 6934 Bioggio, Switzerland<br>UID: CHE-144.001.809<br>Email: <a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a> · Phone: <a href="tel:+41768301847">+41 76 830 18 47</a></p>
+
+                    <h2>2. What data we process and why</h2>
+                    <h3>Van booking form</h3>
+                    <p>We collect: chosen van, dates and times, full name, date of birth, nationality, address, phone, email, type/number/expiry of your ID document, category/number/expiry of your driving licence and notes. We need them to verify the driver, prepare and conclude the rental contract and hand over the vehicle. Without this data we cannot rent you the van. On submission the data is stored in a Google Sheets spreadsheet via Google Apps Script and WhatsApp opens with a summary of the booking. Document photos are not uploaded to the website: you send them separately via WhatsApp.</p>
+                    <h3>Transport / paperwork request form</h3>
+                    <p>We collect: type of service, vehicle details (type, make and model, plate, condition), pick-up and delivery addresses, date, urgency, name, phone and notes, to prepare a quote and perform the service. This data is also stored in Google Sheets and sent via WhatsApp.</p>
+                    <h3>Direct contact</h3>
+                    <p>If you contact us via WhatsApp, email or phone, we process the data you give us to reply and, if you become a customer, to perform the service.</p>
+                    <h3>Visiting the website</h3>
+                    <p>When you open the site, the hosting server logs technical data (IP address, date and time, requested page, browser) needed to deliver the pages and for security. The site also loads fonts from Google Fonts and, on the home page, the availability calendar from Google Sheets; to do so your browser sends your IP address to Google.</p>
+                    <h3>Statistics (only with consent)</h3>
+                    <p>If you click "Accept" in the cookie banner, we use Google Analytics 4 for aggregated visit statistics. If you reject, Google Analytics is not loaded.</p>
+
+                    <h2>3. Legal bases (GDPR)</h2>
+                    <ul>
+                        <li>Performance of a contract or pre-contractual steps (Art. 6(1)(b)): bookings, quotes, services.</li>
+                        <li>Legal obligation (Art. 6(1)(c)): retention of contracts and accounting records.</li>
+                        <li>Legitimate interest (Art. 6(1)(f)): operation and security of the site, fonts, availability calendar, replying to enquiries.</li>
+                        <li>Consent (Art. 6(1)(a)): Google Analytics. You can withdraw it at any time.</li>
+                    </ul>
+
+                    <h2>4. Recipients and providers</h2>
+                    <p>We do not sell your data or share it with third parties for advertising. We use these providers:</p>
+                    <ul>
+                        <li><strong>GitHub Inc.</strong> (GitHub Pages, USA): website hosting.</li>
+                        <li><strong>Google</strong> (Google Ireland Ltd. / Google LLC, USA): Google Sheets and Apps Script (storing requests), Google Fonts, Google Analytics (only with consent).</li>
+                        <li><strong>WhatsApp / Meta</strong>: only if you choose to contact us or send your request via WhatsApp; WhatsApp's own privacy policy also applies.</li>
+                        <li>Instagram (Meta): only if you follow the link to our profile.</li>
+                        <li>Authorities or advisers (e.g. accountant, vehicle insurer, customs) when needed for the service or required by law.</li>
+                    </ul>
+
+                    <h2>5. Transfers abroad</h2>
+                    <p>Some providers process data in the United States or other countries. Transfers are made to recipients certified under the Swiss-U.S. and EU-U.S. Data Privacy Framework or on the basis of standard contractual clauses recognised by the Swiss FDPIC and the European Commission.</p>
+
+                    <h2>6. Retention</h2>
+                    <ul>
+                        <li>Contracts, invoices and accounting records: 10 years (Art. 958f Swiss Code of Obligations).</li>
+                        <li>Requests and quotes that do not lead to a contract: no longer than 12 months.</li>
+                        <li>Google Analytics data: according to the retention period set in the property (maximum 14 months).</li>
+                        <li>Technical server logs: according to the hosting provider's rules.</li>
+                    </ul>
+
+                    <h2>7. Your rights</h2>
+                    <p>You can request access, rectification, erasure, restriction of processing and data portability, and object to processing based on legitimate interest. You can withdraw your consent to Google Analytics at any time. Write to <a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a>.</p>
+                    <p>You may also report to the Swiss Federal Data Protection and Information Commissioner (FDPIC, <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">www.edoeb.admin.ch</a>) and, if you live in the EU, lodge a complaint with your national supervisory authority.</p>
+
+                    <h2>8. Cookies and similar technologies</h2>
+                    <div class="table-scroll">
+                    <table>
+                        <thead><tr><th>Name</th><th>Type</th><th>Purpose</th><th>Duration</th></tr></thead>
+                        <tbody>
+                            <tr><td>tt_cookie_consent</td><td>Technical (localStorage)</td><td>Remembers your cookie choice</td><td>Until you clear it</td></tr>
+                            <tr><td>tt_lang</td><td>Technical (localStorage)</td><td>Remembers your language</td><td>Until you clear it</td></tr>
+                            <tr><td>_ga</td><td>Statistics, Google Analytics</td><td>Distinguishes visitors pseudonymously</td><td>2 years</td></tr>
+                            <tr><td>_ga_C3ER6DN593</td><td>Statistics, Google Analytics</td><td>Keeps session state</td><td>2 years</td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <p>Statistics cookies are set only after your consent. You can change your mind at any time: <a href="#" data-cookie-settings>open cookie settings</a>.</p>
+
+                    <h2>9. Changes</h2>
+                    <p>We may update this notice. The version published on this page applies. In case of differences between languages, the Italian version prevails.</p>
+                    <p><em>Last updated: October 2026</em></p>
+                </article>
+
+                <!-- ===================== DEUTSCH ===================== -->
+                <article data-privacy-lang="de" lang="de" hidden>
+                    <p>Diese Erklärung beschreibt, wie wir Personendaten bearbeiten, wenn Sie ticinotransport.ch besuchen oder uns kontaktieren. Sie beruht auf dem Schweizer Datenschutzgesetz (DSG, insbesondere Art. 19) und, für Personen in der Europäischen Union, auf der Datenschutz-Grundverordnung (DSGVO, Art. 13).</p>
+
+                    <h2>1. Verantwortliche Stelle</h2>
+                    <p><strong>Vespa Scout Sagl</strong> (TicinoTransport)<br>Via Cademario 7, 6934 Bioggio, Schweiz<br>UID: CHE-144.001.809<br>E-Mail: <a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a> · Telefon: <a href="tel:+41768301847">+41 76 830 18 47</a></p>
+
+                    <h2>2. Welche Daten wir bearbeiten und wozu</h2>
+                    <h3>Buchungsformular Lieferwagen</h3>
+                    <p>Wir erheben: gewählter Lieferwagen, Daten und Uhrzeiten, Vor- und Nachname, Geburtsdatum, Nationalität, Adresse, Telefon, E-Mail, Art/Nummer/Ablauf des Ausweises, Kategorie/Nummer/Ablauf des Führerausweises und Bemerkungen. Wir benötigen sie, um den Fahrer zu prüfen, den Mietvertrag vorzubereiten und abzuschliessen und das Fahrzeug zu übergeben. Ohne diese Daten können wir den Lieferwagen nicht vermieten. Beim Absenden werden die Daten über Google Apps Script in einer Google-Sheets-Tabelle gespeichert und WhatsApp öffnet sich mit einer Zusammenfassung. Fotos der Dokumente werden nicht auf die Website hochgeladen: Sie senden sie separat per WhatsApp.</p>
+                    <h3>Anfrageformular Transport / Formalitäten</h3>
+                    <p>Wir erheben: Art der Dienstleistung, Fahrzeugdaten (Typ, Marke und Modell, Kennzeichen, Zustand), Abhol- und Lieferadresse, Datum, Dringlichkeit, Name, Telefon und Bemerkungen, um eine Offerte zu erstellen und den Auftrag auszuführen. Auch diese Daten werden in Google Sheets gespeichert und per WhatsApp übermittelt.</p>
+                    <h3>Direkter Kontakt</h3>
+                    <p>Wenn Sie uns per WhatsApp, E-Mail oder Telefon kontaktieren, bearbeiten wir Ihre Angaben, um zu antworten und gegebenenfalls den Auftrag auszuführen.</p>
+                    <h3>Besuch der Website</h3>
+                    <p>Beim Aufruf der Website speichert der Hosting-Server technische Daten (IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, Browser), die für die Auslieferung der Seiten und die Sicherheit nötig sind. Die Website lädt zudem Schriften von Google Fonts und auf der Startseite den Verfügbarkeitskalender aus Google Sheets; dabei übermittelt Ihr Browser die IP-Adresse an Google.</p>
+                    <h3>Statistik (nur mit Einwilligung)</h3>
+                    <p>Wenn Sie im Cookie-Banner auf «Akzeptieren» klicken, verwenden wir Google Analytics 4 für zusammengefasste Besuchsstatistiken. Lehnen Sie ab, wird Google Analytics nicht geladen.</p>
+
+                    <h2>3. Rechtsgrundlagen (DSGVO)</h2>
+                    <ul>
+                        <li>Vertragserfüllung oder vorvertragliche Massnahmen (Art. 6 Abs. 1 lit. b): Buchungen, Offerten, Dienstleistungen.</li>
+                        <li>Rechtliche Verpflichtung (Art. 6 Abs. 1 lit. c): Aufbewahrung von Verträgen und Buchhaltungsunterlagen.</li>
+                        <li>Berechtigtes Interesse (Art. 6 Abs. 1 lit. f): Betrieb und Sicherheit der Website, Schriften, Verfügbarkeitskalender, Beantwortung von Anfragen.</li>
+                        <li>Einwilligung (Art. 6 Abs. 1 lit. a): Google Analytics. Sie können sie jederzeit widerrufen.</li>
+                    </ul>
+
+                    <h2>4. Empfänger und Dienstleister</h2>
+                    <p>Wir verkaufen Ihre Daten nicht und geben sie nicht zu Werbezwecken weiter. Wir nutzen folgende Dienstleister:</p>
+                    <ul>
+                        <li><strong>GitHub Inc.</strong> (GitHub Pages, USA): Hosting der Website.</li>
+                        <li><strong>Google</strong> (Google Ireland Ltd. / Google LLC, USA): Google Sheets und Apps Script (Speicherung der Anfragen), Google Fonts, Google Analytics (nur mit Einwilligung).</li>
+                        <li><strong>WhatsApp / Meta</strong>: nur wenn Sie uns per WhatsApp kontaktieren oder Ihre Anfrage darüber senden; es gilt zusätzlich die Datenschutzerklärung von WhatsApp.</li>
+                        <li>Instagram (Meta): nur wenn Sie dem Link zu unserem Profil folgen.</li>
+                        <li>Behörden oder Berater (z. B. Treuhänder, Fahrzeugversicherung, Zoll), soweit für den Auftrag nötig oder gesetzlich vorgeschrieben.</li>
+                    </ul>
+
+                    <h2>5. Bekanntgabe ins Ausland</h2>
+                    <p>Einige Dienstleister bearbeiten Daten in den USA oder anderen Ländern. Die Übermittlung erfolgt an Empfänger, die unter dem Swiss-U.S. und EU-U.S. Data Privacy Framework zertifiziert sind, oder gestützt auf Standardvertragsklauseln, die vom EDÖB und der Europäischen Kommission anerkannt sind.</p>
+
+                    <h2>6. Aufbewahrungsdauer</h2>
+                    <ul>
+                        <li>Verträge, Rechnungen und Buchhaltungsunterlagen: 10 Jahre (Art. 958f OR).</li>
+                        <li>Anfragen und Offerten ohne Vertragsabschluss: höchstens 12 Monate.</li>
+                        <li>Google-Analytics-Daten: gemäss der in der Property eingestellten Dauer (höchstens 14 Monate).</li>
+                        <li>Technische Server-Logs: gemäss den Regeln des Hosting-Anbieters.</li>
+                    </ul>
+
+                    <h2>7. Ihre Rechte</h2>
+                    <p>Sie können Auskunft, Berichtigung, Löschung, Einschränkung der Bearbeitung und Datenübertragbarkeit verlangen und der Bearbeitung aufgrund berechtigter Interessen widersprechen. Ihre Einwilligung zu Google Analytics können Sie jederzeit widerrufen. Schreiben Sie an <a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a>.</p>
+                    <p>Sie können sich zudem an den Eidgenössischen Datenschutz- und Öffentlichkeitsbeauftragten wenden (EDÖB, <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">www.edoeb.admin.ch</a>) und, wenn Sie in der EU wohnen, bei der Aufsichtsbehörde Ihres Landes Beschwerde einlegen.</p>
+
+                    <h2>8. Cookies und ähnliche Technologien</h2>
+                    <div class="table-scroll">
+                    <table>
+                        <thead><tr><th>Name</th><th>Art</th><th>Zweck</th><th>Dauer</th></tr></thead>
+                        <tbody>
+                            <tr><td>tt_cookie_consent</td><td>Technisch (localStorage)</td><td>Speichert Ihre Cookie-Wahl</td><td>Bis Sie sie löschen</td></tr>
+                            <tr><td>tt_lang</td><td>Technisch (localStorage)</td><td>Speichert die gewählte Sprache</td><td>Bis Sie sie löschen</td></tr>
+                            <tr><td>_ga</td><td>Statistik, Google Analytics</td><td>Unterscheidet Besucher pseudonym</td><td>2 Jahre</td></tr>
+                            <tr><td>_ga_C3ER6DN593</td><td>Statistik, Google Analytics</td><td>Speichert den Sitzungsstatus</td><td>2 Jahre</td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <p>Statistik-Cookies werden erst nach Ihrer Einwilligung gesetzt. Sie können Ihre Wahl jederzeit ändern: <a href="#" data-cookie-settings>Cookie-Einstellungen öffnen</a>.</p>
+
+                    <h2>9. Änderungen</h2>
+                    <p>Wir können diese Erklärung anpassen. Es gilt die auf dieser Seite veröffentlichte Fassung. Bei Abweichungen zwischen den Sprachen ist die italienische Fassung massgebend.</p>
+                    <p><em>Letzte Aktualisierung: Oktober 2026</em></p>
+                </article>
+
+                <!-- ===================== FRANÇAIS ===================== -->
+                <article data-privacy-lang="fr" lang="fr" hidden>
+                    <p>Cette politique explique comment nous traitons les données personnelles lorsque vous visitez ticinotransport.ch ou nous contactez. Elle se fonde sur la loi fédérale suisse sur la protection des données (LPD, en particulier art. 19) et, pour les personnes situées dans l'Union européenne, sur le Règlement général sur la protection des données (RGPD, art. 13).</p>
+
+                    <h2>1. Responsable du traitement</h2>
+                    <p><strong>Vespa Scout Sagl</strong> (TicinoTransport)<br>Via Cademario 7, 6934 Bioggio, Suisse<br>IDE : CHE-144.001.809<br>E-mail : <a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a> · Téléphone : <a href="tel:+41768301847">+41 76 830 18 47</a></p>
+
+                    <h2>2. Données traitées et finalités</h2>
+                    <h3>Formulaire de réservation de fourgon</h3>
+                    <p>Nous collectons : fourgon choisi, dates et heures, nom et prénom, date de naissance, nationalité, adresse, téléphone, e-mail, type/numéro/échéance de la pièce d'identité, catégorie/numéro/échéance du permis de conduire et remarques. Ces données servent à vérifier le conducteur, préparer et conclure le contrat de location et remettre le véhicule. Sans elles, nous ne pouvons pas vous louer le fourgon. Lors de l'envoi, les données sont enregistrées dans une feuille Google Sheets via Google Apps Script et WhatsApp s'ouvre avec un récapitulatif. Les photos des documents ne sont pas téléchargées sur le site : vous les envoyez séparément par WhatsApp.</p>
+                    <h3>Formulaire de demande de transport / formalités</h3>
+                    <p>Nous collectons : type de service, données du véhicule (type, marque et modèle, plaque, état), adresses d'enlèvement et de livraison, date, urgence, nom, téléphone et remarques, afin d'établir un devis et d'exécuter le service. Ces données sont aussi enregistrées dans Google Sheets et envoyées par WhatsApp.</p>
+                    <h3>Contact direct</h3>
+                    <p>Si vous nous écrivez par WhatsApp, e-mail ou téléphone, nous traitons les données communiquées pour vous répondre et, le cas échéant, exécuter le service.</p>
+                    <h3>Visite du site</h3>
+                    <p>Lorsque vous ouvrez le site, le serveur d'hébergement enregistre des données techniques (adresse IP, date et heure, page demandée, navigateur) nécessaires à l'affichage des pages et à la sécurité. Le site charge également les polices depuis Google Fonts et, sur la page d'accueil, le calendrier des disponibilités depuis Google Sheets ; votre navigateur transmet alors votre adresse IP à Google.</p>
+                    <h3>Statistiques (uniquement avec consentement)</h3>
+                    <p>Si vous cliquez sur « Accepter » dans le bandeau cookies, nous utilisons Google Analytics 4 pour des statistiques de visite agrégées. Si vous refusez, Google Analytics n'est pas chargé.</p>
+
+                    <h2>3. Bases juridiques (RGPD)</h2>
+                    <ul>
+                        <li>Exécution d'un contrat ou mesures précontractuelles (art. 6, par. 1, let. b) : réservations, devis, services.</li>
+                        <li>Obligation légale (art. 6, par. 1, let. c) : conservation des contrats et pièces comptables.</li>
+                        <li>Intérêt légitime (art. 6, par. 1, let. f) : fonctionnement et sécurité du site, polices, calendrier des disponibilités, réponse aux demandes.</li>
+                        <li>Consentement (art. 6, par. 1, let. a) : Google Analytics. Vous pouvez le retirer à tout moment.</li>
+                    </ul>
+
+                    <h2>4. Destinataires et prestataires</h2>
+                    <p>Nous ne vendons pas vos données et ne les transmettons pas à des tiers à des fins publicitaires. Nous faisons appel aux prestataires suivants :</p>
+                    <ul>
+                        <li><strong>GitHub Inc.</strong> (GitHub Pages, États-Unis) : hébergement du site.</li>
+                        <li><strong>Google</strong> (Google Ireland Ltd. / Google LLC, États-Unis) : Google Sheets et Apps Script (enregistrement des demandes), Google Fonts, Google Analytics (uniquement avec consentement).</li>
+                        <li><strong>WhatsApp / Meta</strong> : uniquement si vous choisissez de nous contacter ou d'envoyer votre demande par WhatsApp ; la politique de confidentialité de WhatsApp s'applique également.</li>
+                        <li>Instagram (Meta) : uniquement si vous suivez le lien vers notre profil.</li>
+                        <li>Autorités ou conseillers (p. ex. fiduciaire, assurance du véhicule, douane) lorsque cela est nécessaire au service ou exigé par la loi.</li>
+                    </ul>
+
+                    <h2>5. Communication à l'étranger</h2>
+                    <p>Certains prestataires traitent des données aux États-Unis ou dans d'autres pays. Les transferts ont lieu vers des destinataires certifiés selon le Swiss-U.S. et l'EU-U.S. Data Privacy Framework ou sur la base de clauses contractuelles types reconnues par le PFPDT et la Commission européenne.</p>
+
+                    <h2>6. Durée de conservation</h2>
+                    <ul>
+                        <li>Contrats, factures et pièces comptables : 10 ans (art. 958f CO).</li>
+                        <li>Demandes et devis sans suite : 12 mois au maximum.</li>
+                        <li>Données Google Analytics : selon la durée définie dans la propriété (14 mois au maximum).</li>
+                        <li>Journaux techniques du serveur : selon les règles de l'hébergeur.</li>
+                    </ul>
+
+                    <h2>7. Vos droits</h2>
+                    <p>Vous pouvez demander l'accès, la rectification, l'effacement, la limitation du traitement et la portabilité de vos données, et vous opposer au traitement fondé sur l'intérêt légitime. Vous pouvez retirer à tout moment votre consentement à Google Analytics. Écrivez à <a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a>.</p>
+                    <p>Vous pouvez également vous adresser au Préposé fédéral à la protection des données et à la transparence (PFPDT, <a href="https://www.edoeb.admin.ch" target="_blank" rel="noopener">www.edoeb.admin.ch</a>) et, si vous résidez dans l'UE, déposer une plainte auprès de l'autorité de contrôle de votre pays.</p>
+
+                    <h2>8. Cookies et technologies similaires</h2>
+                    <div class="table-scroll">
+                    <table>
+                        <thead><tr><th>Nom</th><th>Type</th><th>Finalité</th><th>Durée</th></tr></thead>
+                        <tbody>
+                            <tr><td>tt_cookie_consent</td><td>Technique (localStorage)</td><td>Mémorise votre choix sur les cookies</td><td>Jusqu'à suppression</td></tr>
+                            <tr><td>tt_lang</td><td>Technique (localStorage)</td><td>Mémorise la langue choisie</td><td>Jusqu'à suppression</td></tr>
+                            <tr><td>_ga</td><td>Statistiques, Google Analytics</td><td>Distingue les visiteurs de façon pseudonyme</td><td>2 ans</td></tr>
+                            <tr><td>_ga_C3ER6DN593</td><td>Statistiques, Google Analytics</td><td>Conserve l'état de la session</td><td>2 ans</td></tr>
+                        </tbody>
+                    </table>
+                    </div>
+                    <p>Les cookies statistiques ne sont déposés qu'après votre consentement. Vous pouvez changer d'avis à tout moment : <a href="#" data-cookie-settings>ouvrir les paramètres cookies</a>.</p>
+
+                    <h2>9. Modifications</h2>
+                    <p>Nous pouvons mettre à jour cette politique. La version publiée sur cette page fait foi. En cas de divergence entre les langues, la version italienne prévaut.</p>
+                    <p><em>Dernière mise à jour : octobre 2026</em></p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-top">
+                <div class="footer-brand"><span class="logo-icon">TT</span><span class="logo-text">TicinoTransport</span></div>
+                <div class="footer-links">
+                    <a href="index.html#servizi">Servizi</a>
+                    <a href="trasporto-veicoli.html">Trasporto Veicoli</a>
+                    <a href="noleggio-furgoni.html">Noleggio Furgoni</a>
+                    <a href="pratiche-doganali.html">Pratiche Doganali</a>
+                    <a href="autosoccorso-stradale.html">Autosoccorso</a>
+                    <a href="trasporto-moto.html">Trasporto Moto</a>
+                    <a href="trasporto-veicoli-svizzera.html">Trasporto Veicoli Svizzera</a>
+                </div>
+            </div>
+                <div class="footer-social" style="display:flex;gap:12px;align-items:center;margin-top:12px"><a href="https://www.instagram.com/ticino_transport" target="_blank" rel="noopener noreferrer" aria-label="Instagram TicinoTransport" style="color:inherit;display:inline-flex"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 TicinoTransport di <strong>Vespascout SAGL</strong> — Via Cademario, 7 — 6934 Bioggio — CHE-144.001.809</p>
+                <p class="footer-legal"><a href="privacy.html">Privacy</a> · <a href="#" data-cookie-settings>Impostazioni cookie</a></p>
+                <p>Tutti i diritti riservati.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const nav = document.getElementById('nav');
+        menuToggle.addEventListener('click', () => { nav.classList.toggle('nav-open'); menuToggle.classList.toggle('active'); });
+        nav.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { nav.classList.remove('nav-open'); menuToggle.classList.remove('active'); }); });
+        window.addEventListener('scroll', () => { document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50); });
+
+        // Lingua dell'informativa: segue la lingua scelta sul sito (ru/ar -> inglese).
+        (function () {
+            const blocks = document.querySelectorAll('[data-privacy-lang]');
+            const buttons = document.querySelectorAll('[data-privacy-switch]');
+            function show(lang) {
+                blocks.forEach(b => { b.hidden = b.getAttribute('data-privacy-lang') !== lang; });
+                buttons.forEach(b => b.setAttribute('aria-pressed', String(b.getAttribute('data-privacy-switch') === lang)));
+            }
+            buttons.forEach(b => b.addEventListener('click', () => show(b.getAttribute('data-privacy-switch'))));
+            const map = { it: 'it', en: 'en', de: 'de', fr: 'fr', ru: 'en', ar: 'en' };
+            show(map[typeof currentLang === 'string' ? currentLang : 'it'] || 'it');
+        })();
+    </script>
+</body>
+</html>
