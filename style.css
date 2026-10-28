@@ -3034,3 +3034,19 @@ img {
         min-width: 0;
     }
 }
+
+/* Schermi stretti: i pulsanti non devono superare la larghezza dello schermo
+   (.btn ha white-space: nowrap, e i CTA lunghi tipo "Richiedi preventivo su
+   WhatsApp" con .btn-large facevano scorrere la pagina in orizzontale). */
+@media (max-width: 480px) {
+    .btn {
+        max-width: 100%;
+        white-space: normal;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .btn-large {
+        padding: 16px 24px;
+    }
+}
