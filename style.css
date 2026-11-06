@@ -3050,3 +3050,9 @@ img {
         padding: 16px 24px;
     }
 }
+
+/* Figure nelle pagine servizio (es. carrello chiuso) */
+.page-content .page-figure { margin: 0 0 32px; }
+.page-content .page-figure img { width: 100%; height: auto; border-radius: 12px; display: block; }
+.page-content .page-figure figcaption { font-size: 0.85rem; color: #777; margin-top: 8px; }
+.highlight-tag { display: inline-block; align-self: flex-start; width: fit-content; background: var(--red); color: #fff; font-size: 0.75rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 4px 10px; border-radius: 4px; margin-bottom: 14px; }
