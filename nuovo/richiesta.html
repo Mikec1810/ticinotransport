@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Richiesta e preventivo — Ticino Transport</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Archivo:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --display:'Bodoni Moda',Didot,'Times New Roman',serif;
+  --testo:'Archivo',system-ui,sans-serif;
+  --bianco:#FFFFFF;
+  --light:#FFFFFF;          /* tutto bianco */
+  --light-scuro:#F4F4F5;   /* solo come fondo neutro dietro le foto */
+  --accento:#B01116;        /* il rosso del vostro logo */
+  --accento-chiaro:#CC2026;
+  --accento-scuro:#8E0D11;
+  --carbone:#232A3C;        /* blu-ardesia profondo, non nero */
+  --carbone-chiaro:#39415A;
+  --muto:#6D7287;
+  --riga:#E4E4E7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--testo);background:var(--bianco);color:var(--carbone);-webkit-font-smoothing:antialiased;line-height:1.62;font-weight:400}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+
+/* due voci: serif per i titoli, sans per il resto */
+.serif{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.0}
+.occhiello{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--accento);font-weight:600;
+  display:flex;align-items:center;gap:14px}
+.occhiello::before{content:'';display:block;width:30px;height:2px;background:var(--accento);flex:0 0 auto}
+.occhiello.centrato{justify-content:center}
+.corsivo{font-family:var(--display);font-style:italic;font-weight:500}
+
+.rivela{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94)}
+.rivela.visto{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rivela{opacity:1;transform:none}.sfilata ul{animation:none}}
+
+/* ---------- barra ---------- */
+.barra{position:fixed;top:0;left:0;right:0;z-index:70;background:transparent;border-bottom:1px solid transparent;transition:background .35s ease,border-color .35s ease}
+.barra.posata{background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-bottom-color:var(--riga)}
+.barra .menu a,.barra .logo b{color:#fff;transition:color .35s ease}
+.barra .logo b span,.barra .lingue{color:rgba(255,255,255,.62);transition:color .35s ease}
+.barra.posata .menu a,.barra.posata .logo b{color:var(--carbone)}
+.barra.posata .logo b span,.barra.posata .lingue{color:var(--muto)}
+.barra.posata .lingue a.on,.barra .lingue a.on{color:var(--accento-chiaro)}
+.barra.posata .lingue a.on{color:var(--accento)}
+.barra .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:92px;gap:20px}
+.barra .menu{justify-self:start}
+.barra .logo{justify-self:center;flex-direction:column;gap:6px;text-align:center}
+.barra .logo img{width:40px;height:40px}
+.barra .logo b{font-size:15.5px}
+.barra .lingue{justify-self:end}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{width:54px;height:54px;object-fit:contain}
+.logo b{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.01em;line-height:1.1;color:var(--carbone)}
+.logo b span{display:block;font-family:var(--testo);font-size:9.5px;font-weight:600;letter-spacing:.3em;color:var(--muto);text-transform:uppercase;margin-top:3px}
+.menu{display:none;gap:34px;font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--carbone)}
+.menu a:hover{color:var(--accento)}
+.lingue{display:flex;gap:2px;font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--muto)}
+.lingue a{padding:6px 7px}
+.lingue a.on{color:var(--accento)}
+@media(min-width:1000px){.menu{display:flex}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:16px 32px;font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;transition:.2s}
+.btn-pieno{background:var(--accento);color:#fff}
+.btn-pieno:hover{background:var(--accento-scuro)}
+.btn-linea{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn-linea:hover{background:#fff;color:var(--carbone)}
+.btn-scuro{border:1px solid var(--carbone);color:var(--carbone)}
+.btn-scuro:hover{background:var(--carbone);color:#fff}
+.azioni{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
+
+.sezione{padding:112px 0}
+.sezione-chiara{background:var(--light)}
+.titolo{font-family:var(--display);font-weight:600;text-wrap:balance;font-size:clamp(36px,5.8vw,74px);line-height:1.0;letter-spacing:-.025em;margin-top:20px;max-width:17ch}
+.sotto{color:#41465A;margin-top:22px;max-width:56ch;font-size:17px;line-height:1.68;font-weight:400}
+
+.sfilata{overflow:hidden;padding:22px 0;background:var(--carbone)}
+.sfilata ul{display:flex;gap:52px;list-style:none;width:max-content;animation:sfila 38s linear infinite}
+.sfilata li{font-size:12px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:rgba(255,255,255,.42);white-space:nowrap}
+@keyframes sfila{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+footer{background:var(--carbone);color:rgba(255,255,255,.55);font-size:13.5px;padding:56px 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer .logo b{color:#fff}
+footer .logo b span{color:rgba(255,255,255,.45)}
+.nota{background:#F4F4F5;border-bottom:1px solid #E4E4E7;padding:11px 0;font-size:13px;color:#52525B}
+
+/* whatsapp fisso */
+.wa-fisso{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:50%;
+  background:#25D366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(37,211,102,.4);transition:transform .3s}
+.wa-fisso:hover{transform:scale(1.07)}
+.recapiti{display:flex;flex-direction:column;gap:6px;align-items:flex-end;text-align:right}
+@media(max-width:700px){.recapiti{align-items:flex-start;text-align:left}}
+.recapiti a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+.recapiti span{color:rgba(255,255,255,.45)}
+
+/* tendine nella barra */
+.tendina{position:relative}
+.tendina>button{display:inline-flex;align-items:center;gap:9px;background:none;border:0;cursor:pointer;padding:10px 2px;
+  font-family:var(--testo);font-size:11.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--carbone)}
+.tendina>button i{display:block;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
+  transform:rotate(45deg) translate(-2px,-2px);transition:transform .3s}
+.tendina.aperta>button i{transform:rotate(225deg) translate(-3px,-3px)}
+.tendina>button:hover{color:var(--accento)}
+.tendina .pannello{position:absolute;top:calc(100% + 10px);left:0;z-index:40;min-width:250px;padding:8px 0;
+  background:#fff;border:1px solid var(--riga);box-shadow:0 24px 54px rgba(35,42,60,.16);
+  opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .22s,transform .22s,visibility .22s}
+.tendina.aperta .pannello{opacity:1;visibility:visible;transform:none}
+.tendina .pannello a{display:block;padding:12px 22px;font-size:14px;letter-spacing:0;text-transform:none;color:var(--carbone);text-decoration:none;white-space:nowrap}
+.tendina .pannello a:hover{background:#F6F6F7;color:var(--accento)}
+.tendina .pannello hr{border:0;border-top:1px solid var(--riga);margin:8px 0}
+.tendina.lingua{justify-self:end}
+.tendina.lingua .pannello{left:auto;right:0;min-width:130px}
+.tendina.lingua>button{letter-spacing:.14em}
+.tendina.lingua .pannello a.on{color:var(--accento);font-weight:600}
+@media(max-width:640px){.tendina>button{font-size:10.5px;gap:7px}.tendina .pannello{min-width:210px}}
+
+/* la barra sta in cima alla pagina e se ne va con lo scorrimento */
+.barra{position:static!important;background:#fff!important;border-bottom:1px solid var(--riga)!important;backdrop-filter:none!important}
+.barra .menu a,.barra .logo b{color:var(--carbone)!important}
+.barra .lingue{color:var(--muto)!important}
+.barra .lingue a.on{color:var(--accento)!important}
+.marchio .su-scuro{display:none!important}
+.marchio .su-chiaro{display:block!important}
+.barra .wrap{position:relative;display:flex!important;align-items:center;justify-content:space-between;height:96px;gap:10px}
+@media(max-width:640px){.barra .wrap{height:70px;padding-left:16px;padding-right:16px}}
+.barra .logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;z-index:1}
+.tendina{flex:0 0 auto;z-index:2}
+.marchio{display:block;line-height:0}
+.marchio img{width:auto!important;height:50px!important;object-fit:contain;display:block}
+@media(max-width:640px){.marchio img{height:30px!important}}
+.marchio .su-chiaro{display:none}
+.barra.posata .marchio .su-scuro{display:none}
+.barra.posata .marchio .su-chiaro{display:block}
+
+.testatina{background:var(--carbone);color:#fff;padding:64px 0 56px;text-align:center}
+.testatina h1{font-family:var(--display);font-size:clamp(32px,5.4vw,52px);font-weight:600;line-height:1.08;margin:0 0 14px;letter-spacing:-.01em}
+.testatina p{max-width:56ch;margin:0 auto;color:rgba(255,255,255,.72);font-size:16px;line-height:1.65}
+.testatina .via{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:30px}
+.testatina .via a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#fff;
+  border:1px solid rgba(255,255,255,.28);padding:11px 18px;transition:background .3s,border-color .3s}
+.testatina .via a:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.55)}
+.testatina .via a.wa{background:#25D366;border-color:#25D366;font-weight:600}
+
+.schede{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--riga)}
+.schede .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
+.schede .wrap::-webkit-scrollbar{display:none}
+.schede a{flex:0 0 auto;padding:18px 20px;font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--muto);text-decoration:none;border-bottom:2px solid transparent;transition:color .25s,border-color .25s}
+.schede a:hover,.schede a.on{color:var(--carbone);border-bottom-color:var(--accento)}
+
+.blocco{padding:84px 0;border-bottom:1px solid var(--riga);scroll-margin-top:62px}
+.blocco:last-of-type{border-bottom:0}
+.blocco h2{font-family:var(--display);font-size:clamp(26px,3.6vw,38px);font-weight:600;color:var(--carbone);margin:0 0 12px;line-height:1.14}
+.blocco .guida{max-width:62ch;color:var(--muto);font-size:15.5px;line-height:1.7;margin:0 0 36px}
+
+.modulo{max-width:860px}
+.riga{display:grid;gap:18px;margin-bottom:18px}
+@media(min-width:720px){.riga.due{grid-template-columns:1fr 1fr}.riga.tre{grid-template-columns:1fr 1fr 1fr}}
+.campo label{display:block;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--carbone);font-weight:600;margin-bottom:8px}
+.campo input,.campo select,.campo textarea{width:100%;box-sizing:border-box;background:#fff;border:1px solid var(--riga);
+  padding:14px 15px;font-family:var(--testo);font-size:15px;color:var(--carbone);transition:border-color .25s,box-shadow .25s}
+.campo input:focus,.campo select:focus,.campo textarea:focus{outline:none;border-color:var(--accento);box-shadow:0 0 0 3px rgba(176,17,22,.08)}
+.campo textarea{min-height:110px;resize:vertical}
+.campo .aiuto{display:block;margin-top:7px;font-size:12.5px;color:var(--muto)}
+.scelte{display:grid;gap:10px;margin-bottom:22px}
+@media(min-width:720px){.scelte{grid-template-columns:repeat(2,1fr)}.scelte.quattro{grid-template-columns:repeat(4,1fr)}}
+.scelta{position:relative}
+.scelta input{position:absolute;opacity:0;pointer-events:none}
+.scelta span{display:block;padding:16px 18px;background:#fff;border:1px solid var(--riga);cursor:pointer;
+  font-size:14.5px;color:var(--carbone);transition:border-color .25s,background .25s}
+.scelta b{display:block;font-size:12.5px;color:var(--muto);font-weight:400;margin-top:3px}
+.scelta input:checked + span{border-color:var(--accento);border-left-width:3px;background:#fff;box-shadow:0 10px 26px rgba(35,42,60,.07)}
+.scelta input:focus-visible + span{box-shadow:0 0 0 3px rgba(176,17,22,.14)}
+.conto{display:flex;flex-wrap:wrap;gap:26px;align-items:baseline;background:#fff;border:1px solid var(--riga);
+  border-left:3px solid var(--accento);padding:20px 24px;margin-bottom:22px}
+.conto div span{display:block;font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muto);margin-bottom:5px}
+.conto div b{font-family:var(--display);font-size:24px;color:var(--carbone);font-weight:600}
+.privacy{display:flex;gap:11px;align-items:flex-start;margin:4px 0 24px;font-size:13.5px;color:var(--muto);line-height:1.55}
+.privacy input{margin-top:3px;width:17px;height:17px;accent-color:var(--accento);flex:0 0 auto}
+.invia{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn-wa{display:inline-flex;align-items:center;gap:10px;background:#25D366;color:#fff;border:0;cursor:pointer;
+  font-family:var(--testo);font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-weight:600;
+  padding:17px 26px;transition:transform .3s,box-shadow .3s}
+.btn-wa:hover{transform:translateY(-2px);box-shadow:0 14px 30px rgba(37,211,102,.32)}
+.invia .nota-invio{font-size:12.5px;color:var(--muto);max-width:34ch;line-height:1.5}
+</style>
+</head>
+<body id="top">
+
+
+<header class="barra posata"><div class="wrap">
+  <div class="tendina elenco">
+    <button type="button" aria-expanded="false" aria-haspopup="true">Servizi <i></i></button>
+    <div class="pannello">
+      <a href="index.html#d-trasporto">Trasporto veicoli</a>
+      <a href="index.html#d-moto">Trasporto moto</a>
+      <a href="index.html#d-carrello">Carrello chiuso</a>
+      <a href="index.html#d-dogana">Sdoganamento</a>
+      <a href="index.html#d-dogana">Immatricolazione e targhe</a>
+      <a href="index.html#d-noleggio">Noleggio furgoni</a>
+      <a href="index.html#d-soccorso">Autosoccorso</a>
+      <hr>
+      <a href="index.html#misura">La mia auto ci sta?</a>
+      <a href="richiesta.html">Richiesta e preventivo</a>
+    </div>
+  </div>
+  <a class="logo marchio" href="index.html"><img class="su-scuro" src="img/logo_chiaro.webp" alt="Ticino Transport"><img class="su-chiaro" src="img/logo_largo.webp" alt="" aria-hidden="true"></a>
+  <div class="tendina lingua">
+    <button type="button" aria-expanded="false" aria-haspopup="true">IT <i></i></button>
+    <div class="pannello">
+      <a class="on" href="#">Italiano</a><a href="#">Deutsch</a><a href="#">Français</a><a href="#">English</a>
+    </div>
+  </div>
+</div></header>
+
+<section class="testatina"><div class="wrap">
+  <h1>Dicci cosa ti serve.</h1>
+  <p>Compila il modulo che fa per te: il messaggio si apre già scritto su WhatsApp e tu non devi spiegare niente due volte. Il preventivo è gratuito e senza impegno.</p>
+  <div class="via">
+    <a class="wa" href="https://wa.me/41768301847" target="_blank" rel="noopener">Scrivici subito su WhatsApp</a>
+    <a href="tel:+41768301847">+41 76 830 18 47</a>
+    <a href="mailto:maikol.casalaro1@gmail.com">Email</a>
+  </div>
+</div></section>
+
+<nav class="schede"><div class="wrap">
+  <a href="#trasporto">Trasporto veicolo</a>
+  <a href="#furgoni">Noleggio furgoni</a>
+  <a href="#informazioni">Informazioni e pratiche</a>
+</div></nav>
+
+<!-- ============ TRASPORTO ============ -->
+<section class="blocco" id="trasporto"><div class="wrap">
+  <h2>Richiesta di trasporto</h2>
+  <p class="guida">Più dettagli ci dai, più preciso è il preventivo. Targa e data sono facoltative: se non le hai ancora, lascia vuoto.</p>
+  <div class="modulo">
+    <div class="campo"><label>Di cosa hai bisogno</label></div>
+    <div class="scelte quattro">
+      <label class="scelta"><input type="radio" name="tipoServizio" value="Trasporto veicolo" checked><span>Trasporto veicolo</span></label>
+      <label class="scelta"><input type="radio" name="tipoServizio" value="Consegna veicolo"><span>Consegna veicolo</span></label>
+      <label class="scelta"><input type="radio" name="tipoServizio" value="Pratiche doganali"><span>Pratiche doganali</span></label>
+      <label class="scelta"><input type="radio" name="tipoServizio" value="Pratiche auto/moto"><span>Pratiche auto/moto</span></label>
+    </div>
+    <div class="riga due">
+      <div class="campo"><label for="tTipo">Tipo di veicolo</label>
+        <select id="tTipo">
+          <option>Auto</option>
+          <option>Supercar / auto di lusso (carrello chiuso)</option>
+          <option>Moto</option>
+          <option>Scooter</option>
+          <option>Altro</option>
+        </select></div>
+      <div class="campo"><label for="tModello">Marca e modello *</label>
+        <input type="text" id="tModello" placeholder="Es. Porsche 911, Ducati Monster"></div>
+    </div>
+    <div class="riga due">
+      <div class="campo"><label for="tTarga">Targa</label><input type="text" id="tTarga" placeholder="TI 123456"></div>
+      <div class="campo"><label for="tStato">In che condizioni è</label>
+        <select id="tStato">
+          <option>Marciante (funzionante)</option>
+          <option>Non marciante</option>
+          <option>Incidentato</option>
+          <option>Nuovo / da concessionario</option>
+        </select></div>
+    </div>
+    <div class="riga due">
+      <div class="campo"><label for="tRitiro">Dove lo ritiriamo *</label><input type="text" id="tRitiro" placeholder="Via, città, cantone o Paese"></div>
+      <div class="campo"><label for="tConsegna">Dove lo consegniamo *</label><input type="text" id="tConsegna" placeholder="Via, città, cantone o Paese"></div>
+    </div>
+    <div class="riga due">
+      <div class="campo"><label for="tData">Data che preferisci</label><input type="date" id="tData"></div>
+      <div class="campo"><label for="tUrgenza">Quanto è urgente</label>
+        <select id="tUrgenza">
+          <option>Normale (entro 1 settimana)</option>
+          <option>Urgente (entro 2-3 giorni)</option>
+          <option>Express (entro 24h)</option>
+        </select></div>
+    </div>
+    <div class="riga due">
+      <div class="campo"><label for="tNome">Il tuo nome *</label><input type="text" id="tNome" placeholder="Nome e cognome"></div>
+      <div class="campo"><label for="tTel">Telefono *</label><input type="tel" id="tTel" placeholder="+41 79 123 45 67"></div>
+    </div>
+    <div class="riga">
+      <div class="campo"><label for="tNote">Qualcosa che dobbiamo sapere</label>
+        <textarea id="tNote" placeholder="Auto ribassata, batteria scarica, chiavi da ritirare da un'altra persona..."></textarea>
+        <span class="aiuto">Le foto del veicolo e i documenti puoi mandarli direttamente in chat dopo l'invio.</span></div>
+    </div>
+    <label class="privacy"><input type="checkbox" id="tPrivacy"> Ho letto l'informativa sulla privacy e acconsento al trattamento dei dati per questa richiesta.</label>
+    <div class="invia">
+      <button class="btn-wa" id="inviaTrasporto" type="button">Invia su WhatsApp</button>
+      <span class="nota-invio">Si apre WhatsApp con il messaggio già compilato: controlli e premi invio.</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ FURGONI ============ -->
+<section class="blocco" id="furgoni"><div class="wrap">
+  <h2>Noleggio furgoni</h2>
+  <p class="guida">Ritiro e riconsegna alla nostra sede di Bioggio. Scegli il mezzo e le date: il totale si calcola da sé.</p>
+  <div class="modulo">
+    <div class="campo"><label>Quale furgone</label></div>
+    <div class="scelte">
+      <label class="scelta"><input type="radio" name="furgone" value="Citroën Jumpy L1H1" data-prezzo="80" checked><span>Citroën Jumpy L1H1 — CHF 80.–/giorno<b>5 m³, fino a 1'000 kg. Piccoli traslochi, scatoloni, una moto.</b></span></label>
+      <label class="scelta"><input type="radio" name="furgone" value="Fiat Ducato" data-prezzo="120"><span>Fiat Ducato — CHF 120.–/giorno<b>13 m³, fino a 1'500 kg. Trasloco completo, mobili alti, 2–3 moto.</b></span></label>
+    </div>
+    <div class="riga due">
+      <div class="campo"><label for="fDal">Ritiro</label><input type="date" id="fDal"></div>
+      <div class="campo"><label for="fAl">Riconsegna</label><input type="date" id="fAl"></div>
+    </div>
+    <div class="riga due">
+      <div class="campo"><label for="fOraDal">Ora di ritiro</label><input type="time" id="fOraDal" value="09:00"></div>
+      <div class="campo"><label for="fOraAl">Ora di riconsegna</label><input type="time" id="fOraAl" value="18:00"></div>
+    </div>
+    <div class="conto">
+      <div><span>Giorni</span><b id="fGiorni">—</b></div>
+      <div><span>Totale indicativo</span><b id="fTotale">—</b></div>
+    </div>
+    <div class="riga due">
+      <div class="campo"><label for="fNome">Il tuo nome *</label><input type="text" id="fNome" placeholder="Nome e cognome"></div>
+      <div class="campo"><label for="fTel">Telefono *</label><input type="tel" id="fTel" placeholder="+41 79 123 45 67"></div>
+    </div>
+    <div class="riga due">
+      <div class="campo"><label for="fEmail">Email</label><input type="email" id="fEmail" placeholder="nome@esempio.ch"></div>
+      <div class="campo"><label for="fUso">A cosa ti serve</label><input type="text" id="fUso" placeholder="Trasloco, trasporto moto, consegna..."></div>
+    </div>
+    <div class="riga">
+      <div class="campo"><label for="fNote">Note</label><textarea id="fNote" placeholder="Orari particolari, giorni aggiuntivi, altro"></textarea>
+        <span class="aiuto">Per il contratto serviranno un documento d'identità e la patente: li puoi mandare in chat.</span></div>
+    </div>
+    <label class="privacy"><input type="checkbox" id="fPrivacy"> Ho letto l'informativa sulla privacy e acconsento al trattamento dei dati per questa richiesta.</label>
+    <div class="invia">
+      <button class="btn-wa" id="inviaFurgone" type="button">Invia la prenotazione</button>
+      <span class="nota-invio">La disponibilità te la confermiamo noi in chat.</span>
+    </div>
+  </div>
+</div></section>
+
+<!-- ============ INFORMAZIONI ============ -->
+<section class="blocco" id="informazioni"><div class="wrap">
+  <h2>Informazioni e pratiche</h2>
+  <p class="guida">Sdoganamento, immatricolazione, cambio di proprietà, autosoccorso o il noleggio del carrello: scrivi di cosa si tratta e ti rispondiamo con i passaggi e i costi.</p>
+  <div class="modulo">
+    <div class="riga due">
+      <div class="campo"><label for="iTema">Di cosa si tratta</label>
+        <select id="iTema">
+          <option>Pratiche doganali / importazione</option>
+          <option>Esportazione dalla Svizzera</option>
+          <option>Immatricolazione e targhe</option>
+          <option>Cambio di proprietà / voltura</option>
+          <option>Autosoccorso stradale</option>
+          <option>Noleggio carrello</option>
+          <option>Altro</option>
+        </select></div>
+      <div class="campo"><label for="iPaese">Veicolo e provenienza</label><input type="text" id="iPaese" placeholder="Es. BMW 320d acquistata in Germania"></div>
+    </div>
+    <div class="riga">
+      <div class="campo"><label for="iMess">La tua domanda</label>
+        <textarea id="iMess" placeholder="Raccontaci la situazione: cosa hai comprato, dove si trova il veicolo, cosa ti serve."></textarea></div>
+    </div>
+    <div class="riga due">
+      <div class="campo"><label for="iNome">Il tuo nome *</label><input type="text" id="iNome" placeholder="Nome e cognome"></div>
+      <div class="campo"><label for="iTel">Telefono *</label><input type="tel" id="iTel" placeholder="+41 79 123 45 67"></div>
+    </div>
+    <label class="privacy"><input type="checkbox" id="iPrivacy"> Ho letto l'informativa sulla privacy e acconsento al trattamento dei dati per questa richiesta.</label>
+    <div class="invia">
+      <button class="btn-wa" id="inviaInfo" type="button">Invia la domanda</button>
+      <span class="nota-invio">Rispondiamo di norma entro 24 ore.</span>
+    </div>
+  </div>
+</div></section>
+
+<a class="wa-fisso" href="https://wa.me/41768301847" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff" width="28" height="28"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.61.15-.15.35-.4.52-.6.17-.2.22-.35.35-.57.12-.22.06-.42-.03-.57-.09-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.34 5.1 4.56.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.17-1.43-.07-.12-.27-.2-.57-.35zM12.04 21.5h-.01c-1.75 0-3.48-.47-4.99-1.36l-.36-.21-3.71.97.99-3.62-.23-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 012.89 6.99c0 5.46-4.44 9.9-9.96 9.9zM20.5 3.49A11.78 11.78 0 0012.04 0C5.46 0 .1 5.35.1 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.26-1.64a11.9 11.9 0 005.77 1.47h.01c6.58 0 11.94-5.35 11.94-11.93 0-3.19-1.24-6.19-3.48-8.41z"/></svg>
+</a>
+
+<footer><div class="wrap">
+  <a class="logo marchio" href="index.html"><img src="img/logo_chiaro.webp" alt="Ticino Transport"></a>
+  <div class="recapiti">
+    <a href="https://wa.me/41768301847" target="_blank" rel="noopener">WhatsApp +41 76 830 18 47</a>
+    <a href="tel:+41768301847">Telefono +41 76 830 18 47</a>
+    <a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a>
+    <span>Via Cademario 7, 6934 Bioggio — CHE-144.001.809</span>
+  </div>
+</div></footer>
+
+<script>
+const WA = 'https://wa.me/41768301847';
+const SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxj51UvoJ6jXO7aWNrsPlbxXcKLASfeL5AspLuheIJjLE-ZDhX-Ml5nKH2sP9WrNRpVCQ/exec';
+const $ = id => document.getElementById(id);
+const v = id => ($(id) ? $(id).value.trim() : '');
+
+function salvaFoglio(dati){
+  if(!SHEETS_URL) return;
+  try{
+    fetch(SHEETS_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},body:JSON.stringify(dati)}).catch(()=>{});
+  }catch(e){}
+}
+function apriWhatsApp(msg){ window.open(WA+'?text='+encodeURIComponent(msg),'_blank','noopener'); }
+function manca(id,testo){ if(!v(id)){ alert(testo); $(id).focus(); return true; } return false; }
+function dataIt(s){ if(!s) return ''; const p=s.split('-'); return p.length===3 ? p[2]+'.'+p[1]+'.'+p[0] : s; }
+
+/* ---- trasporto ---- */
+$('inviaTrasporto').addEventListener('click', () => {
+  if(manca('tModello','Scrivi marca e modello del veicolo')) return;
+  if(manca('tRitiro','Scrivi dove dobbiamo ritirare il veicolo')) return;
+  if(manca('tConsegna','Scrivi dove dobbiamo consegnare il veicolo')) return;
+  if(manca('tNome','Scrivi il tuo nome')) return;
+  if(manca('tTel','Scrivi il tuo numero di telefono')) return;
+  if(!$('tPrivacy').checked){ alert('Conferma di aver letto l’informativa sulla privacy'); return; }
+  const servizio = document.querySelector('input[name="tipoServizio"]:checked').value;
+  let m = '--- RICHIESTA '+servizio.toUpperCase()+' ---\n\n';
+  m += 'Servizio: '+servizio+'\n';
+  m += 'Veicolo: '+$('tTipo').value+' - '+v('tModello')+'\n';
+  if(v('tTarga')) m += 'Targa: '+v('tTarga')+'\n';
+  m += 'Condizioni: '+$('tStato').value+'\n\n';
+  m += 'Ritiro: '+v('tRitiro')+'\n';
+  m += 'Consegna: '+v('tConsegna')+'\n';
+  if(v('tData')) m += 'Data preferita: '+dataIt(v('tData'))+'\n';
+  m += 'Urgenza: '+$('tUrgenza').value+'\n\n';
+  m += 'Nome: '+v('tNome')+'\nTel: '+v('tTel')+'\n';
+  if(v('tNote')) m += 'Note: '+v('tNote')+'\n';
+  m += '\n(Foto e documenti li invio qui in chat)';
+  salvaFoglio({ furgone:'RICHIESTA: '+servizio, nome:v('tNome'), telefono:v('tTel'), note:m });
+  apriWhatsApp(m);
+});
+
+/* ---- furgoni ---- */
+function furgoneScelto(){ return document.querySelector('input[name="furgone"]:checked'); }
+function giorni(){
+  const a=v('fDal'), b=v('fAl');
+  if(!a||!b) return 0;
+  const d1=new Date(a), d2=new Date(b);
+  const n=Math.round((d2-d1)/86400000)+1;
+  return n>0 ? n : 0;
+}
+function aggiornaConto(){
+  const n=giorni(), f=furgoneScelto();
+  $('fGiorni').textContent = n ? n+(n===1?' giorno':' giorni') : '—';
+  $('fTotale').textContent = n ? 'CHF '+(n*parseInt(f.dataset.prezzo,10))+'.–' : '—';
+}
+['fDal','fAl'].forEach(id=>$(id).addEventListener('change',aggiornaConto));
+document.querySelectorAll('input[name="furgone"]').forEach(r=>r.addEventListener('change',aggiornaConto));
+aggiornaConto();
+
+$('inviaFurgone').addEventListener('click', () => {
+  if(manca('fDal','Scegli la data di ritiro')) return;
+  if(manca('fAl','Scegli la data di riconsegna')) return;
+  if(giorni()<1){ alert('La riconsegna deve essere uguale o successiva al ritiro'); return; }
+  if(manca('fNome','Scrivi il tuo nome')) return;
+  if(manca('fTel','Scrivi il tuo numero di telefono')) return;
+  if(!$('fPrivacy').checked){ alert('Conferma di aver letto l’informativa sulla privacy'); return; }
+  const f=furgoneScelto(), n=giorni(), tot=n*parseInt(f.dataset.prezzo,10);
+  let m = '--- PRENOTAZIONE NOLEGGIO FURGONE ---\n\n';
+  m += 'Furgone: '+f.value+'\n';
+  m += 'Ritiro: '+dataIt(v('fDal'))+' ore '+v('fOraDal')+'\n';
+  m += 'Riconsegna: '+dataIt(v('fAl'))+' ore '+v('fOraAl')+'\n';
+  m += 'Durata: '+n+(n===1?' giorno':' giorni')+'\n';
+  m += 'Totale indicativo: CHF '+tot+'.-\n\n';
+  m += 'Nome: '+v('fNome')+'\nTel: '+v('fTel')+'\n';
+  if(v('fEmail')) m += 'Email: '+v('fEmail')+'\n';
+  if(v('fUso')) m += 'Uso: '+v('fUso')+'\n';
+  if(v('fNote')) m += 'Note: '+v('fNote')+'\n';
+  m += '\n(Documento e patente li invio qui in chat)';
+  salvaFoglio({ furgone:f.value, dataRitiro:dataIt(v('fDal')), dataRiconsegna:dataIt(v('fAl')),
+    oraRitiro:v('fOraDal'), oraRiconsegna:v('fOraAl'), giorni:n, totale:'CHF '+tot+'.-',
+    nome:v('fNome'), telefono:v('fTel'), email:v('fEmail'), note:v('fNote') });
+  apriWhatsApp(m);
+});
+
+/* ---- informazioni ---- */
+$('inviaInfo').addEventListener('click', () => {
+  if(manca('iNome','Scrivi il tuo nome')) return;
+  if(manca('iTel','Scrivi il tuo numero di telefono')) return;
+  if(!$('iPrivacy').checked){ alert('Conferma di aver letto l’informativa sulla privacy'); return; }
+  let m = '--- INFORMAZIONI ---\n\n';
+  m += 'Argomento: '+$('iTema').value+'\n';
+  if(v('iPaese')) m += 'Veicolo: '+v('iPaese')+'\n';
+  if(v('iMess')) m += '\n'+v('iMess')+'\n';
+  m += '\nNome: '+v('iNome')+'\nTel: '+v('iTel')+'\n';
+  salvaFoglio({ furgone:'INFO: '+$('iTema').value, nome:v('iNome'), telefono:v('iTel'), note:m });
+  apriWhatsApp(m);
+});
+
+/* ---- scheda attiva ---- */
+const sezioni=[...document.querySelectorAll('.blocco')], voci=[...document.querySelectorAll('.schede a')];
+const segna=()=>{
+  let i=0;
+  sezioni.forEach((s,k)=>{ if(s.getBoundingClientRect().top < window.innerHeight*0.4) i=k; });
+  voci.forEach((a,k)=>a.classList.toggle('on',k===i));
+};
+segna(); addEventListener('scroll',segna,{passive:true});
+/* ---- tendine della barra ---- */
+(function(){
+  const tendine=[...document.querySelectorAll('.tendina')];
+  tendine.forEach(t=>{
+    const b=t.querySelector('button');
+    b.addEventListener('click',e=>{
+      e.stopPropagation();
+      const era=t.classList.contains('aperta');
+      tendine.forEach(x=>{x.classList.remove('aperta');x.querySelector('button').setAttribute('aria-expanded','false')});
+      if(!era){ t.classList.add('aperta'); b.setAttribute('aria-expanded','true'); }
+    });
+  });
+  addEventListener('click',()=>tendine.forEach(t=>{t.classList.remove('aperta');t.querySelector('button').setAttribute('aria-expanded','false')}));
+  addEventListener('keydown',e=>{ if(e.key==='Escape') tendine.forEach(t=>t.classList.remove('aperta')); });
+})();
+
+/* ---- un link a una piega la apre ---- */
+(function(){
+  const apri=()=>{
+    const id=location.hash.slice(1); if(!id) return;
+    const el=document.getElementById(id);
+    if(el && el.tagName==='DETAILS'){ el.open=true; setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),60); }
+  };
+  addEventListener('hashchange',apri); apri();
+  document.querySelectorAll('a[href^="#d-"]').forEach(a=>a.addEventListener('click',()=>setTimeout(apri,30)));
+})();
+
+</script>
+</body>
+</html>

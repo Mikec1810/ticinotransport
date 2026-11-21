@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex,nofollow">
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Trasporto veicoli — proposta grafica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<style>@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Archivo:wght@300;400;500;600;700&display=swap');
+
+:root{
+  --display:'Bodoni Moda',Didot,'Times New Roman',serif;
+  --testo:'Archivo',system-ui,sans-serif;
+  --bianco:#FFFFFF;
+  --light:#FFFFFF;          /* tutto bianco */
+  --light-scuro:#F4F4F5;   /* solo come fondo neutro dietro le foto */
+  --accento:#B01116;        /* il rosso del vostro logo */
+  --accento-chiaro:#CC2026;
+  --accento-scuro:#8E0D11;
+  --carbone:#232A3C;        /* blu-ardesia profondo, non nero */
+  --carbone-chiaro:#39415A;
+  --muto:#6D7287;
+  --riga:#E4E4E7;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--testo);background:var(--bianco);color:var(--carbone);-webkit-font-smoothing:antialiased;line-height:1.62;font-weight:400}
+img{display:block;width:100%;height:100%;object-fit:cover}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+
+/* due voci: serif per i titoli, sans per il resto */
+.serif{font-family:var(--display);font-weight:600;letter-spacing:-.02em;line-height:1.0}
+.occhiello{font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--accento);font-weight:600;
+  display:flex;align-items:center;gap:14px}
+.occhiello::before{content:'';display:block;width:30px;height:2px;background:var(--accento);flex:0 0 auto}
+.occhiello.centrato{justify-content:center}
+.corsivo{font-family:var(--display);font-style:italic;font-weight:500}
+
+.rivela{opacity:0;transform:translateY(24px);transition:opacity .8s cubic-bezier(.25,.46,.45,.94),transform .8s cubic-bezier(.25,.46,.45,.94)}
+.rivela.visto{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rivela{opacity:1;transform:none}.sfilata ul{animation:none}}
+
+/* ---------- barra ---------- */
+.barra{position:fixed;top:0;left:0;right:0;z-index:70;background:transparent;border-bottom:1px solid transparent;transition:background .35s ease,border-color .35s ease}
+.barra.posata{background:rgba(255,255,255,.95);backdrop-filter:blur(14px);border-bottom-color:var(--riga)}
+.barra .menu a,.barra .logo b{color:#fff;transition:color .35s ease}
+.barra .logo b span,.barra .lingue{color:rgba(255,255,255,.62);transition:color .35s ease}
+.barra.posata .menu a,.barra.posata .logo b{color:var(--carbone)}
+.barra.posata .logo b span,.barra.posata .lingue{color:var(--muto)}
+.barra.posata .lingue a.on,.barra .lingue a.on{color:var(--accento-chiaro)}
+.barra.posata .lingue a.on{color:var(--accento)}
+.barra .wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:92px;gap:20px}
+.barra .menu{justify-self:start}
+.barra .logo{justify-self:center;flex-direction:column;gap:6px;text-align:center}
+.barra .logo img{width:40px;height:40px}
+.barra .logo b{font-size:15.5px}
+.barra .lingue{justify-self:end}
+.logo{display:flex;align-items:center;gap:12px}
+.logo img{width:54px;height:54px;object-fit:contain}
+.logo b{font-family:var(--display);font-weight:600;font-size:18px;letter-spacing:-.01em;line-height:1.1;color:var(--carbone)}
+.logo b span{display:block;font-family:var(--testo);font-size:9.5px;font-weight:600;letter-spacing:.3em;color:var(--muto);text-transform:uppercase;margin-top:3px}
+.menu{display:none;gap:34px;font-size:13px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--carbone)}
+.menu a:hover{color:var(--accento)}
+.lingue{display:flex;gap:2px;font-size:11px;font-weight:600;letter-spacing:.1em;color:var(--muto)}
+.lingue a{padding:6px 7px}
+.lingue a.on{color:var(--accento)}
+@media(min-width:1000px){.menu{display:flex}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:16px 32px;font-size:12.5px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;transition:.2s}
+.btn-pieno{background:var(--accento);color:#fff}
+.btn-pieno:hover{background:var(--accento-scuro)}
+.btn-linea{border:1px solid rgba(255,255,255,.5);color:#fff}
+.btn-linea:hover{background:#fff;color:var(--carbone)}
+.btn-scuro{border:1px solid var(--carbone);color:var(--carbone)}
+.btn-scuro:hover{background:var(--carbone);color:#fff}
+.azioni{display:flex;flex-wrap:wrap;gap:12px;margin-top:38px}
+
+.sezione{padding:112px 0}
+.sezione-chiara{background:var(--light)}
+.titolo{font-family:var(--display);font-weight:600;text-wrap:balance;font-size:clamp(36px,5.8vw,74px);line-height:1.0;letter-spacing:-.025em;margin-top:20px;max-width:17ch}
+.sotto{color:#41465A;margin-top:22px;max-width:56ch;font-size:17px;line-height:1.68;font-weight:400}
+
+.sfilata{overflow:hidden;padding:22px 0;background:var(--carbone)}
+.sfilata ul{display:flex;gap:52px;list-style:none;width:max-content;animation:sfila 38s linear infinite}
+.sfilata li{font-size:12px;font-weight:600;letter-spacing:.34em;text-transform:uppercase;color:rgba(255,255,255,.42);white-space:nowrap}
+@keyframes sfila{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+footer{background:var(--carbone);color:rgba(255,255,255,.55);font-size:13.5px;padding:56px 0}
+footer .wrap{display:flex;flex-wrap:wrap;gap:20px;justify-content:space-between;align-items:center}
+footer .logo b{color:#fff}
+footer .logo b span{color:rgba(255,255,255,.45)}
+.nota{background:#F4F4F5;border-bottom:1px solid #E4E4E7;padding:11px 0;font-size:13px;color:#52525B}
+
+/* whatsapp fisso */
+.wa-fisso{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:50%;
+  background:#25D366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 10px 30px rgba(37,211,102,.4);transition:transform .3s}
+.wa-fisso:hover{transform:scale(1.07)}
+.recapiti{display:flex;flex-direction:column;gap:6px;align-items:flex-end;text-align:right}
+@media(max-width:700px){.recapiti{align-items:flex-start;text-align:left}}
+.recapiti a{color:#fff;text-decoration:none;border-bottom:1px solid rgba(255,255,255,.3)}
+.recapiti span{color:rgba(255,255,255,.45)}
+
+/* tendine nella barra */
+.tendina{position:relative}
+.tendina>button{display:inline-flex;align-items:center;gap:9px;background:none;border:0;cursor:pointer;padding:10px 2px;
+  font-family:var(--testo);font-size:11.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--carbone)}
+.tendina>button i{display:block;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
+  transform:rotate(45deg) translate(-2px,-2px);transition:transform .3s}
+.tendina.aperta>button i{transform:rotate(225deg) translate(-3px,-3px)}
+.tendina>button:hover{color:var(--accento)}
+.tendina .pannello{position:absolute;top:calc(100% + 10px);left:0;z-index:40;min-width:250px;padding:8px 0;
+  background:#fff;border:1px solid var(--riga);box-shadow:0 24px 54px rgba(35,42,60,.16);
+  opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .22s,transform .22s,visibility .22s}
+.tendina.aperta .pannello{opacity:1;visibility:visible;transform:none}
+.tendina .pannello a{display:block;padding:12px 22px;font-size:14px;letter-spacing:0;text-transform:none;color:var(--carbone);text-decoration:none;white-space:nowrap}
+.tendina .pannello a:hover{background:#F6F6F7;color:var(--accento)}
+.tendina .pannello hr{border:0;border-top:1px solid var(--riga);margin:8px 0}
+.tendina.lingua{justify-self:end}
+.tendina.lingua .pannello{left:auto;right:0;min-width:130px}
+.tendina.lingua>button{letter-spacing:.14em}
+.tendina.lingua .pannello a.on{color:var(--accento);font-weight:600}
+@media(max-width:640px){.tendina>button{font-size:10.5px;gap:7px}.tendina .pannello{min-width:210px}}
+
+/* la barra sta in cima alla pagina e se ne va con lo scorrimento */
+.barra{position:static!important;background:#fff!important;border-bottom:1px solid var(--riga)!important;backdrop-filter:none!important}
+.barra .menu a,.barra .logo b{color:var(--carbone)!important}
+.barra .lingue{color:var(--muto)!important}
+.barra .lingue a.on{color:var(--accento)!important}
+.marchio .su-scuro{display:none!important}
+.marchio .su-chiaro{display:block!important}
+.barra .wrap{position:relative;display:flex!important;align-items:center;justify-content:space-between;height:96px;gap:10px}
+@media(max-width:640px){.barra .wrap{height:70px;padding-left:16px;padding-right:16px}}
+.barra .logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;z-index:1}
+.tendina{flex:0 0 auto;z-index:2}
+.marchio{display:block;line-height:0}
+.marchio img{width:auto!important;height:50px!important;object-fit:contain;display:block}
+@media(max-width:640px){.marchio img{height:30px!important}}
+.marchio .su-chiaro{display:none}
+.barra.posata .marchio .su-scuro{display:none}
+.barra.posata .marchio .su-chiaro{display:block}
+
+.testata{position:relative;background:var(--carbone);color:#fff;overflow:hidden;min-height:56vh;display:flex;align-items:flex-end}
+.testata .foto{position:absolute;inset:0}
+.testata .foto::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(35,42,60,.5),rgba(35,42,60,.94) 82%)}
+.testata .wrap{position:relative;padding:110px 24px 48px;width:100%}
+.testata h1{font-family:var(--display);font-size:clamp(34px,6.4vw,64px);line-height:1.04;letter-spacing:-.015em;font-weight:600;margin:18px 0 20px;max-width:16ch}
+.testata p{font-size:clamp(16px,2vw,19px);color:rgba(255,255,255,.78);max-width:48ch;line-height:1.7}
+
+.tre{display:grid;gap:16px;margin-top:44px;grid-template-columns:1fr}
+@media(min-width:760px){.tre{grid-template-columns:repeat(3,1fr)}}
+.punto{background:#fff;border:1px solid var(--riga);;padding:26px}
+.punto h3{font-family:var(--display);font-size:20px;font-weight:600;letter-spacing:-.015em;margin-bottom:8px}
+.punto p{color:var(--muto);font-size:15px}
+
+.fascia{background:var(--carbone);color:#fff;;overflow:hidden;display:grid;grid-template-columns:1fr;margin-top:12px}
+@media(min-width:860px){.fascia{grid-template-columns:1.1fr 1fr}}
+.fascia .t{padding:40px}
+.fascia .t h2{font-family:var(--display);font-size:clamp(26px,3.6vw,38px);letter-spacing:-.01em;line-height:1.1;font-weight:600}
+.fascia .t p{color:rgba(255,255,255,.78);margin-top:14px;font-size:15.5px}
+.fascia .i{min-height:260px}
+
+details{border-bottom:1px solid var(--riga);padding:20px 0}
+details summary{cursor:pointer;font-family:var(--display);font-weight:600;font-size:19px;list-style:none;display:flex;justify-content:space-between;gap:16px;letter-spacing:-.01em}
+details summary::-webkit-details-marker{display:none}
+details summary::after{content:'+';color:var(--accento);font-weight:700;font-size:20px;line-height:1}
+details[open] summary::after{content:'−'}
+details p{color:var(--muto);margin-top:12px;font-size:15.5px;max-width:62ch}
+
+.altri{display:grid;gap:12px;grid-template-columns:1fr;margin-top:40px}
+@media(min-width:700px){.altri{grid-template-columns:repeat(3,1fr)}}
+.altri a{border:1px solid var(--riga);padding:22px;background:#fff;font-family:var(--display);font-weight:600;font-size:17px;display:flex;justify-content:space-between;align-items:center;transition:.15s}
+.altri a:hover{border-color:var(--carbone)}
+.altri a span{color:var(--accento)}
+</style>
+</head>
+<body>
+
+
+<header class="barra"><div class="wrap">
+  <div class="tendina elenco">
+    <button type="button" aria-expanded="false" aria-haspopup="true">Servizi <i></i></button>
+    <div class="pannello">
+      <a href="index.html#d-trasporto">Trasporto veicoli</a>
+      <a href="index.html#d-moto">Trasporto moto</a>
+      <a href="index.html#d-carrello">Carrello chiuso</a>
+      <a href="index.html#d-dogana">Sdoganamento</a>
+      <a href="index.html#d-dogana">Immatricolazione e targhe</a>
+      <a href="index.html#d-noleggio">Noleggio furgoni</a>
+      <a href="index.html#d-soccorso">Autosoccorso</a>
+      <hr>
+      <a href="index.html#misura">La mia auto ci sta?</a>
+      <a href="richiesta.html">Richiesta e preventivo</a>
+    </div>
+  </div>
+  <a class="logo marchio" href="index.html"><img class="su-scuro" src="img/logo_chiaro.webp" alt="Ticino Transport"><img class="su-chiaro" src="img/logo_largo.webp" alt="" aria-hidden="true"></a>
+  <div class="tendina lingua">
+    <button type="button" aria-expanded="false" aria-haspopup="true">IT <i></i></button>
+    <div class="pannello">
+      <a class="on" href="#">Italiano</a><a href="#">Deutsch</a><a href="#">Français</a><a href="#">English</a>
+    </div>
+  </div>
+</div></header>
+
+<section class="testata">
+  <div class="foto"><img src="img/mclaren.webp" alt="Supercar caricata sul carrello"></div>
+  <div class="wrap">
+    <p class="occhiello rivela" style="color:#92A1B2">Servizio</p>
+    <h1 class="rivela">Trasporto veicoli.</h1>
+    <p class="rivela">Veniamo a prendere la tua auto dove si trova e la consegniamo dove dici tu. In Svizzera e in Europa, assicurata per tutto il viaggio.</p>
+    <div class="azioni"><a class="btn btn-pieno" href="richiesta.html#trasporto">Chiedi il preventivo</a><a class="btn btn-linea" href="tel:+41768301847">+41 76 830 18 47</a></div>
+  </div>
+</section>
+
+<section class="sezione"><div class="wrap">
+  <p class="occhiello rivela">In breve</p>
+  <h2 class="titolo">Perché chiamano noi.</h2>
+  <div class="tre">
+    <div class="punto"><h3>Il prezzo non cambia</h3><p>Quello che ti diciamo al preventivo è quello che paghi alla consegna. Nessun supplemento in fondo.</p></div>
+    <div class="punto"><h3>Sempre la stessa persona</h3><p>Dal preventivo alla consegna parli con chi guida il mezzo, su WhatsApp. Non passi da nessun centralino.</p></div>
+    <div class="punto"><h3>Parte quando serve</h3><p>Non aspettiamo di riempire una bisarca: il tuo mezzo viaggia da solo se serve.</p></div>
+  </div>
+</div></section>
+
+<section class="sezione" style="padding-top:0"><div class="wrap">
+  <div class="fascia">
+    <div class="t">
+      <h2>Meglio al coperto?</h2>
+      <p>Per supercar, auto d'epoca e mezzi che non vuoi mostrare in giro abbiamo il Debon Roadster C900: l'auto viaggia chiusa, al riparo da pioggia, sale e sguardi.</p>
+      <div class="azioni"><a class="btn btn-pieno" href="index.html#carrello">Guarda il carrello chiuso</a></div>
+    </div>
+    <div class="i"><img src="img/debon.webp" alt="Carrello chiuso Debon"></div>
+  </div>
+</div></section>
+
+<section class="sezione" id="come" style="background:var(--light)"><div class="wrap">
+  <p class="occhiello rivela">Come funziona</p>
+  <h2 class="titolo">Come andiamo avanti.</h2>
+  <div class="passi" style="display:grid;gap:34px;margin-top:46px">
+    <div class="punto" style="background:transparent;border:0;padding:0"><h3>01 · Scrivi su WhatsApp</h3><p>Che auto è, dov'è e dove deve andare. Ti rispondiamo con un prezzo.</p></div>
+    <div class="punto" style="background:transparent;border:0;padding:0"><h3>02 · Veniamo a prenderla</h3><p>Guardiamo insieme la carrozzeria, facciamo le foto, carichiamo.</p></div>
+    <div class="punto" style="background:transparent;border:0;padding:0"><h3>03 · La consegniamo</h3><p>Si ricontrolla insieme a chi la riceve. Fine.</p></div>
+  </div>
+</div></section>
+
+<section class="sezione" id="domande"><div class="wrap">
+  <p class="occhiello rivela">Domande</p>
+  <h2 class="titolo">Quello che ci chiedono sempre.</h2>
+  <div class="rivela" style="margin-top:36px">
+    <details><summary>Quanto costa trasportare un'auto?</summary><p>Dipende da quanta strada c'è, da che auto è e se serve il carrello chiuso. Il preventivo su WhatsApp è gratis e arriva in pochi minuti. Quel prezzo è quello che paghi.</p></details>
+    <details><summary>L'auto è assicurata?</summary><p>Sì, per tutto il viaggio. Prima di caricare guardiamo insieme la carrozzeria e facciamo le foto; all'arrivo si ripete con chi la riceve.</p></details>
+    <details><summary>E se l'auto non parte?</summary><p>La carichiamo lo stesso, col verricello. Vale anche per le incidentate e per le auto d'epoca ferme da anni.</p></details>
+    <details><summary>Andate anche all'estero?</summary><p>Italia, Germania, Francia e Austria. Se il mezzo passa la dogana, le pratiche le facciamo noi.</p></details>
+    <details><summary>In quanto tempo arriva?</summary><p>In Svizzera di solito il giorno dopo il ritiro. Per l'estero la data la fissiamo insieme.</p></details>
+  </div>
+</div></section>
+
+<section class="sezione" style="padding-top:0"><div class="wrap">
+  <p class="occhiello rivela">Altri servizi</p>
+  <div class="altri">
+    <a class="rivela" href="index.html#d-noleggio">Noleggio furgoni <span>→</span></a>
+    <a class="rivela" href="index.html#d-dogana">Pratiche doganali <span>→</span></a>
+    <a class="rivela" href="index.html#d-soccorso">Autosoccorso stradale <span>→</span></a>
+  </div>
+</div></section>
+
+<a class="wa-fisso" href="https://wa.me/41768301847" target="_blank" rel="noopener" aria-label="Scrivici su WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff" width="28" height="28"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.61.15-.15.35-.4.52-.6.17-.2.22-.35.35-.57.12-.22.06-.42-.03-.57-.09-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.34 5.1 4.56.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.17-1.43-.07-.12-.27-.2-.57-.35zM12.04 21.5h-.01c-1.75 0-3.48-.47-4.99-1.36l-.36-.21-3.71.97.99-3.62-.23-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 012.89 6.99c0 5.46-4.44 9.9-9.96 9.9zM20.5 3.49A11.78 11.78 0 0012.04 0C5.46 0 .1 5.35.1 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.26-1.64a11.9 11.9 0 005.77 1.47h.01c6.58 0 11.94-5.35 11.94-11.93 0-3.19-1.24-6.19-3.48-8.41z"/></svg>
+</a>
+
+<footer><div class="wrap">
+  <div>TicinoTransport di Vespascout SAGL — Via Cademario 7, 6934 Bioggio</div><div>CHE-144.001.809</div>
+</div></footer>
+
+<script>
+const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){x.target.classList.add('visto');o.unobserve(x.target)}}),{threshold:.12});
+document.querySelectorAll('.rivela').forEach((el,i)=>{el.style.transitionDelay=(i%4)*70+'ms';o.observe(el)});
+/* ---- tendine della barra ---- */
+(function(){
+  const tendine=[...document.querySelectorAll('.tendina')];
+  tendine.forEach(t=>{
+    const b=t.querySelector('button');
+    b.addEventListener('click',e=>{
+      e.stopPropagation();
+      const era=t.classList.contains('aperta');
+      tendine.forEach(x=>{x.classList.remove('aperta');x.querySelector('button').setAttribute('aria-expanded','false')});
+      if(!era){ t.classList.add('aperta'); b.setAttribute('aria-expanded','true'); }
+    });
+  });
+  addEventListener('click',()=>tendine.forEach(t=>{t.classList.remove('aperta');t.querySelector('button').setAttribute('aria-expanded','false')}));
+  addEventListener('keydown',e=>{ if(e.key==='Escape') tendine.forEach(t=>t.classList.remove('aperta')); });
+})();
+
+/* ---- un link a una piega la apre ---- */
+(function(){
+  const apri=()=>{
+    const id=location.hash.slice(1); if(!id) return;
+    const el=document.getElementById(id);
+    if(el && el.tagName==='DETAILS'){ el.open=true; setTimeout(()=>el.scrollIntoView({behavior:'smooth',block:'start'}),60); }
+  };
+  addEventListener('hashchange',apri); apri();
+  document.querySelectorAll('a[href^="#d-"]').forEach(a=>a.addEventListener('click',()=>setTimeout(apri,30)));
+})();
+
+</script>
+</body>
+</html>
