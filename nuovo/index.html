@@ -164,6 +164,25 @@ footer .logo b span{color:rgba(255,255,255,.45)}
 @media(max-width:640px){.tendina>button{font-size:9.5px;gap:7px;padding:9px 12px;letter-spacing:.1em}.tendina .pannello{min-width:205px}
   .tendina.lingua .pannello{min-width:120px}}
 
+/* come leghiamo una moto */
+.semaforo{display:grid;gap:16px;margin:26px 0 8px}
+@media(min-width:820px){.semaforo{grid-template-columns:repeat(3,1fr);gap:20px}}
+.semaforo .zona{background:#fff;border:1px solid var(--riga);border-top:3px solid var(--muto);padding:22px 22px 20px}
+.semaforo .zona.v{border-top-color:#2E7D52}
+.semaforo .zona.g{border-top-color:#C98A1E}
+.semaforo .zona.r{border-top-color:var(--accento)}
+.semaforo .pallino{display:block;width:10px;height:10px;border-radius:50%;margin-bottom:12px;background:var(--muto)}
+.semaforo .zona.v .pallino{background:#2E7D52}
+.semaforo .zona.g .pallino{background:#C98A1E}
+.semaforo .zona.r .pallino{background:var(--accento)}
+.semaforo b{display:block;font-family:var(--display);font-weight:700;font-size:19px;color:var(--carbone);margin-bottom:12px}
+.semaforo ul{list-style:none;margin:0 0 12px;padding:0}
+.semaforo ul li{font-size:14.5px;color:var(--carbone);padding:7px 0;margin:0;border-bottom:1px solid var(--riga);padding-left:0}
+.semaforo ul li::before{display:none!important;content:none!important}
+.semaforo .zona ul li{padding-left:0!important;margin-bottom:0!important}
+.semaforo ul li:last-child{border-bottom:0}
+.semaforo p{margin:0;font-size:13.5px;line-height:1.6;color:var(--muto)}
+
 /* la barra sta in cima alla pagina e se ne va con lo scorrimento */
 .barra{position:static!important;background:#fff!important;border-bottom:1px solid var(--riga)!important;backdrop-filter:none!important}
 .barra .menu a,.barra .logo b{color:var(--carbone)!important}
@@ -561,6 +580,42 @@ footer .logo b span{color:rgba(255,255,255,.45)}
           <li>Scooter e Vespe: le carene in plastica si graffiano con niente, quindi vanno protette a parte</li>
           <li>Moto non marcianti, incidentate o senza chiavi: le carichiamo lo stesso</li>
         </ul>
+        <h4>Come la leghiamo</h4>
+        <p>La moto sale sul ferma-moto e resta dritta da sola. Poi vanno le cinghie, e lì conta dove le attacchi: se le metti nel punto sbagliato, in frenata la moto non si muove ma si rovina lo stesso.</p>
+  <div class="semaforo rivela">
+    <div class="zona v">
+      <span class="pallino"></span>
+      <b>Qui si lega</b>
+      <ul>
+        <li>Telaio</li>
+        <li>Supporti dei poggiapiedi</li>
+        <li>Piastra inferiore della forcella</li>
+      </ul>
+      <p>Sono le parti che reggono la trazione delle cinghie senza deformarsi.</p>
+    </div>
+    <div class="zona g">
+      <span class="pallino"></span>
+      <b>Qui solo se serve</b>
+      <ul>
+        <li>Manubrio, se la carena copre la piastra</li>
+        <li>Maniglie del passeggero</li>
+      </ul>
+      <p>La cinghia va tenuta il più vicino possibile agli steli: più si allontana, più il manubrio fa leva e rischia di piegarsi. Un manubrio da 22 mm è più delicato di un conico da 28.</p>
+    </div>
+    <div class="zona r">
+      <span class="pallino"></span>
+      <b>Qui mai</b>
+      <ul>
+        <li>Frecce</li>
+        <li>Collettori di scarico</li>
+        <li>Carene e plastiche</li>
+      </ul>
+      <p>Si piegano, si crepano o si fondono. Una cinghia su una freccia costa più del trasporto.</p>
+    </div>
+  </div>
+
+        <p>Sotto ogni cinghia mettiamo una protezione, perché gli spigoli della moto tagliano il nastro e il nastro segna la vernice. E alle soste ricontrolliamo sempre: su un viaggio lungo le cinghie si allentano, è normale, basta ritenderle.</p>
+
         <h4>Comprata all'estero?</h4>
         <p>È il motivo per cui ci chiamano più spesso. Ritiriamo la moto dal venditore in Italia, Germania, Francia o Austria e te la portiamo a casa. Se serve ci occupiamo anche dello sdoganamento e dell'immatricolazione svizzera, così tu non devi muoverti: compri, e la moto arriva targata.</p>
         <h4>Come viaggia</h4>
