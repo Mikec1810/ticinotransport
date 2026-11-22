@@ -357,6 +357,14 @@ footer .logo b span{color:rgba(255,255,255,.45)}
 @media(max-width:980px){.barra .principale{min-height:0}}
 @media(max-width:640px){.barra .filo .wrap{height:auto;min-height:34px}}
 
+/* chi c'e dietro */
+.sezione.chi{border-top:1px solid var(--riga)}
+.chi-testo{max-width:62ch;margin-top:28px}
+.chi-testo p{font-size:17px;line-height:1.75;color:#41465A;margin:0 0 18px}
+.firma-chi{margin-top:30px!important;padding-top:22px;border-top:1px solid var(--riga)}
+.firma-chi b{display:block;font-family:var(--display);font-weight:700;font-size:20px;color:var(--carbone)}
+.firma-chi span{display:block;margin-top:5px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muto)}
+
 /* verifica misure */
 .verifica{max-width:760px;margin-top:44px}
 .cerca{position:relative}
