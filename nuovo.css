@@ -238,7 +238,7 @@ footer .logo b span{color:rgba(255,255,255,.45)}
 .dettagli img{transition:transform .9s cubic-bezier(.25,.46,.45,.94)}
 .dettagli figure:hover img{transform:scale(1.07)}
 
-.pista{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:56px 0 18px;margin:0 -24px;padding-left:24px;padding-right:24px;scrollbar-width:none}
+.pista{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x proximity;scroll-padding-left:24px;padding:56px 0 18px;margin:0 -24px;padding-left:24px;padding-right:24px;scrollbar-width:none}
 .pista::-webkit-scrollbar{display:none}
 .pista figure{flex:0 0 78%;max-width:520px;scroll-snap-align:start}
 .pista .scatto{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--light-scuro)}
