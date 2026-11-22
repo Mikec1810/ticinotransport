@@ -286,6 +286,72 @@ footer .logo b span{color:rgba(255,255,255,.45)}
 .chiusura .titolo,.chiusura .sotto{margin-left:auto;margin-right:auto}
 .chiusura .azioni{justify-content:center}
 
+
+/* ===== testata: voci di testo attorno al logo ===== */
+.barra{position:static!important;background:#fff!important;border-bottom:1px solid var(--riga)!important;backdrop-filter:none!important}
+.barra .filo{border-bottom:1px solid var(--riga);background:#FCFCFD}
+.barra .filo .wrap{display:flex;align-items:center;justify-content:space-between;height:38px;gap:16px}
+.barra .filo a,.barra .filo span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--muto);text-decoration:none}
+.barra .filo .tel{color:var(--carbone);font-weight:600}
+.barra .filo .tel:hover{color:var(--accento)}
+.lingue-testo{display:flex;gap:14px}
+.lingue-testo a{cursor:pointer;transition:color .2s}
+.lingue-testo a:hover{color:var(--carbone)}
+.lingue-testo a.on{color:var(--accento);font-weight:600}
+
+.barra .principale{position:relative;display:flex;align-items:center;justify-content:space-between;height:104px;gap:20px}
+.barra .principale .logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;z-index:1}
+.voci{display:flex;align-items:center;gap:30px}
+.voci a{font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--carbone);text-decoration:none;
+  position:relative;padding:6px 0;white-space:nowrap;transition:color .25s}
+.voci a::after{content:'';position:absolute;left:0;right:100%;bottom:0;height:1px;background:var(--accento);transition:right .3s}
+.voci a:hover{color:var(--accento)}
+.voci a:hover::after{right:0}
+.voci a.spicca{color:var(--accento);font-weight:600}
+
+@media(max-width:1180px){.voci{gap:20px}.voci a{font-size:11px;letter-spacing:.06em}}
+@media(max-width:980px){
+  .barra .principale{flex-wrap:wrap;justify-content:center;height:auto;padding:16px 0 10px;gap:10px}
+  .barra .principale .logo{position:static;transform:none;order:-1;width:100%;display:flex;justify-content:center}
+  .voci{display:flex;width:100%;justify-content:center;gap:22px;flex-wrap:wrap;row-gap:6px}
+  .voci a{font-size:10.5px;letter-spacing:.08em;padding:4px 0}
+}
+@media(max-width:620px){
+  .barra .filo .wrap{height:34px}
+  .lingue-testo{gap:9px}
+  .barra .principale{gap:14px;row-gap:8px}
+}
+.marchio{display:block;line-height:0}
+.marchio img{width:auto!important;height:54px!important;object-fit:contain;display:block}
+@media(max-width:620px){.marchio img{height:38px!important}}
+.marchio .su-scuro{display:none!important}
+.marchio .su-chiaro{display:block!important}
+
+/* ===== blocco a due campi: testo e foto ===== */
+.fianco{display:grid;align-items:stretch;border-top:1px solid var(--riga)}
+@media(min-width:900px){.fianco{grid-template-columns:1fr 1fr}}
+.fianco.foto-prima .lato-foto{order:-1}
+.fianco .lato-foto{position:relative;overflow:hidden;background:var(--light-scuro);min-height:52svh}
+@media(max-width:899px){.fianco .lato-foto{min-height:44svh}}
+.fianco .lato-foto img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.fianco .lato-testo{display:flex;align-items:center;padding:76px 0}
+@media(max-width:899px){.fianco .lato-testo{padding:54px 0}}
+.fianco .dentro{width:100%;padding:0 24px;max-width:640px;margin:0 auto}
+@media(min-width:900px){
+  .fianco:not(.foto-prima) .dentro{margin-right:0;padding-left:max(24px,calc((100vw - 1280px)/2 + 24px));padding-right:56px}
+  .fianco.foto-prima .dentro{margin-left:0;padding-right:max(24px,calc((100vw - 1280px)/2 + 24px));padding-left:56px}
+}
+.fianco.scuro{background:var(--carbone);color:#fff;border-top:0}
+.fianco.scuro .titolo,.fianco.scuro .frase{color:#fff}
+.fianco.scuro .sotto{color:rgba(255,255,255,.76)}
+.fianco .titolo{margin-top:18px}
+.fianco .lista{list-style:none;padding:0;margin:26px 0 0}
+.fianco .lista li{position:relative;padding-left:26px;margin-bottom:11px;font-size:15px;line-height:1.6;color:#41465A}
+.fianco.scuro .lista li{color:rgba(255,255,255,.8)}
+.fianco .lista li::before{content:'';position:absolute;left:3px;top:9px;width:6px;height:6px;background:var(--accento)}
+.fianco .frase{font-family:var(--display);font-weight:600;line-height:1.1;font-size:clamp(28px,3.4vw,50px);letter-spacing:-.02em;margin:14px 0 0}
+.fianco .azioni{margin-top:30px}
+
 /* verifica misure */
 .verifica{max-width:760px;margin-top:44px}
 .cerca{position:relative}

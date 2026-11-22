@@ -356,39 +356,32 @@
     <link rel="stylesheet" href="nuovo.css">
 </head>
 <body id="top">
-<header class="barra posata"><div class="wrap">
-  <div class="tendina elenco">
-    <button type="button" aria-expanded="false" aria-haspopup="true"><span data-i18n="n_menu_servizi">Servizi</span> <i></i></button>
-    <div class="pannello">
+<header class="barra posata">
+  <div class="filo"><div class="wrap">
+    <a class="tel" href="tel:+41768301847">+41 76 830 18 47</a>
+    <nav class="lingue-testo">
+      <a href="#" data-lingua="it" class="on">IT</a><a href="#" data-lingua="de">DE</a><a href="#" data-lingua="fr">FR</a>
+      <a href="#" data-lingua="en">EN</a><a href="#" data-lingua="ru">RU</a><a href="#" data-lingua="ar">AR</a>
+    </nav>
+  </div></div>
+  <div class="wrap principale">
+    <nav class="voci sx">
       <a href="trasporto-veicoli.html" data-i18n="n_menu_trasporto">Trasporto veicoli</a>
       <a href="trasporto-moto.html" data-i18n="n_menu_moto">Trasporto moto</a>
+    </nav>
+    <a class="logo marchio" href="/"><img class="su-scuro" src="img/n-logo_chiaro.webp" alt="Ticino Transport"><img class="su-chiaro" src="img/n-logo_largo.webp" alt="" aria-hidden="true"></a>
+    <nav class="voci dx">
       <a href="trasporto-supercar-carrello-chiuso.html" data-i18n="n_menu_carrello">Carrello chiuso</a>
-      <a href="pratiche-doganali.html" data-i18n="n_menu_dogana">Sdoganamento e immatricolazione</a>
-      <a href="noleggio-furgoni.html" data-i18n="n_menu_furgoni">Noleggio furgoni</a>
-      <a href="autosoccorso-stradale.html" data-i18n="n_menu_soccorso">Autosoccorso</a>
-      <hr>
-      <a href="#misura" data-i18n="n_menu_misura">La mia auto ci sta?</a>
-      <a href="richiesta.html" data-i18n="n_menu_richiesta">Richiesta e preventivo</a>
-    </div>
-  </div>
-  <a class="logo marchio" href="/"><img class="su-scuro" src="img/n-logo_chiaro.webp" alt="Ticino Transport"><img class="su-chiaro" src="img/n-logo_largo.webp" alt="" aria-hidden="true"></a>
-  <div class="tendina lingua">
-    <button type="button" aria-expanded="false" aria-haspopup="true"><span id="linguaOra">IT</span> <i></i></button>
-    <div class="pannello">
-      <a href="#" data-lingua="it">Italiano</a>
-      <a href="#" data-lingua="de">Deutsch</a>
-      <a href="#" data-lingua="fr">Français</a>
-      <a href="#" data-lingua="en">English</a>
-      <a href="#" data-lingua="ru">Русский</a>
-      <a href="#" data-lingua="ar">العربية</a>
-    </div>
+      <a href="pratiche-doganali.html" data-i18n="n_menu_dogana">Pratiche doganali</a>
+      <a href="richiesta.html" class="spicca" data-i18n="n_menu_contatti">Contatti</a>
+    </nav>
   </div>
   <label class="solo-lettori-schermo" for="langSelect" data-i18n="n_scegli_lingua">Scegli la lingua</label>
   <select id="langSelect" class="solo-lettori-schermo">
     <option value="it">Italiano</option><option value="de">Deutsch</option><option value="fr">Français</option>
     <option value="en">English</option><option value="ru">Русский</option><option value="ar">العربية</option>
   </select>
-</div></header>
+</header>
 
 <section class="apertura">
   <div class="campo-testo">
@@ -449,12 +442,10 @@
   </div>
 </div></section>
 
-<section class="cinema" id="carrello">
-  <div class="sfondo"><img src="img/n-debon2.webp" alt="Carrello chiuso aperto sul retro" loading="lazy"></div>
-  <div class="velo"></div>
-  <div class="wrap">
-    <p class="occhiello rivela" style="color:#F0C9A8" data-i18n="n_carrello_occhiello">Il pezzo forte</p>
-    <h2 class="titolo rivela"><span data-i18n="n_carrello_t">La tua auto d'epoca viaggia al coperto.</span></h2>
+<section class="fianco" id="carrello">
+  <div class="lato-testo"><div class="dentro">
+    <p class="occhiello rivela" data-i18n="n_carrello_occhiello">Il pezzo forte</p>
+    <h2 class="titolo rivela" data-i18n="n_carrello_t">La tua auto d'epoca viaggia al coperto.</h2>
     <p class="sotto rivela" data-i18n="n_carrello_p">Debon Roadster C900. Dentro non entrano pioggia, sale, sassi e sguardi. L'ingresso della rampa misura 177 cm e tra i passaruota ce ne sono 191: ci stanno le vetture d'epoca, le piccole e le moto.</p>
     <ul class="lista rivela">
       <li data-i18n="n_carrello_l1">177 cm all'ingresso rampa, 191 cm tra i passaruota</li>
@@ -463,7 +454,8 @@
       <li data-i18n="n_carrello_l4">Per le supercar moderne arriva presto un carrello più grande</li>
     </ul>
     <div class="azioni rivela"><a class="btn btn-pieno" href="https://wa.me/41768301847?text=Buongiorno%2C%20vorrei%20sapere%20se%20la%20mia%20auto%20entra%20nel%20carrello%20chiuso.%20Marca%20e%20modello%3A%20" target="_blank" rel="noopener" data-i18n="n_carrello_btn">Chiedi se la tua ci sta</a></div>
-  </div>
+  </div></div>
+  <div class="lato-foto"><img src="img/n-carrello-epoca.webp" alt="Auto d'epoca caricata nel carrello chiuso Debon" loading="lazy"></div>
 </section>
 
 <section class="sezione" id="misura"><div class="wrap">
@@ -528,13 +520,14 @@
   </div>
 </div></section>
 
-<section class="striscia-larga bassa">
-  <img src="img/n-w_gt3rs.webp" alt="Porsche 911 GT3 RS" loading="lazy">
+<section class="fianco foto-prima scuro">
+  <div class="lato-foto"><img src="img/n-cura.webp" alt="McLaren fissata sul carrello" loading="lazy"></div>
+  <div class="lato-testo"><div class="dentro">
+    <p class="occhiello rivela" style="color:#F0C9A8" data-i18n="n_cura_occhiello">La nostra regola</p>
+    <p class="frase rivela" data-i18n="n_frase2">Le auto degli altri,<br>trattate come le nostre.</p>
+    <p class="sotto rivela" data-i18n="n_cura_p">Controllo visivo con foto al carico, fissaggio alle ruote, aggiornamenti durante il viaggio e verifica insieme a te alla consegna. Sempre, anche per uno spostamento di venti chilometri.</p>
+  </div></div>
 </section>
-
-<section class="fascia-frase chiara"><div class="wrap">
-  <p class="frase rivela" data-i18n="n_frase2">Le auto degli altri,<br>trattate come le nostre.</p>
-</div></section>
 
 <section class="sezione tinta-fredda" id="passaggi"><div class="wrap">
   <p class="occhiello rivela" data-i18n="n_passaggi_occhiello">Come si fa</p>
