@@ -9,4 +9,28 @@ Allow: /
 User-agent: Bingbot
 Allow: /
 
+# Agenti e assistenti AI: scheda sintetica dei servizi e dei dati utili
+# https://ticinotransport.ch/llms.txt
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
 Sitemap: https://ticinotransport.ch/sitemap.xml

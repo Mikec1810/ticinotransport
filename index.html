@@ -51,82 +51,249 @@
 
     <!-- Structured Data: LocalBusiness -->
     <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": ["LocalBusiness", "AutoRental", "MovingCompany"],
-        "@id": "https://ticinotransport.ch/#localbusiness",
-        "name": "TicinoTransport",
-        "alternateName": "TicinoTransport - Trasporto Veicoli e Noleggio Furgoni",
-        "description": "Agenzia di trasporto e consegna auto e moto in Svizzera e Europa. Noleggio furgoni per traslochi e trasporti. Pratiche doganali, importazione, esportazione, immatricolazione. Consegne veloci e autosoccorso stradale. Servizio per privati e concessionari auto.",
-        "url": "https://ticinotransport.ch",
-        "telephone": "+41768301847",
-        "email": "maikol.casalaro1@gmail.com",
-        "address": {
-            "@type": "PostalAddress",
-            "streetAddress": "Via Cademario, 7",
-            "addressLocality": "Bioggio",
-            "addressRegion": "Ticino",
-            "postalCode": "6934",
-            "addressCountry": "CH"
+{
+    "@context": "https://schema.org",
+    "@type": [
+        "LocalBusiness",
+        "AutoRental",
+        "MovingCompany"
+    ],
+    "@id": "https://ticinotransport.ch/#localbusiness",
+    "name": "TicinoTransport",
+    "alternateName": "TicinoTransport - Trasporto Veicoli e Noleggio Furgoni",
+    "description": "Agenzia di trasporto e consegna auto e moto in Svizzera e Europa. Noleggio furgoni per traslochi e trasporti. Pratiche doganali, importazione, esportazione, immatricolazione. Consegne veloci e autosoccorso stradale. Servizio per privati e concessionari auto.",
+    "url": "https://ticinotransport.ch",
+    "telephone": "+41768301847",
+    "email": "maikol.casalaro1@gmail.com",
+    "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Cademario, 7",
+        "addressLocality": "Bioggio",
+        "addressRegion": "Ticino",
+        "postalCode": "6934",
+        "addressCountry": "CH"
+    },
+    "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 46.02,
+        "longitude": 8.89
+    },
+    "areaServed": [
+        {
+            "@type": "AdministrativeArea",
+            "name": "Ticino"
         },
-        "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": 46.02,
-            "longitude": 8.89
+        {
+            "@type": "City",
+            "name": "Lugano"
         },
-        "areaServed": [
-            {"@type": "AdministrativeArea", "name": "Ticino"},
-            {"@type": "City", "name": "Lugano"},
-            {"@type": "City", "name": "Bellinzona"},
-            {"@type": "City", "name": "Locarno"},
-            {"@type": "City", "name": "Zürich"},
-            {"@type": "City", "name": "Bern"},
-            {"@type": "City", "name": "Luzern"},
-            {"@type": "City", "name": "Basel"},
-            {"@type": "City", "name": "Genève"},
-            {"@type": "City", "name": "Lausanne"},
-            {"@type": "Country", "name": "Switzerland"},
-            {"@type": "Country", "name": "Italy"},
-            {"@type": "Country", "name": "Germany"},
-            {"@type": "Country", "name": "France"},
-            {"@type": "Country", "name": "Austria"}
-        ],
-        "openingHoursSpecification": [
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "08:00", "closes": "18:00"},
-            {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "12:00"}
-        ],
-        "priceRange": "CHF 80 - CHF 500",
-        "image": "https://ticinotransport.ch/img/lamborghini-aventador-red.jpg",
-        "sameAs": [
-            "https://wa.me/41768301847",
-            "https://www.instagram.com/ticino_transport"
-        ],
-        "founder": {"@type": "Person", "name": "Maikol Casalaro"},
-        "parentOrganization": {"@type": "Organization", "name": "Vespascout SAGL", "taxID": "CHE-144.001.809"},
-        "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Servizi TicinoTransport",
-            "itemListElement": [
-                {
-                    "@type": "Offer",
-                    "itemOffered": {"@type": "Service", "name": "Trasporto e consegna auto e moto", "description": "Trasporto veicoli porta a porta in Svizzera e Europa. Auto, moto, supercar in carrello chiuso, veicoli commerciali. Consegne veloci e autosoccorso stradale. Alternativa a Galliker per privati e concessionari."}
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {"@type": "Service", "name": "Noleggio furgoni per traslochi e trasporti", "description": "Noleggio Citroen Jumpy e Fiat Ducato. Ideali per traslochi, trasporto moto, noleggio carrello autoveicoli. Da CHF 80 al giorno."},
-                    "priceSpecification": {"@type": "PriceSpecification", "price": "80", "priceCurrency": "CHF", "unitText": "giorno"}
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {"@type": "Service", "name": "Pratiche doganali e immatricolazione", "description": "Importazione ed esportazione veicoli. Pratiche doganali, immatricolazione, cambio proprieta, targhe. Servizio completo per privati e concessionari auto."}
-                },
-                {
-                    "@type": "Offer",
-                    "itemOffered": {"@type": "Service", "name": "Compravendita veicoli", "description": "Assistenza completa nell'acquisto e vendita di auto e moto. Ritiro, consegna, pratiche e documenti inclusi."}
-                }
-            ]
+        {
+            "@type": "City",
+            "name": "Bellinzona"
+        },
+        {
+            "@type": "City",
+            "name": "Locarno"
+        },
+        {
+            "@type": "City",
+            "name": "Zürich"
+        },
+        {
+            "@type": "City",
+            "name": "Bern"
+        },
+        {
+            "@type": "City",
+            "name": "Luzern"
+        },
+        {
+            "@type": "City",
+            "name": "Basel"
+        },
+        {
+            "@type": "City",
+            "name": "Genève"
+        },
+        {
+            "@type": "City",
+            "name": "Lausanne"
+        },
+        {
+            "@type": "Country",
+            "name": "Switzerland"
+        },
+        {
+            "@type": "Country",
+            "name": "Italy"
+        },
+        {
+            "@type": "Country",
+            "name": "Germany"
+        },
+        {
+            "@type": "Country",
+            "name": "France"
+        },
+        {
+            "@type": "Country",
+            "name": "Austria"
         }
-    }
+    ],
+    "openingHoursSpecification": [
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday"
+            ],
+            "opens": "08:00",
+            "closes": "18:00"
+        },
+        {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": "Saturday",
+            "opens": "09:00",
+            "closes": "12:00"
+        }
+    ],
+    "priceRange": "CHF 80 - CHF 500",
+    "image": "https://ticinotransport.ch/img/lamborghini-aventador-red.jpg",
+    "sameAs": [
+        "https://wa.me/41768301847",
+        "https://www.instagram.com/ticino_transport"
+    ],
+    "founder": {
+        "@type": "Person",
+        "name": "Maikol Casalaro"
+    },
+    "parentOrganization": {
+        "@type": "Organization",
+        "name": "Vespascout SAGL",
+        "taxID": "CHE-144.001.809"
+    },
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Servizi TicinoTransport",
+        "itemListElement": [
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Trasporto e consegna veicoli",
+                    "serviceType": "Trasporto auto e moto porta a porta",
+                    "url": "https://ticinotransport.ch/trasporto-veicoli.html",
+                    "areaServed": [
+                        {
+                            "@type": "Country",
+                            "name": "Svizzera"
+                        },
+                        {
+                            "@type": "Country",
+                            "name": "Italia"
+                        },
+                        {
+                            "@type": "Country",
+                            "name": "Germania"
+                        },
+                        {
+                            "@type": "Country",
+                            "name": "Francia"
+                        },
+                        {
+                            "@type": "Country",
+                            "name": "Austria"
+                        }
+                    ]
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Trasporto moto e scooter",
+                    "serviceType": "Trasporto moto con furgone attrezzato",
+                    "url": "https://ticinotransport.ch/trasporto-moto.html"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Trasporto in carrello chiuso",
+                    "serviceType": "Trasporto coperto per auto d'epoca e vetture compatte",
+                    "url": "https://ticinotransport.ch/trasporto-supercar-carrello-chiuso.html",
+                    "description": "Carrello chiuso Debon Roadster C900: ingresso rampa 177 cm, 191 cm tra i passaruota, vano 497x202x206 cm, peso massimo del veicolo 2465 kg."
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "Noleggio Citroën Jumpy L1H1",
+                "priceCurrency": "CHF",
+                "price": "80",
+                "unitText": "giorno",
+                "url": "https://ticinotransport.ch/noleggio-furgoni.html",
+                "availableAtOrFrom": {
+                    "@type": "Place",
+                    "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Via Cademario 7",
+                        "postalCode": "6934",
+                        "addressLocality": "Bioggio",
+                        "addressCountry": "CH"
+                    }
+                },
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Noleggio furgone 5 m³, portata 1000 kg"
+                }
+            },
+            {
+                "@type": "Offer",
+                "name": "Noleggio Fiat Ducato",
+                "priceCurrency": "CHF",
+                "price": "120",
+                "unitText": "giorno",
+                "url": "https://ticinotransport.ch/noleggio-furgoni.html",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Noleggio furgone 13 m³, portata 1500 kg"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Pratiche doganali e immatricolazione",
+                    "serviceType": "Sdoganamento, importazione, esportazione, immatricolazione e cambio di proprietà",
+                    "url": "https://ticinotransport.ch/pratiche-doganali.html"
+                }
+            },
+            {
+                "@type": "Offer",
+                "itemOffered": {
+                    "@type": "Service",
+                    "name": "Autosoccorso e recupero veicoli",
+                    "serviceType": "Recupero veicoli non marcianti e incidentati",
+                    "url": "https://ticinotransport.ch/autosoccorso-stradale.html",
+                    "areaServed": {
+                        "@type": "AdministrativeArea",
+                        "name": "Canton Ticino"
+                    }
+                }
+            }
+        ]
+    },
+    "knowsLanguage": [
+        "it",
+        "de",
+        "fr",
+        "en"
+    ]
+}
     </script>
 
     <!-- Structured Data: FAQPage -->
@@ -182,1014 +349,273 @@
         ]
     }
     </script>
-
-    <link rel="stylesheet" href="style.css">
     <script src="cookie-consent.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="nuovo.css">
 </head>
-<body>
+<body id="top">
+<header class="barra posata"><div class="wrap">
+  <div class="tendina elenco">
+    <button type="button" aria-expanded="false" aria-haspopup="true"><span data-i18n="n_menu_servizi">Servizi</span> <i></i></button>
+    <div class="pannello">
+      <a href="trasporto-veicoli.html" data-i18n="n_menu_trasporto">Trasporto veicoli</a>
+      <a href="trasporto-moto.html" data-i18n="n_menu_moto">Trasporto moto</a>
+      <a href="trasporto-supercar-carrello-chiuso.html" data-i18n="n_menu_carrello">Carrello chiuso</a>
+      <a href="pratiche-doganali.html" data-i18n="n_menu_dogana">Sdoganamento e immatricolazione</a>
+      <a href="noleggio-furgoni.html" data-i18n="n_menu_furgoni">Noleggio furgoni</a>
+      <a href="autosoccorso-stradale.html" data-i18n="n_menu_soccorso">Autosoccorso</a>
+      <hr>
+      <a href="#misura" data-i18n="n_menu_misura">La mia auto ci sta?</a>
+      <a href="richiesta.html" data-i18n="n_menu_richiesta">Richiesta e preventivo</a>
+    </div>
+  </div>
+  <a class="logo marchio" href="/"><img class="su-scuro" src="img/n-logo_chiaro.webp" alt="Ticino Transport"><img class="su-chiaro" src="img/n-logo_largo.webp" alt="" aria-hidden="true"></a>
+  <div class="tendina lingua">
+    <button type="button" aria-expanded="false" aria-haspopup="true"><span id="linguaOra">IT</span> <i></i></button>
+    <div class="pannello">
+      <a href="#" data-lingua="it">Italiano</a>
+      <a href="#" data-lingua="de">Deutsch</a>
+      <a href="#" data-lingua="fr">Français</a>
+      <a href="#" data-lingua="en">English</a>
+      <a href="#" data-lingua="ru">Русский</a>
+      <a href="#" data-lingua="ar">العربية</a>
+    </div>
+  </div>
+  <label class="solo-lettori-schermo" for="langSelect" data-i18n="n_scegli_lingua">Scegli la lingua</label>
+  <select id="langSelect" class="solo-lettori-schermo">
+    <option value="it">Italiano</option><option value="de">Deutsch</option><option value="fr">Français</option>
+    <option value="en">English</option><option value="ru">Русский</option><option value="ar">العربية</option>
+  </select>
+</div></header>
 
-    <!-- Header -->
-    <header class="header" id="header">
-        <div class="container header-inner">
-            <a href="#" class="logo">
-                <img src="img/logo-ticinotransport.webp" alt="TicinoTransport Logo" class="logo-img">
-            </a>
-            <nav class="nav" id="nav">
-                <a href="#servizi" data-i18n="nav_servizi">Servizi</a>
-                <a href="#noleggio" data-i18n="nav_prenota">Prenota</a>
-                <a href="#gallery" data-i18n="nav_gallery">Gallery</a>
-                <a href="#contatti" data-i18n="nav_contatti">Contatti</a>
-            </nav>
-            <div class="lang-selector">
-                <select class="lang-select" id="langSelect">
-                    <option value="it" selected>IT</option>
-                    <option value="en">EN</option>
-                    <option value="de">DE</option>
-                    <option value="fr">FR</option>
-                    <option value="ru">RU</option>
-                    <option value="ar">AR</option>
-                </select>
-            </div>
-            <a href="tel:+41768301847" class="header-phone">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
-                +41 76 830 18 47
-            </a>
-            <button class="menu-toggle" id="menuToggle" aria-label="Menu">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-    </header>
+<section class="apertura">
+  <div class="campo-testo">
+    <div class="dentro">
+      <p class="occhiello rivela" data-i18n="n_hero_occhiello">Bioggio · Ticino</p>
+      <h1 class="rivela"><span data-i18n="n_hero_h1a">Ritiriamo la tua auto</span><em data-i18n="n_hero_h1b">e te la portiamo dove vuoi.</em></h1>
+      <p class="intro rivela" data-i18n="n_hero_intro">Auto, moto, supercar e vetture d'epoca. In Svizzera e in Europa, con il carrello chiuso quando serve. Scrivici su WhatsApp: il preventivo arriva in pochi minuti.</p>
+      <div class="azioni rivela">
+        <a class="btn btn-pieno" href="https://wa.me/41768301847?text=Buongiorno%2C%20vorrei%20un%20preventivo%20per%20il%20trasporto%20di%20un%20veicolo." target="_blank" rel="noopener" data-i18n="n_hero_wa">Preventivo su WhatsApp</a>
+        <a class="btn btn-linea" href="tel:+41768301847">+41 76 830 18 47</a>
+      </div>
+    </div>
+  </div>
+  <div class="campo-foto">
+    <img src="img/n-gt3.webp" alt="Porsche 911 GT3 caricata sul carrello" width="700" height="525">
+    <div class="firma"><b>Porsche 911 GT3</b><span data-i18n="n_hero_firma">Fissata alle ruote, pronta a partire</span></div>
+  </div>
+</section>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-bg">
-            <img src="img/hero-porsche-rain.webp" alt="Trasporto supercar Porsche - TicinoTransport Svizzera" loading="eager" fetchpriority="high">
-        </div>
-        <div class="hero-overlay"></div>
-        <div class="container hero-top">
-            <h2 class="hero-slogan"><span data-i18n="hero_title_1">Auto, moto, furgoni.</span><br><span class="text-red" data-i18n="hero_title_2">Ci pensiamo noi.</span></h2>
-        </div>
-        <div class="container hero-bottom">
-            <h1 data-i18n="hero_h1">Trasporto veicoli, noleggio furgoni, pratiche doganali. Svizzera e estero.</h1>
-            <div class="hero-buttons">
-                <a href="#servizi" class="btn btn-primary btn-large" data-i18n="hero_btn_services">Scopri i servizi</a>
-                <a href="https://wa.me/41768301847" class="btn btn-white-outline btn-large" target="_blank" rel="noopener">
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                    <span data-i18n="hero_btn_wa">WhatsApp</span>
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat"><span class="stat-num">CH + EU</span><span class="stat-label" data-i18n="stat_coverage">Copertura</span></div>
-                <div class="stat"><span class="stat-num">24h</span><span class="stat-label" data-i18n="stat_response">Risposta</span></div>
-                <div class="stat"><span class="stat-num">100%</span><span class="stat-label" data-i18n="stat_insured">Assicurato</span></div>
-            </div>
-        </div>
-    </section>
+<section class="cifre-striscia"><div class="wrap">
+  <div class="cifre">
+    <div><b>24h</b><span data-i18n="n_cifra1">Ti rispondiamo</span></div>
+    <div><b>CH + EU</b><span data-i18n="n_cifra2">Dove arriviamo</span></div>
+    <div><b>100%</b><span data-i18n="n_cifra3">Assicurato</span></div>
+    <div><b data-i18n="n_cifra4b">Porta a porta</b><span data-i18n="n_cifra4">Ritiro e consegna</span></div>
+  </div>
+</div></section>
 
-    <!-- Servizi -->
-    <section class="section" id="servizi">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-i18n="serv_tag">Servizi</span>
-                <h2 class="section-title"><span data-i18n="serv_title_1">Un'agenzia per ogni esigenza.</span><br><span class="text-red" data-i18n="serv_title_2">Dalla A alla Z.</span></h2>
-            </div>
-            <div class="services-grid">
-                <a href="trasporto-veicoli.html" class="service-card" data-animate>
-                    <div class="service-img"><img src="img/ferrari-f8-red.webp" alt="Trasporto e consegna auto moto Svizzera - TicinoTransport Bioggio" loading="lazy"></div>
-                    <div class="service-body">
-                        <h3 data-i18n="serv_transport_title">Trasporto Veicoli</h3>
-                        <p data-i18n="serv_transport_desc">Auto, moto e supercar. Ritiro e consegna porta a porta, Svizzera e estero.</p>
-                        <span class="service-price" data-i18n="serv_price_quote">Preventivo gratuito</span>
-                    </div>
-                </a>
-                <a href="noleggio-furgoni.html" class="service-card" data-animate>
-                    <div class="service-img"><img src="img/fiat-ducato.webp" alt="Noleggio furgoni traslochi Ticino - Citroen Jumpy Fiat Ducato" loading="lazy"></div>
-                    <div class="service-body">
-                        <h3 data-i18n="serv_rental_title">Noleggio Furgoni</h3>
-                        <p data-i18n="serv_rental_desc">Citroen Jumpy e Fiat Ducato. Traslochi, trasporti e ogni tua esigenza.</p>
-                        <span class="service-price" data-i18n="serv_price_from">Da CHF 80.-/giorno</span>
-                    </div>
-                </a>
-                <a href="pratiche-doganali.html" class="service-card" data-animate>
-                    <div class="service-img"><img src="img/lamborghini-badge.webp" alt="Pratiche doganali importazione esportazione auto Svizzera" loading="lazy"></div>
-                    <div class="service-body">
-                        <h3 data-i18n="serv_customs_title">Pratiche e Dogana</h3>
-                        <p data-i18n="serv_customs_desc">Importazione, esportazione, immatricolazione, targhe e documenti veicoli.</p>
-                        <span class="service-price" data-i18n="serv_price_full">Assistenza completa</span>
-                    </div>
-                </a>
-                <a href="autosoccorso-stradale.html" class="service-card" data-animate>
-                    <div class="service-img"><img src="img/porsche-classic.webp" alt="Autosoccorso stradale e compravendita veicoli Ticino Svizzera" loading="lazy"></div>
-                    <div class="service-body">
-                        <h3 data-i18n="serv_trade_title">Compravendita</h3>
-                        <p data-i18n="serv_trade_desc">Ti seguiamo nell'acquisto e vendita. Ritiro, consegna e pratiche incluse.</p>
-                        <span class="service-price" data-i18n="serv_price_complete">Servizio completo</span>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+<section class="sfilata"><div class="pista-marche">
+  <span>Rolls-Royce</span><span>Ferrari</span><span>Lamborghini</span><span>McLaren</span><span>Porsche</span><span>Mercedes-AMG</span><span>Audi</span><span>Range Rover</span>
+  <span>Rolls-Royce</span><span>Ferrari</span><span>Lamborghini</span><span>McLaren</span><span>Porsche</span><span>Mercedes-AMG</span><span>Audi</span><span>Range Rover</span>
+</div></section>
 
-    <!-- Banner emozionale -->
-    <section class="highlight-banner">
-        <div class="container highlight-content">
-            <div class="highlight-text">
-                <span class="highlight-tag">Novità</span>
-                <h2>La tua supercar viaggia al coperto.</h2>
-                <p>Nuovo carrello chiuso Debon Roadster C900 per supercar, auto di lusso e d'epoca. Niente pioggia, sale o occhi indiscreti: trasporto con autista, assicurato, in Svizzera e in Europa.</p>
-                <a href="trasporto-supercar-carrello-chiuso.html" class="btn btn-white btn-large">Scopri il carrello chiuso</a>
-            </div>
-            <div class="highlight-img">
-                <img src="img/carrello-chiuso-debon-rampa.webp" alt="Carrello chiuso Debon Roadster C900 per trasporto supercar e auto di lusso - TicinoTransport" loading="lazy">
-            </div>
-        </div>
-    </section>
+<section class="dettagli">
+  <figure><img src="img/n-q_mclaren.webp" alt="Dettaglio frontale McLaren" loading="lazy"></figure>
+  <figure><img src="img/n-q_ferrari.webp" alt="Cerchio Ferrari" loading="lazy"></figure>
+  <figure><img src="img/n-q_temerario.webp" alt="Ruota Lamborghini" loading="lazy"></figure>
+  <figure><img src="img/n-q_interni.webp" alt="Interni in pelle Mercedes-AMG" loading="lazy"></figure>
+</section>
 
-    <!-- Formulario Trasporto / Pratiche -->
-    <section class="section section-alt" id="richiesta-trasporto">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-i18n="trans_tag">Richiedi preventivo</span>
-                <h2 class="section-title" data-i18n="trans_title">Trasporto, Consegna o Pratiche</h2>
-                <p class="section-subtitle" data-i18n="trans_subtitle">Compila il modulo e ricevi un preventivo su WhatsApp</p>
-            </div>
+<section class="sezione tinta-calda" id="servizi"><div class="wrap">
+  <p class="occhiello rivela" data-i18n="n_servizi_occhiello">Cosa facciamo</p>
+  <h2 class="titolo rivela" data-i18n="n_servizi_titolo">I nostri servizi.</h2>
+  <p class="sotto rivela" data-i18n="n_servizi_sotto">Auto e moto, in Svizzera e in Europa. Chi ti risponde su WhatsApp è la stessa persona che guida il mezzo e che te lo consegna: nessun intermediario in mezzo.</p>
+  <div class="servizi">
+    <a class="servizio rivela" href="trasporto-veicoli.html"><div class="img"><img src="img/n-rangerover.webp" alt="Range Rover e utilitaria caricate" loading="lazy"></div>
+      <div class="testo"><h3 data-i18n="n_s1_t">Trasporto veicoli</h3><p data-i18n="n_s1_p">Dalla city car alla supercar. Ritiro all'indirizzo che ci dai, consegna a destinazione.</p><span class="piu" data-i18n="n_scopri">Scopri →</span></div></a>
+    <a class="servizio rivela" href="trasporto-moto.html"><div class="img"><img src="img/n-moto.webp" alt="Vespa d'epoca pronta al trasporto" loading="lazy"></div>
+      <div class="testo"><h3 data-i18n="n_s2_t">Trasporto moto</h3><p data-i18n="n_s2_p">Furgone attrezzato con ferma-moto e cinghie: sportive, custom, enduro, scooter e moto d'epoca viaggiano dritte e al chiuso.</p><span class="piu" data-i18n="n_scopri">Scopri →</span></div></a>
+    <a class="servizio rivela" href="trasporto-supercar-carrello-chiuso.html"><div class="img"><img src="img/n-debon.webp" alt="Carrello chiuso Debon Roadster C900" loading="lazy"></div>
+      <div class="testo"><h3 data-i18n="n_s3_t">Carrello chiuso</h3><p data-i18n="n_s3_p">Per auto d'epoca, vetture compatte e moto: viaggiano coperte, al riparo da pioggia, sale e sguardi.</p><span class="piu" data-i18n="n_scopri">Scopri →</span></div></a>
+    <a class="servizio rivela" href="noleggio-furgoni.html"><div class="img"><img src="img/n-jumpy.webp" alt="Furgone a noleggio" loading="lazy"></div>
+      <div class="testo"><h3 data-i18n="n_s4_t">Noleggio furgoni</h3><p data-i18n="n_s4_p">Jumpy a CHF 80 al giorno, Ducato a 120. Ritiro a Bioggio, anche per un giorno solo.</p><span class="piu" data-i18n="n_scopri">Scopri →</span></div></a>
+    <a class="servizio rivela" href="pratiche-doganali.html"><div class="img"><img src="img/n-dogana.webp" alt="Pratiche doganali" loading="lazy"></div>
+      <div class="testo"><h3 data-i18n="n_s5_t">Pratiche doganali</h3><p data-i18n="n_s5_p">Comprata all'estero o rientri con la tua? Sdoganamento, tributi e targhe li sbrighiamo noi, in entrambi i sensi.</p><span class="piu" data-i18n="n_scopri">Scopri →</span></div></a>
+    <a class="servizio rivela" href="autosoccorso-stradale.html"><div class="img"><img src="img/n-gt3.webp" alt="Recupero veicolo" loading="lazy"></div>
+      <div class="testo"><h3 data-i18n="n_s6_t">Autosoccorso</h3><p data-i18n="n_s6_p">Se non si muove più, la carichiamo e la portiamo in officina. Tutto il Ticino, su appuntamento.</p><span class="piu" data-i18n="n_scopri">Scopri →</span></div></a>
+  </div>
+</div></section>
 
-            <div class="booking-container" data-animate>
-                <!-- Tipo servizio -->
-                <div class="booking-step">
-                    <div class="booking-step-header">
-                        <span class="booking-step-num">1</span>
-                        <h3 data-i18n="trans_step1">Tipo di servizio</h3>
-                    </div>
-                    <div class="service-select">
-                        <label class="service-option">
-                            <input type="radio" name="serviceType" value="trasporto" checked>
-                            <div class="service-option-card">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="3" width="15" height="13" rx="2"/><path d="M16 8h4l3 4v5h-7V8z"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
-                                <span data-i18n="trans_opt_transport">Trasporto veicolo</span>
-                            </div>
-                        </label>
-                        <label class="service-option">
-                            <input type="radio" name="serviceType" value="consegna">
-                            <div class="service-option-card">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-                                <span data-i18n="trans_opt_delivery">Consegna veicolo</span>
-                            </div>
-                        </label>
-                        <label class="service-option">
-                            <input type="radio" name="serviceType" value="dogana">
-                            <div class="service-option-card">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                                <span data-i18n="trans_opt_customs">Pratiche doganali</span>
-                            </div>
-                        </label>
-                        <label class="service-option">
-                            <input type="radio" name="serviceType" value="pratiche">
-                            <div class="service-option-card">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
-                                <span data-i18n="trans_opt_paperwork">Pratiche auto/moto</span>
-                            </div>
-                        </label>
-                    </div>
-                </div>
+<section class="cinema" id="carrello">
+  <div class="sfondo"><img src="img/n-debon2.webp" alt="Carrello chiuso aperto sul retro" loading="lazy"></div>
+  <div class="velo"></div>
+  <div class="wrap">
+    <p class="occhiello rivela" style="color:#F0C9A8" data-i18n="n_carrello_occhiello">Il pezzo forte</p>
+    <h2 class="titolo rivela"><span data-i18n="n_carrello_t">La tua auto d'epoca viaggia al coperto.</span></h2>
+    <p class="sotto rivela" data-i18n="n_carrello_p">Debon Roadster C900. Dentro non entrano pioggia, sale, sassi e sguardi. L'ingresso della rampa misura 177 cm e tra i passaruota ce ne sono 191: ci stanno le vetture d'epoca, le piccole e le moto.</p>
+    <ul class="lista rivela">
+      <li data-i18n="n_carrello_l1">177 cm all'ingresso rampa, 191 cm tra i passaruota</li>
+      <li data-i18n="n_carrello_l2">Si lega alle ruote, mai alla carrozzeria</li>
+      <li data-i18n="n_carrello_l3">Va bene anche per auto che non si accendono</li>
+      <li data-i18n="n_carrello_l4">Per le supercar moderne arriva presto un carrello più grande</li>
+    </ul>
+    <div class="azioni rivela"><a class="btn btn-pieno" href="https://wa.me/41768301847?text=Buongiorno%2C%20vorrei%20sapere%20se%20la%20mia%20auto%20entra%20nel%20carrello%20chiuso.%20Marca%20e%20modello%3A%20" target="_blank" rel="noopener" data-i18n="n_carrello_btn">Chiedi se la tua ci sta</a></div>
+  </div>
+</section>
 
-                <!-- Dati veicolo + indirizzi -->
-                <div class="booking-step">
-                    <div class="booking-step-header">
-                        <span class="booking-step-num">2</span>
-                        <h3 data-i18n="trans_step2">Dettagli</h3>
-                    </div>
-                    <div class="booking-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="tVehicleType" data-i18n="form_vehicle_type">Tipo veicolo *</label>
-                                <select id="tVehicleType"><option value="Auto">Auto</option><option value="Supercar / auto di lusso (carrello chiuso)">Supercar / auto di lusso (carrello chiuso)</option><option value="Moto">Moto</option><option value="Scooter">Scooter</option><option value="Altro">Altro</option></select>
-                            </div>
-                            <div class="form-group"><label for="tVehicleBrand" data-i18n="form_brand">Marca e modello *</label><input type="text" id="tVehicleBrand" placeholder="Es: BMW Serie 3, Ducati Monster..." required></div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group"><label for="tVehiclePlate" data-i18n="form_plate">Targa</label><input type="text" id="tVehiclePlate" placeholder="TI 123456"></div>
-                            <div class="form-group">
-                                <label for="tVehicleCondition" data-i18n="form_condition">Condizioni *</label>
-                                <select id="tVehicleCondition">
-                                    <option value="Marciante" data-i18n="form_condition_running">Marciante (funzionante)</option>
-                                    <option value="Non marciante" data-i18n="form_condition_not">Non marciante</option>
-                                    <option value="Incidentato" data-i18n="form_condition_damaged">Incidentato</option>
-                                    <option value="Nuovo" data-i18n="form_condition_new">Nuovo / da concessionario</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group"><label for="tPickupAddress" data-i18n="form_pickup_addr">Indirizzo di ritiro *</label><input type="text" id="tPickupAddress" placeholder="Via, citta, cantone/paese" required></div>
-                            <div class="form-group"><label for="tDeliveryAddress" data-i18n="form_delivery_addr">Indirizzo di consegna *</label><input type="text" id="tDeliveryAddress" placeholder="Via, citta, cantone/paese" required></div>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group"><label for="tPreferredDate" data-i18n="form_date">Data preferita</label><input type="date" id="tPreferredDate"></div>
-                            <div class="form-group">
-                                <label for="tUrgency" data-i18n="form_urgency">Urgenza</label>
-                                <select id="tUrgency">
-                                    <option value="Normale" data-i18n="form_urgency_normal">Normale (entro 1 settimana)</option>
-                                    <option value="Urgente" data-i18n="form_urgency_urgent">Urgente (entro 2-3 giorni)</option>
-                                    <option value="Express" data-i18n="form_urgency_express">Express (entro 24h)</option>
-                                </select>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<section class="sezione" id="misura"><div class="wrap">
+  <p class="occhiello rivela">Verifica in due secondi</p>
+  <h2 class="titolo rivela">La tua auto entra<br>nel carrello chiuso?</h2>
+  <p class="sotto rivela">Scrivi marca e modello. Confrontiamo la larghezza con i 177 cm dell'ingresso rampa e ti diciamo subito come viaggia, senza che tu debba chiedere a nessuno.</p>
 
-                <!-- Foto, documenti e contatto -->
-                <div class="booking-step">
-                    <div class="booking-step-header">
-                        <span class="booking-step-num">3</span>
-                        <h3 data-i18n="trans_step3">Foto, documenti e contatto</h3>
-                    </div>
-                    <p class="upload-info" data-i18n="upload_info_vehicle">Allega foto del veicolo e documenti necessari. Verranno inviati via WhatsApp.</p>
-                    <div class="upload-grid upload-grid-3">
-                        <div class="upload-box">
-                            <input type="file" id="fileVehicle" accept="image/*" multiple class="upload-input">
-                            <label for="fileVehicle" class="upload-label">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z"/><circle cx="12" cy="13" r="4"/></svg>
-                                <strong data-i18n="upload_vehicle">Foto veicolo</strong>
-                            </label>
-                            <div class="upload-preview" id="previewVehicle"></div>
-                        </div>
-                        <div class="upload-box">
-                            <input type="file" id="fileDocs" accept="image/*,.pdf" multiple class="upload-input">
-                            <label for="fileDocs" class="upload-label">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
-                                <strong data-i18n="upload_documents">Documenti</strong>
-                            </label>
-                            <div class="upload-preview" id="previewDocs"></div>
-                        </div>
-                        <div class="upload-box">
-                            <input type="file" id="fileOther" accept="image/*,.pdf" multiple class="upload-input">
-                            <label for="fileOther" class="upload-label">
-                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21.44 11.05l-9.19 9.19a6 6 0 01-8.49-8.49l9.19-9.19a4 4 0 015.66 5.66l-9.2 9.19a2 2 0 01-2.83-2.83l8.49-8.48"/></svg>
-                                <strong data-i18n="upload_other">Altro</strong>
-                            </label>
-                            <div class="upload-preview" id="previewOther"></div>
-                        </div>
-                    </div>
-                    <div class="booking-form" style="margin-top:20px">
-                        <div class="form-row">
-                            <div class="form-group"><label for="tName" data-i18n="form_name">Nome e Cognome *</label><input type="text" id="tName" placeholder="Mario Rossi" required></div>
-                            <div class="form-group"><label for="tPhone" data-i18n="form_phone">Telefono *</label><input type="tel" id="tPhone" placeholder="+41 7X XXX XX XX" required></div>
-                        </div>
-                        <div class="form-group"><label for="tExtraNotes" data-i18n="form_notes">Note aggiuntive</label><textarea id="tExtraNotes" rows="2" placeholder="Qualsiasi informazione utile..."></textarea></div>
-                    </div>
-                </div>
+  <div class="verifica rivela">
+    <div class="cerca">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>
+      <input id="qAuto" type="search" autocomplete="off" spellcheck="false" placeholder="Es. Porsche 911 993, Lancia Delta, Fiat 500...">
+      <ul class="suggerimenti" id="sugg" hidden></ul>
+    </div>
+    <div class="esito" id="esito"></div>
+    <p class="chiosa"><strong>Le moto ci stanno sempre</strong>, qualunque sia la cilindrata: questo controllo serve solo per le auto. Misure di carrozzeria da scheda tecnica, specchietti esclusi. Allestimenti e cerchi possono cambiare qualche millimetro: la verifica finale la facciamo noi prima di confermare il preventivo.</p>
+  </div>
+</div></section>
 
-                <!-- Submit -->
-                <div class="booking-submit">
-                    <label class="privacy-consent" for="tPrivacy"><input type="checkbox" id="tPrivacy" required> <span data-i18n="form_privacy_consent">Ho letto l'<a href="privacy.html" target="_blank" rel="noopener">informativa sulla privacy</a> e prendo atto del trattamento dei miei dati per gestire la richiesta. *</span></label>
-                    <button class="btn btn-whatsapp btn-large" id="transportSubmit" type="button">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        <span data-i18n="btn_send_request">Invia richiesta su WhatsApp</span>
-                    </button>
-                    <p class="booking-disclaimer" data-i18n="trans_disclaimer">Riceverai un preventivo personalizzato via WhatsApp.</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Prenota Online -->
-    <section class="section" id="noleggio">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-i18n="book_tag">Prenota online</span>
-                <h2 class="section-title" data-i18n="book_title">Prenota il tuo furgone</h2>
-                <p class="section-subtitle" data-i18n="book_subtitle">Compila il modulo e invia tutto su WhatsApp</p>
-            </div>
+<section class="sezione tinta-calda" id="mondo"><div class="wrap">
+  <p class="occhiello rivela" data-i18n="n_mondo_occhiello">Il mondo che trasportiamo</p>
+  <h2 class="titolo rivela" data-i18n="n_mondo_t">Ogni mezzo ha un suo carattere.</h2>
+  <p class="sotto rivela" data-i18n="n_mondo_p">Youngtimer, americane, giapponesi, utilitarie. Cambia l'auto, non il modo di trattarla.</p>
+  <div class="mosaico-colore">
+    <figure class="rivela"><img src="img/n-m_huracan.webp" alt="Lamborghini Huracán gialla" loading="lazy"></figure>
+    <figure class="rivela"><img src="img/n-m_gtr.webp" alt="Nissan GT-R" loading="lazy"></figure>
+    <figure class="rivela"><img src="img/n-m_amgrosso.webp" alt="Mercedes-AMG GT rossa" loading="lazy"></figure>
+    <figure class="rivela"><img src="img/n-m_corvette.webp" alt="Chevrolet Corvette bianca" loading="lazy"></figure>
+    <figure class="rivela"><img src="img/n-m_gt2.webp" alt="Porsche 911 GT2 in officina" loading="lazy"></figure>
+    <figure class="rivela"><img src="img/n-m_audi.webp" alt="Audi TT RS bianca di notte" loading="lazy"></figure>
+  </div>
+</div></section>
 
-            <div class="booking-container booking-compact" data-animate>
-                <!-- Furgone + Calendario (side by side) -->
-                <div class="booking-top-row">
-                    <div class="booking-col">
-                        <h4 data-i18n="book_step1">Scegli il furgone</h4>
-                        <div class="booking-vans-compact">
-                            <label class="booking-van-option">
-                                <input type="radio" name="van" value="jumpy" checked>
-                                <div class="booking-van-card">
-                                    <img src="img/citroen-jumpy.webp" alt="Citroen Jumpy L1H1" loading="lazy">
-                                    <div class="van-details">
-                                        <strong>Citro&euml;n Jumpy L1H1</strong>
-                                        <span class="van-price"><b>CHF 80.-<span data-i18n="rent_day">/giorno</span></b></span>
-                                        <button type="button" class="van-toggle" onclick="this.closest('.van-details').classList.toggle('specs-open')">
-                                            <span data-i18n="van_specs_show">Dimensioni</span>
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-                                        </button>
-                                        <ul class="van-specs">
-                                            <li>Lunghezza: 2'254 mm</li>
-                                            <li>Larghezza: 1'600 mm (1'245 tra passaruota)</li>
-                                            <li>Altezza: 1'449 mm</li>
-                                            <li>Volume: ~5 m&sup3; &middot; Portata: ~1'000 kg</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </label>
-                            <label class="booking-van-option">
-                                <input type="radio" name="van" value="ducato">
-                                <div class="booking-van-card">
-                                    <img src="img/fiat-ducato.webp" alt="Fiat Ducato L2H2" loading="lazy">
-                                    <div class="van-details">
-                                        <strong>Fiat Ducato L2H2</strong>
-                                        <span class="van-price"><b>CHF 120.-<span data-i18n="rent_day">/giorno</span></b></span>
-                                        <button type="button" class="van-toggle" onclick="this.closest('.van-details').classList.toggle('specs-open')">
-                                            <span data-i18n="van_specs_show">Dimensioni</span>
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
-                                        </button>
-                                        <ul class="van-specs">
-                                            <li>Lunghezza: 3'120 mm</li>
-                                            <li>Larghezza: 1'870 mm (1'422 tra passaruota)</li>
-                                            <li>Altezza: 1'932 mm</li>
-                                            <li>Porta laterale: 1'250 &times; 1'755 mm</li>
-                                            <li>Porta posteriore: 1'562 &times; 1'790 mm</li>
-                                            <li>Volume: ~13 m&sup3; &middot; Portata: ~1'500 kg</li>
-                                            <li>Gancio traino fino a 3'000 kg</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="booking-col">
-                        <h4 data-i18n="book_step2">Seleziona le date</h4>
-                        <div class="calendar-container">
-                            <div class="calendar-nav">
-                                <button class="cal-nav-btn" id="calPrev" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="15 18 9 12 15 6"/></svg></button>
-                                <h4 id="calMonthYear"></h4>
-                                <button class="cal-nav-btn" id="calNext" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg></button>
-                            </div>
-                            <div class="calendar-grid">
-                                <div class="cal-header">Lun</div><div class="cal-header">Mar</div><div class="cal-header">Mer</div><div class="cal-header">Gio</div><div class="cal-header">Ven</div><div class="cal-header">Sab</div><div class="cal-header">Dom</div>
-                            </div>
-                            <div class="calendar-days" id="calDays"></div>
-                        </div>
-                        <div class="calendar-legend">
-                            <div class="legend-item"><span class="legend-dot legend-available"></span> <span data-i18n="cal_available">Disponibile</span></div>
-                            <div class="legend-item"><span class="legend-dot legend-booked"></span> <span data-i18n="cal_booked">Occupato</span></div>
-                            <div class="legend-item"><span class="legend-dot legend-selected"></span> <span data-i18n="cal_selected">Selezionato</span></div>
-                        </div>
-                    </div>
-                </div>
+<section class="fascia-frase scura"><div class="wrap">
+  <p class="occhiello rivela" style="color:#F0C9A8" data-i18n="n_frase1_occhiello">Come le trattiamo</p>
+  <p class="frase rivela" data-i18n="n_frase1">Il valore delle auto cambia.<br>Il modo di trasportarla in sicurezza no.</p>
+</div></section>
 
-                <!-- Riepilogo date + orari -->
-                <div class="booking-summary-row">
-                    <div class="date-field"><label data-i18n="cal_pickup">Data ritiro</label><span id="dateStart" data-i18n="cal_select">Seleziona sul calendario</span></div>
-                    <div class="date-field"><label data-i18n="cal_return">Data riconsegna</label><span id="dateEnd" data-i18n="cal_select">Seleziona sul calendario</span></div>
-                    <div class="date-field">
-                        <label data-i18n="time_pickup">Ora ritiro</label>
-                        <select id="bookingTimeStart">
-                            <option value="07:00">07:00</option><option value="08:00" selected>08:00</option><option value="09:00">09:00</option><option value="10:00">10:00</option><option value="11:00">11:00</option><option value="12:00">12:00</option><option value="13:00">13:00</option><option value="14:00">14:00</option><option value="15:00">15:00</option><option value="16:00">16:00</option><option value="17:00">17:00</option><option value="18:00">18:00</option>
-                        </select>
-                    </div>
-                    <div class="date-field">
-                        <label data-i18n="time_return">Ora riconsegna</label>
-                        <select id="bookingTimeEnd">
-                            <option value="07:00">07:00</option><option value="08:00">08:00</option><option value="09:00">09:00</option><option value="10:00">10:00</option><option value="11:00">11:00</option><option value="12:00">12:00</option><option value="13:00">13:00</option><option value="14:00">14:00</option><option value="15:00">15:00</option><option value="16:00">16:00</option><option value="17:00">17:00</option><option value="18:00" selected>18:00</option>
-                        </select>
-                    </div>
-                    <div class="date-field date-total"><label data-i18n="cal_total">Totale stimato</label><span id="bookingTotal">-</span></div>
-                </div>
+<section class="sezione" id="lavori"><div class="wrap">
+  <p class="occhiello rivela" data-i18n="n_lavori_occhiello">I nostri trasporti</p>
+  <h2 class="titolo rivela" data-i18n="n_lavori_t">Queste le abbiamo trasportate noi.</h2>
+  <p class="sotto rivela" data-i18n="n_lavori_p">Nessuna foto comprata: ogni scatto è un trasporto che abbiamo fatto davvero.</p>
+  <div class="pista">
+    <figure class="rivela"><div class="scatto"><img src="img/n-spectre2.webp" alt="Rolls-Royce Spectre" loading="lazy"></div><figcaption>Rolls-Royce Spectre</figcaption></figure>
+    <figure class="rivela"><div class="scatto"><img src="img/n-ferrari.webp" alt="Ferrari" loading="lazy"></div><figcaption>Ferrari</figcaption></figure>
+    <figure class="rivela"><div class="scatto"><img src="img/n-mclaren.webp" alt="McLaren" loading="lazy"></div><figcaption>McLaren</figcaption></figure>
+    <figure class="rivela"><div class="scatto"><img src="img/n-gclass.webp" alt="Mercedes Classe G" loading="lazy"></div><figcaption>Mercedes Classe G</figcaption></figure>
+  </div>
+</div></section>
 
-                <!-- Dati cliente (compatto) -->
-                <div class="booking-form">
-                    <h4 data-i18n="book_step3">Dati del cliente</h4>
-                    <div class="form-row">
-                        <div class="form-group"><label for="bookingName" data-i18n="form_name">Nome e Cognome *</label><input type="text" id="bookingName" placeholder="Mario Rossi" required></div>
-                        <div class="form-group"><label for="bookingPhone" data-i18n="form_phone">Telefono *</label><input type="tel" id="bookingPhone" placeholder="+41 7X XXX XX XX" required></div>
-                        <div class="form-group"><label for="bookingEmail" data-i18n="form_email">Email *</label><input type="email" id="bookingEmail" placeholder="mario@email.com" required></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group"><label for="bookingDob" data-i18n="form_dob">Data di nascita *</label><input type="date" id="bookingDob" required></div>
-                        <div class="form-group"><label for="bookingNationality" data-i18n="form_nationality">Nazionalita *</label><input type="text" id="bookingNationality" placeholder="Svizzera" required></div>
-                        <div class="form-group"><label for="bookingAddress" data-i18n="form_address">Indirizzo *</label><input type="text" id="bookingAddress" placeholder="Via Roma 1, 6900 Lugano" required></div>
-                    </div>
-                    <div class="form-row">
-                        <div class="form-group"><label for="bookingDocId" data-i18n="form_doc">Documento identita (tipo/numero/scadenza) *</label><input type="text" id="bookingDocId" placeholder="Carta ID / C1234567 / 12.2028" required></div>
-                        <div class="form-group"><label for="bookingLicense" data-i18n="form_license">Patente (categoria/numero/scadenza) *</label><input type="text" id="bookingLicense" placeholder="Cat. B / 123456 / 06.2030" required></div>
-                    </div>
-                </div>
+<section class="sezione" id="dettaglio"><div class="wrap">
+  <p class="occhiello rivela" data-i18n="n_appro_occhiello">Nel dettaglio</p>
+  <h2 class="titolo rivela" data-i18n="n_appro_t">Come lavoriamo, servizio per servizio.</h2>
+  <p class="sotto rivela" data-i18n="n_appro_p">Ogni servizio ha la sua pagina, con i passaggi, i documenti e i costi scritti per esteso.</p>
+  <div class="scorciatoie rivela">
+    <a href="trasporto-veicoli.html"><b data-i18n="n_s1_t">Trasporto veicoli</b><span data-i18n="n_a1">I cinque passaggi, le tratte in Europa e il servizio express in 24 ore</span></a>
+    <a href="trasporto-moto.html"><b data-i18n="n_s2_t">Trasporto moto</b><span data-i18n="n_a2">Il furgone attrezzato, dove si legano le cinghie e dove non vanno mai</span></a>
+    <a href="trasporto-supercar-carrello-chiuso.html"><b data-i18n="n_s3_t">Carrello chiuso</b><span data-i18n="n_a3">Misure, peso massimo e quali auto entrano davvero dalla rampa</span></a>
+    <a href="pratiche-doganali.html"><b data-i18n="n_s5_t">Pratiche doganali</b><span data-i18n="n_a4">Importazione, trasloco in franchigia, sanzione CO₂ e il senso Svizzera-Italia</span></a>
+    <a href="noleggio-furgoni.html"><b data-i18n="n_s4_t">Noleggio furgoni</b><span data-i18n="n_a5">Jumpy e Ducato: volumi, portate, prezzi e come si prenota</span></a>
+    <a href="autosoccorso-stradale.html"><b data-i18n="n_s6_t">Autosoccorso</b><span data-i18n="n_a6">Quando chiamarci, dove arriviamo e come ci coordiniamo con l'assicurazione</span></a>
+  </div>
+</div></section>
 
-                <!-- Documenti + Note + Submit -->
-                <div class="booking-bottom-row">
-                    <div class="booking-uploads-compact">
-                        <p class="upload-info" data-i18n="upload_info_docs">Allega foto dei documenti. Verranno inviate separatamente via WhatsApp.</p>
-                        <div class="upload-grid">
-                            <div class="upload-box">
-                                <input type="file" id="fileId" accept="image/*,.pdf" class="upload-input">
-                                <label for="fileId" class="upload-label">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-                                    <strong data-i18n="upload_id">Documento d'identita</strong>
-                                </label>
-                                <div class="upload-preview" id="previewId"></div>
-                            </div>
-                            <div class="upload-box">
-                                <input type="file" id="fileLicense" accept="image/*,.pdf" class="upload-input">
-                                <label for="fileLicense" class="upload-label">
-                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/><path d="M6 16h4"/></svg>
-                                    <strong data-i18n="upload_license">Patente di guida</strong>
-                                </label>
-                                <div class="upload-preview" id="previewLicense"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="form-group"><label for="bookingNotes" data-i18n="form_notes">Note aggiuntive</label><textarea id="bookingNotes" rows="2" placeholder="Es: necessito gancio traino, km extra previsti..."></textarea></div>
-                </div>
+<section class="striscia-larga bassa">
+  <img src="img/n-w_gt3rs.webp" alt="Porsche 911 GT3 RS" loading="lazy">
+</section>
 
-                <div class="booking-submit">
-                    <label class="privacy-consent" for="bookingPrivacy"><input type="checkbox" id="bookingPrivacy" required> <span data-i18n="form_privacy_consent">Ho letto l'<a href="privacy.html" target="_blank" rel="noopener">informativa sulla privacy</a> e prendo atto del trattamento dei miei dati per gestire la richiesta. *</span></label>
-                    <button class="btn btn-whatsapp btn-large" id="bookingSubmit" type="button">
-                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-                        <span data-i18n="btn_send_booking">Invia prenotazione su WhatsApp</span>
-                    </button>
-                    <p class="booking-disclaimer" data-i18n="booking_disclaimer">La prenotazione verra confermata via WhatsApp. Deposito cauzionale e firma contratto al ritiro.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="fascia-frase chiara"><div class="wrap">
+  <p class="frase rivela" data-i18n="n_frase2">Le auto degli altri,<br>trattate come le nostre.</p>
+</div></section>
 
-    <!-- Gallery -->
-    <section class="section gallery-section" id="gallery">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-i18n="gallery_tag">Gallery</span>
-                <h2 class="section-title" data-i18n="gallery_title">I nostri trasporti</h2>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/trasporto-auto-1.webp" alt="Trasporto auto su carrello TicinoTransport" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/ducato-furgone.webp" alt="Fiat Ducato noleggio furgone TicinoTransport" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-supercar.webp" alt="Trasporto supercar Svizzera" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/carrello-trasporto.webp" alt="Carrello trasporto veicoli" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/trasporto-strada.webp" alt="Trasporto veicoli su strada Svizzera" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/carico-auto.webp" alt="Carico auto su rimorchio" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/consegna-veicolo.webp" alt="Consegna veicolo al cliente" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-auto-2.webp" alt="Trasporto auto professionale" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/furgone-lavoro.webp" alt="Furgone noleggio per traslochi" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-moto.webp" alt="Trasporto moto Svizzera" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/consegna-cliente.webp" alt="Consegna auto al cliente" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-carrello.webp" alt="Carrello autoveicoli TicinoTransport" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/trasporto-auto-3.webp" alt="Trasporto auto Ticino" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/veicolo-carico.webp" alt="Veicolo in carico trasporto" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-furgone.webp" alt="Trasporto con furgone" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/auto-consegna.webp" alt="Auto in consegna" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/rimorchio-auto.webp" alt="Rimorchio auto TicinoTransport" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-professionale.webp" alt="Trasporto professionale veicoli" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/furgone-consegna.webp" alt="Furgone consegna TicinoTransport" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/servizio-trasporto.webp" alt="Servizio trasporto veicoli" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-auto-4.webp" alt="Trasporto auto Svizzera" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/lavoro-trasporto.webp" alt="Lavoro trasporto veicoli" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/operazione-carico.webp" alt="Operazione carico veicolo" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-veicolo.webp" alt="Trasporto veicolo Ticino" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/auto-rimorchio.webp" alt="Auto su rimorchio trasporto" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/carrello-strada.webp" alt="Carrello su strada" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-cliente.webp" alt="Trasporto per cliente" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/consegna-porta.webp" alt="Consegna porta a porta" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/porsche-gt3rs-silver.webp" alt="Porsche GT3 RS trasporto Svizzera" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/lambo-black-rear.webp" alt="Lamborghini Huracan posteriore" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/ferrari-badge-red.webp" alt="Ferrari badge dettaglio" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/ferrari-sf90-yellow.webp" alt="Ferrari SF90 gialla garage" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/mustang-classic.webp" alt="Ford Mustang classica trasporto" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/nissan-gtr-engine.webp" alt="Nissan GT-R motore" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/lambo-interior-steering.webp" alt="Lamborghini interni volante" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/lambo-green-front.webp" alt="Lamborghini Huracan verde" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/ford-gt-red.webp" alt="Ford GT rossa" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/mclaren-orange.webp" alt="McLaren arancione" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/lambo-revuelto-rear.webp" alt="Lamborghini Revuelto posteriore" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/bisarca-carico-1.webp" alt="Bisarca trasporto veicoli TicinoTransport" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/bisarca-carico-2.webp" alt="Carico veicoli su bisarca" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-carico-1.webp" alt="Carico auto su pianale trasporto" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-carico-2.webp" alt="Trasporto veicolo su carrello" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/trasporto-carico-3.webp" alt="Carico veicolo classico trasporto" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/car-transporter-truck.webp" alt="Camion bisarca trasporto auto" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/car-loading-carrier.webp" alt="Carico auto su bisarca" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/porsche-911-blue-night.webp" alt="Porsche 911 blu notte" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/supercar-rear-night.webp" alt="Supercar posteriore notte" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/ferrari-red-showroom.webp" alt="Ferrari rossa showroom" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/bmw-m-front-dark.webp" alt="BMW M frontale" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/rolls-royce-spectre-rear.webp" alt="Rolls Royce Spectre trasporto" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/lambo-aventador-side.webp" alt="Lamborghini Aventador laterale" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/supercar-dark-moody.webp" alt="Supercar atmosfera notturna" loading="lazy">
-                </div>
-                <div class="gallery-item gallery-item-large" data-animate>
-                    <img src="img/rolls-royce-spectre-front.webp" alt="Rolls Royce Spectre frontale trasporto" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/rolls-royce-spectre-carrier.webp" alt="Rolls Royce Spectre su carrello" loading="lazy">
-                </div>
-                <div class="gallery-item" data-animate>
-                    <img src="img/rolls-royce-spectre-side.webp" alt="Rolls Royce Spectre laterale trasporto" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
+<section class="sezione tinta-fredda" id="passaggi"><div class="wrap">
+  <p class="occhiello rivela" data-i18n="n_passaggi_occhiello">Come si fa</p>
+  <h2 class="titolo rivela" data-i18n="n_passaggi_t">Tre passaggi, nessuna sorpresa.</h2>
+  <div class="passi">
+    <div class="passo rivela"><span class="num">01</span><h3 data-i18n="n_p1_t">Ci scrivi</h3><p data-i18n="n_p1_p">Marca e modello, dove si trova e dove deve arrivare. Anche solo su WhatsApp, anche con una foto.</p></div>
+    <div class="passo rivela"><span class="num">02</span><h3 data-i18n="n_p2_t">Ti rispondiamo</h3><p data-i18n="n_p2_p">Prezzo chiaro e data, di solito in pochi minuti. Gratis e senza impegno.</p></div>
+    <div class="passo rivela"><span class="num">03</span><h3 data-i18n="n_p3_t">Partiamo</h3><p data-i18n="n_p3_p">Ritiriamo, documentiamo con le foto, ti aggiorniamo durante il viaggio e consegniamo.</p></div>
+  </div>
+</div></section>
 
-    <!-- Contatti -->
-    <section class="section section-dark" id="contatti">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag section-tag-light" data-i18n="contact_tag">Contatti</span>
-                <h2 class="section-title" data-i18n="contact_title">Dove trovarci</h2>
-            </div>
-            <div class="contact-grid">
-                <div class="contact-cards">
-                    <div class="contact-card">
-                        <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
-                        <strong data-i18n="contact_sede">Sede</strong><p>Bioggio, Ticino<br>Svizzera</p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg></div>
-                        <strong data-i18n="contact_phone">Telefono</strong><p><a href="tel:+41768301847">+41 76 830 18 47</a></p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-card-icon wa-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg></div>
-                        <strong>WhatsApp</strong><p><a href="https://wa.me/41768301847" target="_blank" rel="noopener">+41 76 830 18 47</a></p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
-                        <strong>Email</strong><p><a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a></p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></div>
-                        <strong>Instagram</strong><p><a href="https://www.instagram.com/ticino_transport" target="_blank" rel="noopener noreferrer" aria-label="Instagram TicinoTransport">@ticino_transport</a></p>
-                    </div>
-                    <div class="contact-card">
-                        <div class="contact-card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-                        <strong data-i18n="contact_hours">Orari</strong><p data-i18n="contact_hours_val">Lun - Ven: 08:00 - 18:00<br>Sab: 09:00 - 12:00</p>
-                    </div>
-                </div>
-                <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11073.33!2d8.89!3d46.02!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47842e0e2a1caaab%3A0x400ff8840194c10!2s6934%20Bioggio%2C%20Switzerland!5e0!3m2!1sit!2sch!4v1" width="100%" height="100%" style="border:0; border-radius: 16px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-            </div>
-            <div class="contact-owner"><p>Maikol Casalaro - TicinoTransport</p></div>
-        </div>
-    </section>
+<section class="sezione chiusura" id="contatti"><div class="wrap">
+  <p class="occhiello centrato rivela" data-i18n="n_fine_occhiello">Parliamone</p>
+  <h2 class="titolo rivela" data-i18n="n_fine_t">Devi spostare un veicolo?</h2>
+  <p class="sotto rivela" data-i18n="n_fine_p">Scrivici marca, modello e le due città. Il preventivo è gratuito e arriva in pochi minuti, anche di domenica.</p>
+  <div class="azioni rivela">
+    <a class="btn btn-pieno" href="https://wa.me/41768301847?text=Buongiorno%2C%20vorrei%20un%20preventivo." target="_blank" rel="noopener" data-i18n="n_fine_wa">Scrivici su WhatsApp</a>
+    <a class="btn btn-scuro" href="tel:+41768301847">+41 76 830 18 47</a>
+  </div>
+  <div class="scorciatoie rivela">
+    <a href="richiesta.html#trasporto"><b data-i18n="n_sc1_t">Richiesta di trasporto</b><span data-i18n="n_sc1_p">Auto, moto o supercar: compila e ti arriva il preventivo</span></a>
+    <a href="richiesta.html#furgoni"><b data-i18n="n_sc2_t">Noleggio furgoni</b><span data-i18n="n_sc2_p">Jumpy o Ducato, scegli le date e prenota</span></a>
+    <a href="richiesta.html#informazioni"><b data-i18n="n_sc3_t">Informazioni e pratiche</b><span data-i18n="n_sc3_p">Sdoganamento, immatricolazione, voltura, autosoccorso</span></a>
+  </div>
+</div></section>
 
-    <!-- FAQ -->
-    <section class="section section-alt" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag" data-i18n="faq_tag">FAQ</span>
-                <h2 class="section-title" data-i18n="faq_title">Domande frequenti</h2>
-            </div>
-            <div class="faq-list">
-                <details class="faq-item">
-                    <summary data-i18n="faq_q1">Quanto costa noleggiare un furgone per trasloco in Ticino?</summary>
-                    <p data-i18n="faq_a1">Il noleggio furgone per trasloco parte da <strong>CHF 80.-/giorno</strong> per il Citroen Jumpy L1H1 (5 m3, portata 1'000 kg) e <strong>CHF 120.-/giorno</strong> per il Fiat Ducato L2H2 (13 m3, portata 1'500 kg). Prenotazione online con calendario disponibilita e conferma immediata via WhatsApp. Servizio attivo a Lugano, Mendrisio, Bellinzona, Locarno e in tutto il Ticino.</p>
-                </details>
-                <details class="faq-item">
-                    <summary data-i18n="faq_q2">Come funziona il trasporto auto in Svizzera?</summary>
-                    <p data-i18n="faq_a2">TicinoTransport offre <strong>trasporto e consegna auto porta a porta</strong> in tutta la Svizzera e in Europa. Ritiriamo il veicolo all'indirizzo indicato e lo consegniamo a destinazione. Il servizio e completamente assicurato e disponibile anche per supercar, auto d'epoca e veicoli da concessionario. <strong>Consegne veloci entro 24 ore</strong> disponibili su richiesta.</p>
-                </details>
-                <details class="faq-item">
-                    <summary data-i18n="faq_q3">Offrite servizio di autosoccorso stradale in Ticino?</summary>
-                    <p data-i18n="faq_a3">Si, offriamo <strong>autosoccorso stradale</strong> e recupero veicoli in panne, incidentati o non marcianti in Ticino e Svizzera. Utilizziamo carrello autoveicoli professionale per il trasporto sicuro. Interventi rapidi per privati, assicurazioni e servizio di soccorso stradale.</p>
-                </details>
-                <details class="faq-item">
-                    <summary data-i18n="faq_q4">Gestite le pratiche doganali per importazione auto dalla Germania o Italia?</summary>
-                    <p data-i18n="faq_a4">Si, gestiamo tutte le <strong>pratiche doganali</strong> per importazione ed esportazione veicoli tra Svizzera, Italia, Germania, Francia e Austria: sdoganamento, immatricolazione svizzera, targhe provvisorie e definitive, cambio di proprieta, collaudo. Servizio completo per privati e <strong>concessionari auto</strong>.</p>
-                </details>
-                <details class="faq-item">
-                    <summary data-i18n="faq_q5">Siete un'alternativa a Galliker per il trasporto veicoli?</summary>
-                    <p data-i18n="faq_a5">Si, TicinoTransport e un'<strong>alternativa flessibile a Galliker</strong> per il trasporto di singoli veicoli. Offriamo un servizio personalizzato, porta a porta, con tempi rapidi e preventivi gratuiti. Ideale per privati, concessionari auto, officine e garage che necessitano di un servizio su misura.</p>
-                </details>
-                <details class="faq-item">
-                    <summary data-i18n="faq_q6">Posso noleggiare un furgone per trasportare una moto?</summary>
-                    <p data-i18n="faq_a6">Si, i nostri furgoni sono ideali per il <strong>trasporto moto</strong>. Il Citroen Jumpy e perfetto per una moto, il Fiat Ducato puo trasportare fino a 2-3 moto. Offriamo anche <strong>noleggio carrello autoveicoli</strong> per il trasporto di auto e moto su rimorchio.</p>
-                </details>
-                <details class="faq-item">
-                    <summary data-i18n="faq_q7">Dove si trova TicinoTransport?</summary>
-                    <p data-i18n="faq_a7">TicinoTransport ha sede a <strong>Bioggio, nel Canton Ticino</strong> (Svizzera), a pochi minuti da Lugano. Operiamo in tutto il Ticino (Lugano, Mendrisio, Bellinzona, Locarno) e in tutta la Svizzera, con servizi anche verso Italia, Germania, Francia e Austria.</p>
-                </details>
-            </div>
-        </div>
-    </section>
+<a class="wa-fisso" href="https://wa.me/41768301847" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="#fff" width="28" height="28"><path d="M17.47 14.38c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.95 1.17-.17.2-.35.22-.65.07-.3-.15-1.27-.47-2.42-1.49-.9-.8-1.5-1.79-1.67-2.09-.17-.3-.02-.46.13-.61.15-.15.35-.4.52-.6.17-.2.22-.35.35-.57.12-.22.06-.42-.03-.57-.09-.15-.67-1.62-.92-2.21-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.37-.27.3-1.04 1.02-1.04 2.49s1.07 2.89 1.22 3.09c.15.2 2.1 3.34 5.1 4.56.71.31 1.27.49 1.7.63.72.23 1.37.2 1.89.12.58-.09 1.78-.73 2.03-1.43.25-.7.25-1.3.17-1.43-.07-.12-.27-.2-.57-.35zM12.04 21.5h-.01c-1.75 0-3.48-.47-4.99-1.36l-.36-.21-3.71.97.99-3.62-.23-.37a9.86 9.86 0 01-1.51-5.26c0-5.45 4.44-9.89 9.9-9.89 2.64 0 5.12 1.03 6.99 2.9a9.82 9.82 0 012.89 6.99c0 5.46-4.44 9.9-9.96 9.9zM20.5 3.49A11.78 11.78 0 0012.04 0C5.46 0 .1 5.35.1 11.93c0 2.1.55 4.15 1.6 5.96L0 24l6.26-1.64a11.9 11.9 0 005.77 1.47h.01c6.58 0 11.94-5.35 11.94-11.93 0-3.19-1.24-6.19-3.48-8.41z"/></svg>
+</a>
 
-    <!-- SEO Content -->
-    <section class="section seo-section">
-        <div class="container">
-            <div class="seo-content">
-                <h2 data-i18n="seo_h2">Trasporto e Consegna Auto in Svizzera - TicinoTransport</h2>
-                <div class="seo-grid">
-                    <div class="seo-block">
-                        <h3 data-i18n="seo_b1_title"><a href="trasporto-veicoli.html">Trasporto Veicoli e Consegne Veloci</a></h3>
-                        <p data-i18n="seo_b1_text">TicinoTransport e il tuo partner per il <strong>trasporto e la consegna di auto, moto e veicoli commerciali</strong> in tutta la Svizzera e in Europa. Operiamo da Bioggio, nel cuore del Ticino, con un servizio <strong>porta a porta</strong> rapido e assicurato. Che si tratti di una supercar, un'auto d'epoca, un veicolo da concessionario o un mezzo incidentato, garantiamo <strong>consegne veloci</strong> e massima cura. Un'alternativa flessibile e personalizzata rispetto ai grandi operatori come <strong>Galliker</strong>, pensata per privati, <strong>concessionari auto</strong>, officine e garage. <a href="trasporto-veicoli.html">Scopri di piu</a></p>
-                    </div>
-                    <div class="seo-block">
-                        <h3 data-i18n="seo_b2_title"><a href="noleggio-furgoni.html">Noleggio Furgoni per Traslochi e Trasporti</a></h3>
-                        <p data-i18n="seo_b2_text">Offriamo il <strong>noleggio furgoni per traslochi</strong> e trasporti a partire da CHF 80.-/giorno. Citroen Jumpy L1H1 (5 m3) e Fiat Ducato L2H2 (13 m3): ideali per traslochi, trasporto mobili, <strong><a href="trasporto-moto.html">trasporto moto</a></strong>, materiali e attrezzature. Disponibile anche il <strong>noleggio carrello autoveicoli</strong> per il trasporto di auto e moto. Prenotazione online con calendario disponibilita e conferma immediata via WhatsApp. Servizio attivo a Lugano, Mendrisio, Bellinzona, Locarno e in tutto il Ticino. <a href="noleggio-furgoni.html">Scopri di piu</a></p>
-                    </div>
-                    <div class="seo-block">
-                        <h3 data-i18n="seo_b3_title"><a href="pratiche-doganali.html">Pratiche Doganali e Immatricolazione</a></h3>
-                        <p data-i18n="seo_b3_text">Gestiamo tutte le <strong>pratiche doganali</strong> per l'importazione e l'esportazione di veicoli tra Svizzera, Italia, Germania, Francia e Austria. Sdoganamento, <strong>immatricolazione svizzera</strong>, cambio di proprieta, targhe provvisorie e definitive, collaudo. Servizio completo per privati e <strong>concessionari auto</strong>. Ti seguiamo dalla A alla Z con competenza e rapidita. <a href="pratiche-doganali.html">Scopri di piu</a></p>
-                    </div>
-                    <div class="seo-block">
-                        <h3 data-i18n="seo_b4_title"><a href="autosoccorso-stradale.html">Autosoccorso Stradale e Recupero Veicoli</a></h3>
-                        <p data-i18n="seo_b4_text">Servizio di <strong>autosoccorso stradale</strong> e recupero veicoli in panne, incidentati o non marcianti in Ticino e Svizzera. Trasporto con <strong>carrello autoveicoli</strong> professionale. Interventi rapidi per privati, assicurazioni e soccorso stradale. Disponibili anche per <strong>consegne veloci</strong> urgenti entro 24 ore in tutta la Svizzera e nelle zone di confine. <a href="autosoccorso-stradale.html">Scopri di piu</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<footer><div class="wrap">
+  <a class="logo marchio" href="/"><img src="__logo_chiaro__" alt="Ticino Transport"></a>
+  <div class="recapiti">
+    <a href="https://wa.me/41768301847" target="_blank" rel="noopener">WhatsApp +41 76 830 18 47</a>
+    <a href="tel:+41768301847">+41 76 830 18 47</a>
+    <a href="mailto:maikol.casalaro1@gmail.com">maikol.casalaro1@gmail.com</a>
+    <span>Via Cademario 7, 6934 Bioggio — CHE-144.001.809</span>
+    <span class="minuti"><a href="privacy.html" data-i18n="n_foot_privacy">Privacy</a> · <a href="#" data-cookie-settings data-i18n="n_foot_cookie">Impostazioni cookie</a> · <a href="https://www.instagram.com/ticino_transport" target="_blank" rel="noopener">Instagram</a></span>
+  </div>
+</div></footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container footer-inner">
-            <div class="footer-top">
-                <div class="footer-brand"><img src="img/logo-ticinotransport.webp" alt="TicinoTransport" class="footer-logo"></div>
-                <div class="footer-links">
-                    <a href="#servizi" data-i18n="nav_servizi">Servizi</a><a href="#noleggio" data-i18n="nav_prenota">Prenota</a><a href="#gallery" data-i18n="nav_gallery">Gallery</a><a href="#contatti" data-i18n="nav_contatti">Contatti</a>
-                </div>
-                <div class="footer-links footer-pages">
-                    <a href="noleggio-furgoni.html">Noleggio furgoni</a><a href="noleggio-furgoni-traslochi.html">Noleggio furgoni traslochi</a><a href="trasporto-veicoli.html">Trasporto veicoli</a><a href="trasporto-veicoli-svizzera.html">Trasporto veicoli Svizzera</a><a href="trasporto-supercar-carrello-chiuso.html">Trasporto supercar carrello chiuso</a><a href="trasporto-moto.html">Trasporto moto</a><a href="pratiche-doganali.html">Pratiche doganali</a><a href="autosoccorso-stradale.html">Autosoccorso stradale</a>
-                </div>
-            </div>
-                <div class="footer-social" style="display:flex;gap:12px;align-items:center;margin-top:12px"><a href="https://www.instagram.com/ticino_transport" target="_blank" rel="noopener noreferrer" aria-label="Instagram TicinoTransport" style="color:inherit;display:inline-flex"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a></div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 TicinoTransport di <strong>Vespascout SAGL</strong> — Via Cademario, 7 — 6934 Bioggio — CHE-144.001.809</p>
-                <p class="footer-legal"><a href="privacy.html" data-i18n="footer_privacy">Privacy</a> · <a href="#" data-cookie-settings data-i18n="footer_cookies">Impostazioni cookie</a></p>
-                <p><span data-i18n="footer_rights">Tutti i diritti riservati.</span></p>
-            </div>
-        </div>
-    </footer>
+<script src="i18n.js"></script>
+<script src="cookie-consent.js"></script>
+<script src="misura.js" defer></script>
+<script>
+/* comparsa degli elementi */
+const osserva=new IntersectionObserver(v=>v.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visto');osserva.unobserve(e.target);}}),{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.rivela').forEach(e=>osserva.observe(e));
 
-    <!-- WhatsApp floating button -->
-    <a href="https://wa.me/41768301847" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contattaci su WhatsApp">
-        <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
-    </a>
+/* tendine della barra */
+(function(){
+  const tendine=[...document.querySelectorAll('.tendina')];
+  tendine.forEach(t=>{
+    const b=t.querySelector('button');
+    b.addEventListener('click',e=>{
+      e.stopPropagation();
+      const era=t.classList.contains('aperta');
+      tendine.forEach(x=>{x.classList.remove('aperta');x.querySelector('button').setAttribute('aria-expanded','false')});
+      if(!era){ t.classList.add('aperta'); b.setAttribute('aria-expanded','true'); }
+    });
+  });
+  addEventListener('click',()=>tendine.forEach(t=>{t.classList.remove('aperta');t.querySelector('button').setAttribute('aria-expanded','false')}));
+  addEventListener('keydown',e=>{ if(e.key==='Escape') tendine.forEach(t=>t.classList.remove('aperta')); });
+})();
 
-    <script src="i18n.js" charset="UTF-8"></script>
-    <script>
-        // Google Sheets URL - sostituisci con il tuo dopo il deploy dello script
-        window.SHEETS_URL = 'https://script.google.com/macros/s/AKfycbxj51UvoJ6jXO7aWNrsPlbxXcKLASfeL5AspLuheIJjLE-ZDhX-Ml5nKH2sP9WrNRpVCQ/exec';
-
-        // Mobile menu
-        const menuToggle = document.getElementById('menuToggle');
-        const nav = document.getElementById('nav');
-        menuToggle.addEventListener('click', () => { nav.classList.toggle('nav-open'); menuToggle.classList.toggle('active'); });
-        nav.querySelectorAll('a').forEach(link => { link.addEventListener('click', () => { nav.classList.remove('nav-open'); menuToggle.classList.remove('active'); }); });
-
-        // Header scroll
-        window.addEventListener('scroll', () => { document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50); });
-
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(a => { a.addEventListener('click', function(e) { e.preventDefault(); const t = document.querySelector(this.getAttribute('href')); if (t) t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }); });
-
-        // Scroll animations
-        const observer = new IntersectionObserver((entries) => { entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('animated'); observer.unobserve(entry.target); } }); }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-        document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
-
-        // ===== BOOKING SYSTEM =====
-        const BookingSystem = (() => {
-            const VANS = {
-                jumpy: { name: 'Citroen Jumpy L1H1', price: 80 },
-                ducato: { name: 'Fiat Ducato L2H2', price: 120 }
-            };
-
-            const SHEET_CSV_URL = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT8rDu-PEHkFNUPypYrO-xInHM8KpNCufDEbkZ7gazw56JVUhTOm-DaVYsj8Dh6R1WInNc8QADIuF1d/pub?output=csv';
-            const BOOKED_DATES = { jumpy: [], ducato: [] };
-
-            function loadBookedDates() {
-                return new Promise((resolve) => {
-                    const cbName = '_sheetCb' + Date.now();
-                    const script = document.createElement('script');
-                    window[cbName] = function(response) {
-                        try {
-                            BOOKED_DATES.jumpy = [];
-                            BOOKED_DATES.ducato = [];
-                            if (response && response.table && response.table.rows) {
-                                response.table.rows.forEach(row => {
-                                    if (row.c && row.c[0] && row.c[1]) {
-                                        const van = (row.c[0].v || '').toString().trim().toLowerCase();
-                                        const dateVal = row.c[1];
-                                        let dateStr = '';
-                                        if (dateVal.v && typeof dateVal.v === 'string' && dateVal.v.match(/Date\(/)) {
-                                            const m = dateVal.v.match(/Date\((\d+),(\d+),(\d+)\)/);
-                                            if (m) dateStr = m[1] + '-' + String(parseInt(m[2])+1).padStart(2,'0') + '-' + String(parseInt(m[3])).padStart(2,'0');
-                                        } else if (dateVal.f) {
-                                            dateStr = dateVal.f.trim();
-                                        } else if (dateVal.v) {
-                                            dateStr = dateVal.v.toString().trim();
-                                        }
-                                        if (BOOKED_DATES[van] && dateStr.match(/^\d{4}-\d{2}-\d{2}$/)) {
-                                            BOOKED_DATES[van].push(dateStr);
-                                        }
-                                    }
-                                });
-                            }
-                        } catch(e) { console.log('Sheet parse error:', e); }
-                        delete window[cbName];
-                        if (script.parentNode) script.parentNode.removeChild(script);
-                        resolve();
-                    };
-                    script.src = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vT8rDu-PEHkFNUPypYrO-xInHM8KpNCufDEbkZ7gazw56JVUhTOm-DaVYsj8Dh6R1WInNc8QADIuF1d/gviz/tq?tqx=responseHandler:' + cbName;
-                    script.onerror = () => {
-                        delete window[cbName];
-                        if (script.parentNode) script.parentNode.removeChild(script);
-                        fetch(SHEET_CSV_URL).then(r => r.text()).then(csv => {
-                            BOOKED_DATES.jumpy = [];
-                            BOOKED_DATES.ducato = [];
-                            csv.split('\n').slice(1).forEach(line => {
-                                const cols = line.split(',');
-                                if (cols.length >= 2) {
-                                    const van = cols[0].trim().toLowerCase().replace(/"/g,'');
-                                    const date = cols[1].trim().replace(/"/g,'');
-                                    if (BOOKED_DATES[van] && date.match(/^\d{4}-\d{2}-\d{2}$/)) BOOKED_DATES[van].push(date);
-                                }
-                            });
-                        }).catch(() => {}).finally(resolve);
-                    };
-                    document.head.appendChild(script);
-                });
-            }
-
-            function getMonthNames() {
-                const ci = (typeof CALENDAR_I18N !== 'undefined' && typeof currentLang !== 'undefined') ? CALENDAR_I18N[currentLang] : null;
-                return ci ? ci.months : ['Gennaio','Febbraio','Marzo','Aprile','Maggio','Giugno','Luglio','Agosto','Settembre','Ottobre','Novembre','Dicembre'];
-            }
-
-            let currentMonth = new Date().getMonth();
-            let currentYear = new Date().getFullYear();
-            let startDate = null, endDate = null;
-
-            function getSelectedVan() { const r = document.querySelector('input[name="van"]:checked'); return r ? r.value : 'jumpy'; }
-            function formatDate(d) { return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
-            function formatDateLocale(d) { return d.getDate()+' '+getMonthNames()[d.getMonth()]+' '+d.getFullYear(); }
-            function isBooked(dateStr) { const van = getSelectedVan(); return BOOKED_DATES[van] && BOOKED_DATES[van].includes(dateStr); }
-            function isPast(date) { const t = new Date(); t.setHours(0,0,0,0); return date < t; }
-            function isInRange(date) { return startDate && endDate && date >= startDate && date <= endDate; }
-            function hasBookedInRange(s, e) { const d = new Date(s); while(d<=e) { if(isBooked(formatDate(d))) return true; d.setDate(d.getDate()+1); } return false; }
-            function countDays() { return (!startDate||!endDate) ? 0 : Math.round((endDate-startDate)/(1000*60*60*24))+1; }
-
-            function getDayWord(n) {
-                if (typeof currentLang === 'undefined' || currentLang === 'it') return n===1?'giorno':'giorni';
-                if (currentLang === 'en') return n===1?'day':'days';
-                if (currentLang === 'de') return n===1?'Tag':'Tage';
-                if (currentLang === 'fr') return n===1?'jour':'jours';
-                if (currentLang === 'ru') {
-                    if (n%10===1&&n%100!==11) return '\u0434\u0435\u043d\u044c';
-                    if ([2,3,4].includes(n%10)&&![12,13,14].includes(n%100)) return '\u0434\u043d\u044f';
-                    return '\u0434\u043d\u0435\u0439';
-                }
-                if (currentLang === 'ar') return n===1?'\u064a\u0648\u0645':'\u0623\u064a\u0627\u0645';
-                return n===1?'giorno':'giorni';
-            }
-
-            function updateSummary() {
-                const ds=document.getElementById('dateStart'), de=document.getElementById('dateEnd'), tot=document.getElementById('bookingTotal');
-                const selectText = (typeof t === 'function') ? t('cal_select') : 'Seleziona sul calendario';
-                ds.textContent = startDate ? formatDateLocale(startDate) : selectText;
-                ds.removeAttribute('data-i18n');
-                de.textContent = endDate ? formatDateLocale(endDate) : selectText;
-                de.removeAttribute('data-i18n');
-                if (startDate && endDate) {
-                    const days=countDays(), price=VANS[getSelectedVan()].price;
-                    tot.textContent = days+' '+getDayWord(days)+' = CHF '+(days*price)+'.-';
-                    ds.classList.add('date-filled'); de.classList.add('date-filled'); tot.classList.add('date-filled');
-                } else {
-                    tot.textContent='-';
-                    ds.classList.remove('date-filled'); de.classList.remove('date-filled'); tot.classList.remove('date-filled');
-                    ds.setAttribute('data-i18n','cal_select');
-                    de.setAttribute('data-i18n','cal_select');
-                }
-            }
-
-            function renderCalendar() {
-                const container=document.getElementById('calDays'), monthEl=document.getElementById('calMonthYear');
-                monthEl.textContent = getMonthNames()[currentMonth]+' '+currentYear;
-                const first=new Date(currentYear,currentMonth,1); let sd=first.getDay(); if(sd===0) sd=7; sd--;
-                const dim=new Date(currentYear,currentMonth+1,0).getDate();
-                let html='';
-                for(let i=0;i<sd;i++) html+='<div class="cal-day cal-empty"></div>';
-                for(let d=1;d<=dim;d++) {
-                    const date=new Date(currentYear,currentMonth,d), ds=formatDate(date); let cls='cal-day';
-                    if(isPast(date)) cls+=' cal-past';
-                    else if(isBooked(ds)) cls+=' cal-booked';
-                    else { cls+=' cal-available'; if(startDate&&date.getTime()===startDate.getTime()) cls+=' cal-start'; if(endDate&&date.getTime()===endDate.getTime()) cls+=' cal-end'; if(isInRange(date)) cls+=' cal-in-range'; }
-                    html+='<div class="'+cls+'" data-date="'+ds+'">'+d+'</div>';
-                }
-                container.innerHTML=html;
-                container.querySelectorAll('.cal-available').forEach(el => {
-                    el.addEventListener('click', () => {
-                        const clicked=new Date(el.dataset.date+'T00:00:00');
-                        if(!startDate||(startDate&&endDate)) { startDate=clicked; endDate=null; }
-                        else { if(clicked<startDate){endDate=startDate;startDate=clicked;}else{endDate=clicked;} if(hasBookedInRange(startDate,endDate)){alert(typeof t==='function'?t('cal_booked'):'Ci sono date occupate');startDate=null;endDate=null;} }
-                        renderCalendar(); updateSummary();
-                    });
-                });
-            }
-
-            function init() {
-                loadBookedDates().then(() => { renderCalendar(); console.log('Date caricate:', BOOKED_DATES); });
-                setInterval(() => { loadBookedDates().then(() => renderCalendar()); }, 5*60*1000);
-
-                document.getElementById('calPrev').addEventListener('click', () => { currentMonth--; if(currentMonth<0){currentMonth=11;currentYear--;} renderCalendar(); });
-                document.getElementById('calNext').addEventListener('click', () => { currentMonth++; if(currentMonth>11){currentMonth=0;currentYear++;} renderCalendar(); });
-                document.querySelectorAll('input[name="van"]').forEach(r => { r.addEventListener('change', () => { startDate=null; endDate=null; renderCalendar(); updateSummary(); }); });
-
-                document.getElementById('bookingSubmit').addEventListener('click', () => {
-                    const name=document.getElementById('bookingName').value.trim(), dob=document.getElementById('bookingDob').value,
-                        nationality=document.getElementById('bookingNationality').value.trim(), address=document.getElementById('bookingAddress').value.trim(),
-                        phone=document.getElementById('bookingPhone').value.trim(), email=document.getElementById('bookingEmail').value.trim(),
-                        docId=document.getElementById('bookingDocId').value.trim(), license=document.getElementById('bookingLicense').value.trim(),
-                        timeStart=document.getElementById('bookingTimeStart').value, timeEnd=document.getElementById('bookingTimeEnd').value,
-                        notes=document.getElementById('bookingNotes').value.trim(), van=getSelectedVan();
-                    if(!name){alert('Inserisci il tuo nome');return;}
-                    if(!email){alert('Inserisci la tua email');return;}
-                    if(!phone){alert('Inserisci il telefono');return;}
-                    if(!dob){alert('Inserisci la data di nascita');return;}
-                    if(!nationality){alert('Inserisci la nazionalit\u00e0');return;}
-                    if(!address){alert('Inserisci l\'indirizzo');return;}
-                    if(!docId){alert('Inserisci il numero documento');return;}
-                    if(!license){alert('Inserisci il numero patente');return;}
-                    if(!startDate||!endDate){alert('Seleziona le date di ritiro e riconsegna');return;}
-                    if(!document.getElementById('bookingPrivacy').checked){alert(typeof t==='function'?t('form_privacy_alert'):'Conferma di aver letto l\'informativa sulla privacy');return;}
-                    const days=countDays(), total=days*VANS[van].price;
-
-                    // Salva su Google Sheets
-                    if(window.SHEETS_URL) {
-                        fetch(window.SHEETS_URL, {
-                            method:'POST', mode:'no-cors',
-                            headers:{'Content-Type':'application/json'},
-                            body: JSON.stringify({
-                                furgone: VANS[van].name,
-                                dataRitiro: formatDateLocale(startDate),
-                                dataRiconsegna: formatDateLocale(endDate),
-                                oraRitiro: timeStart,
-                                oraRiconsegna: timeEnd,
-                                giorni: days,
-                                totale: 'CHF '+total+'.-',
-                                nome: name, nascita: dob, nazionalita: nationality,
-                                indirizzo: address, telefono: phone, email: email,
-                                documento: docId, patente: license, note: notes
-                            })
-                        }).catch(()=>{});
-                    }
-
-                    // Invia su WhatsApp
-                    let msg='--- PRENOTAZIONE NOLEGGIO ---\n\nFurgone: '+VANS[van].name+'\nRitiro: '+formatDateLocale(startDate)+' ore '+timeStart+'\nRiconsegna: '+formatDateLocale(endDate)+' ore '+timeEnd+'\nDurata: '+days+' '+getDayWord(days)+'\nTotale: CHF '+total+'.-\n\n--- DATI ---\nNome: '+name+'\n';
-                    if(dob) msg+='Nascita: '+dob+'\n'; if(nationality) msg+='Nazionalita: '+nationality+'\n'; if(address) msg+='Indirizzo: '+address+'\n';
-                    msg+='Tel: '+phone+'\n'; if(email) msg+='Email: '+email+'\n'; if(docId) msg+='Documento: '+docId+'\n'; if(license) msg+='Patente: '+license+'\n'; if(notes) msg+='\nNote: '+notes+'\n';
-                    msg+='\n(Foto documenti inviate separatamente)';
-                    window.open('https://wa.me/41768301847?text='+encodeURIComponent(msg),'_blank');
-                });
-                renderCalendar();
-            }
-
-            return { init, renderCalendar, updateSummary };
-        })();
-        BookingSystem.init();
-
-        // Expose rerender for i18n
-        window.BookingSystemRerender = () => { BookingSystem.renderCalendar(); BookingSystem.updateSummary(); };
-
-        // ===== TRANSPORT FORM =====
-        document.getElementById('transportSubmit').addEventListener('click', () => {
-            const labels={trasporto:'Trasporto veicolo',consegna:'Consegna veicolo',dogana:'Pratiche doganali',pratiche:'Pratiche auto/moto'};
-            const st=document.querySelector('input[name="serviceType"]:checked').value;
-            const brand=document.getElementById('tVehicleBrand').value.trim(), name=document.getElementById('tName').value.trim(), phone=document.getElementById('tPhone').value.trim();
-            if(!brand){alert(typeof t==='function'?t('form_brand'):'Inserisci marca e modello');return;}
-            if(!name){alert(typeof t==='function'?t('form_name'):'Inserisci il tuo nome');return;}
-            if(!phone){alert(typeof t==='function'?t('form_phone'):'Inserisci il telefono');return;}
-            if(!document.getElementById('tPrivacy').checked){alert(typeof t==='function'?t('form_privacy_alert'):'Conferma di aver letto l\'informativa sulla privacy');return;}
-            let msg='--- RICHIESTA '+labels[st].toUpperCase()+' ---\n\nServizio: '+labels[st]+'\n\nVeicolo: '+document.getElementById('tVehicleType').value+' - '+brand+'\n';
-            const plate=document.getElementById('tVehiclePlate').value.trim(); if(plate) msg+='Targa: '+plate+'\n';
-            msg+='Condizioni: '+document.getElementById('tVehicleCondition').value+'\n';
-            const pa=document.getElementById('tPickupAddress').value.trim(), da=document.getElementById('tDeliveryAddress').value.trim();
-            if(pa) msg+='\nRitiro: '+pa+'\n'; if(da) msg+='Consegna: '+da+'\n';
-            const pd=document.getElementById('tPreferredDate').value; if(pd) msg+='Data: '+pd+'\n';
-            msg+='Urgenza: '+document.getElementById('tUrgency').value+'\n\nNome: '+name+'\nTel: '+phone+'\n';
-            const notes=document.getElementById('tExtraNotes').value.trim(); if(notes) msg+='Note: '+notes+'\n';
-            msg+='\n(Foto e documenti inviati separatamente)';
-            // Fallback: salva la richiesta anche su Google Sheets (non solo WhatsApp),
-            // così il lead non si perde se il visitatore non completa l'invio su WhatsApp.
-            if(window.SHEETS_URL){
-                fetch(window.SHEETS_URL,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/json'},
-                    body:JSON.stringify({ furgone:'RICHIESTA: '+labels[st], nome:name, telefono:phone, note:msg })}).catch(()=>{});
-            }
-            window.open('https://wa.me/41768301847?text='+encodeURIComponent(msg),'_blank');
-        });
-
-        // ===== FILE UPLOAD PREVIEWS =====
-        function setupUpload(inputId, previewId) {
-            const input=document.getElementById(inputId), preview=document.getElementById(previewId);
-            if(!input||!preview) return;
-            input.addEventListener('change', () => {
-                preview.innerHTML='';
-                Array.from(input.files).forEach(f => {
-                    if(f.type.startsWith('image/')) { const img=document.createElement('img'); img.src=URL.createObjectURL(f); img.onload=()=>URL.revokeObjectURL(img.src); preview.appendChild(img); }
-                    else { const s=document.createElement('span'); s.className='file-tag'; s.textContent=f.name.length>15?f.name.substring(0,12)+'...':f.name; preview.appendChild(s); }
-                });
-            });
-        }
-        setupUpload('fileId','previewId'); setupUpload('fileLicense','previewLicense');
-        setupUpload('fileVehicle','previewVehicle'); setupUpload('fileDocs','previewDocs'); setupUpload('fileOther','previewOther');
-    </script>
+/* scelta della lingua: usa il motore i18n gia in uso sul sito */
+(function(){
+  const etichetta=document.getElementById('linguaOra');
+  const sel=document.getElementById('langSelect');
+  const segna=l=>{ if(etichetta) etichetta.textContent=l.toUpperCase();
+    document.querySelectorAll('[data-lingua]').forEach(a=>a.classList.toggle('on', a.dataset.lingua===l)); };
+  document.querySelectorAll('[data-lingua]').forEach(a=>a.addEventListener('click',e=>{
+    e.preventDefault();
+    const l=a.dataset.lingua;
+    if(typeof setLanguage==='function') setLanguage(l); else if(sel){ sel.value=l; sel.dispatchEvent(new Event('change')); }
+    segna(l);
+  }));
+  const aggiorna=()=>segna((typeof currentLang!=='undefined' && currentLang) || 'it');
+  aggiorna(); setTimeout(aggiorna,0); addEventListener('load',aggiorna);
+  if(sel) sel.addEventListener('change',()=>segna(sel.value));
+})();
+</script>
 </body>
 </html>

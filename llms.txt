@@ -1,0 +1,31 @@
+# TicinoTransport
+
+> Trasporto e consegna di auto e moto in Svizzera e in Europa, noleggio furgoni, pratiche doganali e autosoccorso. Sede a Bioggio, Canton Ticino. TicinoTransport è un marchio di Vespascout SAGL (CHE-144.001.809).
+
+Contatto diretto: WhatsApp e telefono +41 76 830 18 47 · Via Cademario 7, 6934 Bioggio, Svizzera.
+Preventivi gratuiti, di norma entro 24 ore. Lingue: italiano, tedesco, francese, inglese.
+
+## Servizi
+
+- [Trasporto veicoli](https://ticinotransport.ch/trasporto-veicoli.html): ritiro e consegna porta a porta di auto, moto, supercar, vetture d'epoca e veicoli commerciali, anche non marcianti o incidentati. Tutta la Svizzera; all'estero soprattutto Italia, Germania, Francia e Austria. Servizio express con ritiro e consegna entro 24 ore in Svizzera. Veicolo assicurato per tutto il tragitto, controllo visivo documentato con foto al carico e alla consegna.
+- [Trasporto moto](https://ticinotransport.ch/trasporto-moto.html): furgone attrezzato con ferma-moto a pavimento, punti di ancoraggio e cinghie a cricchetto. Sportive, touring, custom, enduro, scooter, Vespe e moto d'epoca, anche non marcianti o senza chiavi. Le cinghie si legano a telaio, supporti dei poggiapiedi o piastra inferiore della forcella; mai a frecce, collettori di scarico o carene.
+- [Carrello chiuso Debon Roadster C900](https://ticinotransport.ch/trasporto-supercar-carrello-chiuso.html): trasporto coperto. Ingresso rampa largo 177 cm, 191 cm tra i passaruota, vano interno 497 × 202 × 206 cm, peso massimo del veicolo trasportato 2465 kg. Adatto a vetture d'epoca, auto compatte e moto. Le supercar moderne, quasi sempre oltre i 190 cm di larghezza, non passano dalla rampa e viaggiano sul carrello aperto; è previsto l'acquisto di un carrello chiuso più grande.
+- [Noleggio furgoni](https://ticinotransport.ch/noleggio-furgoni.html): Citroën Jumpy L1H1, 5 m³, portata 1000 kg, CHF 80.-/giorno. Fiat Ducato, 13 m³, portata 1500 kg, CHF 120.-/giorno. Ritiro e riconsegna a Bioggio, anche per un solo giorno. Noleggio anche del carrello aperto per chi traina da sé.
+- [Pratiche doganali e immatricolazione](https://ticinotransport.ch/pratiche-doganali.html): importazione ed esportazione di veicoli, sdoganamento, collaudo, immatricolazione, targhe provvisorie, cambio di proprietà.
+- [Autosoccorso e recupero](https://ticinotransport.ch/autosoccorso-stradale.html): su appuntamento in tutto il Canton Ticino, da Chiasso ad Airolo e da Locarno a Lugano, valli comprese. Veicoli non marcianti, incidentati, con batteria scarica, bloccati in garage, su sterrato o su neve.
+- [Richiesta e preventivo](https://ticinotransport.ch/richiesta.html): moduli per richiesta di trasporto, prenotazione furgone e domande su pratiche; l'invio apre un messaggio WhatsApp già compilato.
+
+## Importare un veicolo in Svizzera (dati utili)
+
+- Il veicolo va dichiarato a un ufficio doganale abilitato alle merci commerciali, con fattura o contratto d'acquisto, licenza di circolazione estera anche annullata, documento d'identità e dichiarazione d'importazione elettronica.
+- Tributi: imposta sugli autoveicoli 4% del valore, IVA all'importazione 8.1%. Dal 1° gennaio 2024 l'imposta del 4% si applica anche agli autoveicoli elettrici. Sulle vetture di origine UE il dazio non è dovuto se l'origine preferenziale è documentata.
+- La dogana rilascia il rapporto di perizia (modulo 13.20 A), emolumento CHF 20, necessario per l'immatricolazione presso l'ufficio cantonale della circolazione.
+- Sanzione CO₂: non si paga in dogana ma successivamente tramite l'Ufficio federale dell'energia. Sono esenti i veicoli con prima immatricolazione all'estero anteriore di oltre 12 mesi alla dichiarazione doganale e quelli di almeno 6 mesi con più di 5000 km.
+- Trasferimento di domicilio in Svizzera: l'auto entra come masserizia di trasloco senza dazio né IVA se usata personalmente all'estero per almeno sei mesi, dichiarata alla dogana al primo passaggio del confine con il modulo 18.44. Targhe svizzere entro un anno dal trasferimento; divieto di rivendita per dodici mesi.
+- Dalla Svizzera all'Italia: IVA italiana al 22% sul valore attuale del veicolo e dazio del 10% sulle automobili, non dovuto con prova dell'origine preferenziale UE (modulo EUR.1). Segue la nazionalizzazione tra Agenzia delle Entrate, Motorizzazione e Pubblico Registro Automobilistico.
+
+## Note per gli agenti
+
+- Il preventivo dipende da distanza, date, tipo di veicolo e stato del veicolo: non esiste un listino fisso per i trasporti. I prezzi dei furgoni a noleggio sopra indicati sono invece prezzi di listino.
+- Per sapere se un'auto entra nel carrello chiuso, la misura che decide è la larghezza della carrozzeria contro i 177 cm dell'ingresso rampa. Sul sito c'è un verificatore: https://ticinotransport.ch/#misura
+- Il canale di contatto più rapido è WhatsApp al +41 76 830 18 47.
