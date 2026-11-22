@@ -18,44 +18,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="nuovo.css">
-<style>/* tendine nella barra */
-.tendina{position:relative}
-.tendina>button{display:inline-flex;align-items:center;gap:9px;background:none;border:0;cursor:pointer;padding:10px 2px;
-  font-family:var(--testo);font-size:11.5px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--carbone)}
-.tendina>button i{display:block;width:7px;height:7px;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;
-  transform:rotate(45deg) translate(-2px,-2px);transition:transform .3s}
-.tendina.aperta>button i{transform:rotate(225deg) translate(-3px,-3px)}
-.tendina>button:hover{color:var(--accento)}
-.tendina .pannello{position:absolute;top:calc(100% + 10px);left:0;z-index:40;min-width:250px;padding:8px 0;
-  background:#fff;border:1px solid var(--riga);box-shadow:0 24px 54px rgba(35,42,60,.16);
-  opacity:0;visibility:hidden;transform:translateY(-6px);transition:opacity .22s,transform .22s,visibility .22s}
-.tendina.aperta .pannello{opacity:1;visibility:visible;transform:none}
-.tendina .pannello a{display:block;padding:12px 22px;font-size:14px;letter-spacing:0;text-transform:none;color:var(--carbone);text-decoration:none;white-space:nowrap}
-.tendina .pannello a:hover{background:#F6F6F7;color:var(--accento)}
-.tendina .pannello hr{border:0;border-top:1px solid var(--riga);margin:8px 0}
-.tendina.lingua{justify-self:end}
-.tendina.lingua .pannello{left:auto;right:0;min-width:130px}
-.tendina.lingua>button{letter-spacing:.14em}
-.tendina.lingua .pannello a.on{color:var(--accento);font-weight:600}
-@media(max-width:640px){.tendina>button{font-size:10.5px;gap:7px}.tendina .pannello{min-width:210px}}
-
+<style>
 /* la barra sta in cima alla pagina e se ne va con lo scorrimento */
-.barra{position:static!important;background:#fff!important;border-bottom:1px solid var(--riga)!important;backdrop-filter:none!important}
-.barra .menu a,.barra .logo b{color:var(--carbone)!important}
-.barra .lingue{color:var(--muto)!important}
-.barra .lingue a.on{color:var(--accento)!important}
-.marchio .su-scuro{display:none!important}
-.marchio .su-chiaro{display:block!important}
-.barra .wrap{position:relative;display:flex!important;align-items:center;justify-content:space-between;height:96px;gap:10px}
-@media(max-width:640px){.barra .wrap{height:70px;padding-left:16px;padding-right:16px}}
-.barra .logo{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0;z-index:1}
-.tendina{flex:0 0 auto;z-index:2}
-.marchio{display:block;line-height:0}
-.marchio img{width:auto!important;height:50px!important;object-fit:contain;display:block}
 @media(max-width:640px){.marchio img{height:30px!important}}
-.marchio .su-chiaro{display:none}
-.barra.posata .marchio .su-scuro{display:none}
-.barra.posata .marchio .su-chiaro{display:block}
 
 .testatina{background:var(--carbone);color:#fff;padding:64px 0 56px;text-align:center}
 .testatina h1{font-family:var(--display);font-size:clamp(32px,5.4vw,52px);font-weight:600;line-height:1.08;margin:0 0 14px;letter-spacing:-.01em}
