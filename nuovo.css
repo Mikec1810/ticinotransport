@@ -599,3 +599,8 @@ section{padding:0}
 .vecchia .page-hero .container{max-width:1000px;margin-left:auto;margin-right:auto}
 .vecchia .page-content h2{max-width:26ch}
 .vecchia .page-content h3{max-width:34ch}
+
+/* fotografie dentro le pagine di servizio */
+.vecchia .page-content .scatto-pagina{margin:34px 0 40px}
+.vecchia .page-content .scatto-pagina img{width:100%;height:auto;display:block;margin:0}
+.vecchia .page-content .scatto-pagina figcaption{margin-top:12px;font-size:12.5px;color:var(--muto);line-height:1.55}
