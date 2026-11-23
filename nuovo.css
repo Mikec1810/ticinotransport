@@ -624,3 +624,79 @@ section{padding:0}
 .vecchia .richiamo-misura b{display:block;font-family:var(--display);font-weight:700;font-size:20px;color:var(--carbone);margin-bottom:10px}
 .vecchia .richiamo-misura p{margin:0 0 18px;font-size:15px}
 .vecchia .richiamo-misura .btn{font-size:11px;padding:14px 22px}
+
+/* ===== ritmo delle pagine servizio ===== */
+.vecchia .page-hero h1{text-wrap:balance}
+.vecchia .page-content h2{margin-top:74px;text-wrap:balance}
+.vecchia .page-content h2:first-child,.vecchia .duetto h2{margin-top:0}
+.vecchia .page-content h2::before{content:"";display:block;width:44px;height:2px;background:var(--accento);margin:0 0 18px}
+.vecchia .page-cta h2::before{margin-left:auto;margin-right:auto}
+.vecchia .page-content h3{margin-top:48px;text-wrap:balance}
+
+/* fascia delle cifre sotto l'intestazione */
+.vecchia .cifre-pagina{background:#F6F6F9;border-bottom:1px solid var(--riga)}
+.vecchia .cifre-pagina ul{max-width:1100px;margin:0 auto;padding:0;list-style:none;display:grid;
+  grid-template-columns:repeat(2,1fr);gap:1px;background:var(--riga)}
+@media(min-width:800px){.vecchia .cifre-pagina ul{grid-template-columns:repeat(4,1fr)}}
+.vecchia .cifre-pagina li{background:#F6F6F9;padding:28px 18px;text-align:center;margin:0}
+.vecchia .cifre-pagina li::marker{content:""}
+.vecchia .cifre-pagina b{display:block;font-family:var(--display);font-weight:700;font-size:24px;
+  line-height:1.15;color:var(--carbone)}
+.vecchia .cifre-pagina span{display:block;margin-top:8px;font-size:10.5px;letter-spacing:.14em;
+  text-transform:uppercase;color:#6B7183}
+
+/* blocco metà testo metà immagine */
+.vecchia .duetto{display:grid;gap:28px;margin:64px 0;align-items:center}
+@media(min-width:900px){.vecchia .duetto{grid-template-columns:1fr 1fr;gap:46px}
+  .vecchia .duetto.rovescio .testo{order:2}}
+@media(min-width:1220px){.vecchia .duetto{margin-left:-140px;margin-right:-140px}}
+.vecchia .duetto .testo>*:last-child{margin-bottom:0}
+.vecchia .duetto figure{margin:0}
+.vecchia .duetto img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block;margin:0}
+.vecchia .duetto figcaption{font-size:12.5px;color:#6B7183;margin-top:10px;line-height:1.5}
+
+/* fascia scura con la frase */
+.vecchia .banda-frase{background:var(--carbone);padding:78px 24px;text-align:center;margin:0}
+.vecchia .banda-frase p{font-family:var(--display);font-weight:600;color:#fff;
+  font-size:clamp(24px,3.2vw,38px);line-height:1.28;max-width:860px;margin:0 auto;text-wrap:balance}
+.vecchia .banda-frase span{display:block;margin-bottom:20px;font-size:10.5px;letter-spacing:.16em;
+  text-transform:uppercase;color:#C98A86}
+
+/* passaggi numerati */
+.vecchia ol.passi{list-style:none;counter-reset:passo;padding:0;margin:34px 0 0;display:grid;gap:1px;
+  background:var(--riga);border:1px solid var(--riga)}
+.vecchia ol.passi li{background:#fff;margin:0;padding:24px 26px 24px 74px;position:relative;font-size:16px;line-height:1.7}
+.vecchia ol.passi li::before{counter-increment:passo;content:counter(passo,decimal-leading-zero);
+  position:absolute;left:26px;top:24px;font-family:var(--display);font-size:19px;color:var(--accento)}
+.vecchia ol.passi li::marker{content:""}
+
+/* listino prezzi */
+.vecchia ul.listino{list-style:none;padding:0;margin:26px 0 0;border-top:1px solid var(--riga)}
+.vecchia ul.listino li{margin:0;padding:15px 2px;border-bottom:1px solid var(--riga);display:flex;
+  justify-content:space-between;gap:20px;font-size:16px}
+.vecchia ul.listino li::marker{content:""}
+.vecchia ul.listino b{font-weight:600;color:var(--carbone)}
+.vecchia ul.listino span{white-space:nowrap;font-family:var(--display);font-size:18px;color:var(--carbone)}
+
+/* immagini a tutta fascia: stessa larghezza dei blocchi doppi */
+@media(min-width:1220px){
+  .vecchia .page-content .scatto-pagina,.vecchia .page-content .page-figure{margin-left:-140px;margin-right:-140px}
+}
+.vecchia .page-content .scatto-pagina img,.vecchia .page-content .page-figure img{width:100%;display:block;margin:0}
+.vecchia .page-content .scatto-pagina figcaption,.vecchia .page-content .page-figure figcaption{
+  font-size:12.5px;color:#6B7183;margin-top:10px;line-height:1.5}
+
+/* passi con titolo, schede affiancate, richiami */
+.vecchia ol.passi li h3{margin:0 0 10px;font-size:19px;line-height:1.3}
+.vecchia ol.passi li p{margin:0 0 12px}
+.vecchia ol.passi li p:last-child{margin-bottom:0}
+.vecchia .duetto{align-items:start}
+.vecchia .richiamo{background:#fff;border:1px solid var(--riga);border-left:3px solid var(--accento);
+  padding:26px 28px;margin:40px 0}
+.vecchia .richiamo h3{margin:0 0 10px;font-size:20px}
+.vecchia .richiamo p:last-child{margin-bottom:0}
+.vecchia .schede{display:grid;gap:1px;background:var(--riga);border:1px solid var(--riga);margin:36px 0}
+@media(min-width:860px){.vecchia .schede{grid-template-columns:1fr 1fr}}
+.vecchia .schede>div{background:#fff;padding:26px 28px}
+.vecchia .schede h3{margin:0 0 10px;font-size:19px}
+.vecchia .schede p:last-child{margin-bottom:0}
