@@ -709,3 +709,12 @@ section{padding:0}
 .vecchia .schede p:last-child{margin-bottom:0}
 .vecchia .scatto-pagina.schema{background:#fff;border:1px solid var(--riga);padding:18px}
 .vecchia .scatto-pagina.schema figcaption{margin:14px 4px 2px}
+
+/* titoli centrati sulla colonna */
+.vecchia .page-hero .container{text-align:center}
+.vecchia .page-hero h1{margin-left:auto;margin-right:auto;max-width:22ch}
+.vecchia .page-hero p{margin-left:auto;margin-right:auto;max-width:58ch}
+.vecchia .page-content h2{text-align:center}
+.vecchia .page-content h2::before{margin-left:auto;margin-right:auto}
+.vecchia .duetto .testo h2{text-align:left}
+.vecchia .duetto .testo h2::before{margin-left:0;margin-right:0}
