@@ -108,8 +108,8 @@
 </header>
 
 <section class="testatina"><div class="wrap">
-  <h1>Il preventivo arriva in pochi minuti.</h1>
-  <p>Compila il modulo che fa per te: il messaggio si apre già scritto su WhatsApp e tu non devi spiegare niente due volte. Il preventivo è gratuito e senza impegno.</p>
+  <h1 data-tp="ri01">Il preventivo arriva in pochi minuti.</h1>
+  <p data-tp="ri02">Compila il modulo che fa per te: il messaggio si apre già scritto su WhatsApp e tu non devi spiegare niente due volte. Il preventivo è gratuito e senza impegno.</p>
   <div class="via">
     <a class="wa" href="https://wa.me/41768301847" target="_blank" rel="noopener">Scrivici subito su WhatsApp</a>
     <a href="tel:+41768301847">+41 76 830 18 47</a>
@@ -127,15 +127,15 @@
 
 <!-- ============ TRASPORTO ============ -->
 <section class="blocco" id="trasporto"><div class="wrap">
-  <h2>Richiesta di trasporto</h2>
-  <p class="guida">Più dettagli ci dai, più preciso è il preventivo. Targa e data sono facoltative: se non le hai ancora, lascia vuoto.</p>
+  <h2 data-tp="ri03">Richiesta di trasporto</h2>
+  <p class="guida" data-tp="ri04">Più dettagli ci dai, più preciso è il preventivo. Targa e data sono facoltative: se non le hai ancora, lascia vuoto.</p>
   <div class="modulo">
     <div class="campo"><label>Di cosa hai bisogno</label></div>
     <div class="scelte quattro">
-      <label class="scelta"><input type="radio" name="tipoServizio" value="Trasporto veicolo" checked><span>Trasporto veicolo</span></label>
-      <label class="scelta"><input type="radio" name="tipoServizio" value="Consegna veicolo"><span>Consegna veicolo</span></label>
-      <label class="scelta"><input type="radio" name="tipoServizio" value="Pratiche doganali"><span>Pratiche doganali</span></label>
-      <label class="scelta"><input type="radio" name="tipoServizio" value="Pratiche auto/moto"><span>Pratiche auto/moto</span></label>
+      <label class="scelta"><input type="radio" name="tipoServizio" value="Trasporto veicolo" checked><span data-tp="ri05">Trasporto veicolo</span></label>
+      <label class="scelta"><input type="radio" name="tipoServizio" value="Consegna veicolo"><span data-tp="ri06">Consegna veicolo</span></label>
+      <label class="scelta"><input type="radio" name="tipoServizio" value="Pratiche doganali"><span data-tp="ri07">Pratiche doganali</span></label>
+      <label class="scelta"><input type="radio" name="tipoServizio" value="Pratiche auto/moto"><span data-tp="ri08">Pratiche auto/moto</span></label>
     </div>
     <div class="riga due">
       <div class="campo"><label for="tTipo">Tipo di veicolo</label>
@@ -179,25 +179,25 @@
     <div class="riga">
       <div class="campo"><label for="tNote">Qualcosa che dobbiamo sapere</label>
         <textarea id="tNote" placeholder="Auto ribassata, batteria scarica, chiavi da ritirare da un'altra persona..."></textarea>
-        <span class="aiuto">Le foto del veicolo e i documenti puoi mandarli direttamente in chat dopo l'invio.</span></div>
+        <span class="aiuto" data-tp="ri09">Le foto del veicolo e i documenti puoi mandarli direttamente in chat dopo l'invio.</span></div>
     </div>
     <label class="privacy"><input type="checkbox" id="tPrivacy"> Ho letto l'informativa sulla privacy e acconsento al trattamento dei dati per questa richiesta.</label>
     <div class="invia">
       <button class="btn-wa" id="inviaTrasporto" type="button">Invia su WhatsApp</button>
-      <span class="nota-invio">Si apre WhatsApp con il messaggio già compilato: controlli e premi invio.</span>
+      <span class="nota-invio" data-tp="ri10">Si apre WhatsApp con il messaggio già compilato: controlli e premi invio.</span>
     </div>
   </div>
 </div></section>
 
 <!-- ============ FURGONI ============ -->
 <section class="blocco" id="furgoni"><div class="wrap">
-  <h2>Noleggio furgoni</h2>
-  <p class="guida">Ritiro e riconsegna alla nostra sede di Bioggio. Scegli il mezzo e le date: il totale si calcola da sé.</p>
+  <h2 data-tp="ri11">Noleggio furgoni</h2>
+  <p class="guida" data-tp="ri12">Ritiro e riconsegna alla nostra sede di Bioggio. Scegli il mezzo e le date: il totale si calcola da sé.</p>
   <div class="modulo">
     <div class="campo"><label>Quale furgone</label></div>
     <div class="scelte">
-      <label class="scelta"><input type="radio" name="furgone" value="Citroën Jumpy L1H1" data-prezzo="80" checked><span>Citroën Jumpy L1H1 — CHF 80.–/giorno<b>5 m³, fino a 1'000 kg. Piccoli traslochi, scatoloni, una moto.</b></span></label>
-      <label class="scelta"><input type="radio" name="furgone" value="Fiat Ducato" data-prezzo="120"><span>Fiat Ducato — CHF 120.–/giorno<b>13 m³, fino a 1'500 kg. Trasloco completo, mobili alti, 2–3 moto.</b></span></label>
+      <label class="scelta"><input type="radio" name="furgone" value="Citroën Jumpy L1H1" data-prezzo="80" checked><span>Citroën Jumpy L1H1 — CHF 80.–/giorno<b data-tp="ri13">5 m³, fino a 1'000 kg. Piccoli traslochi, scatoloni, una moto.</b></span></label>
+      <label class="scelta"><input type="radio" name="furgone" value="Fiat Ducato" data-prezzo="120"><span>Fiat Ducato — CHF 120.–/giorno<b data-tp="ri14">13 m³, fino a 1'500 kg. Trasloco completo, mobili alti, 2–3 moto.</b></span></label>
     </div>
     <div class="riga due">
       <div class="campo"><label for="fDal">Ritiro</label><input type="date" id="fDal"></div>
@@ -208,8 +208,8 @@
       <div class="campo"><label for="fOraAl">Ora di riconsegna</label><input type="time" id="fOraAl" value="18:00"></div>
     </div>
     <div class="conto">
-      <div><span>Giorni</span><b id="fGiorni">—</b></div>
-      <div><span>Totale indicativo</span><b id="fTotale">—</b></div>
+      <div><span data-tp="ri15">Giorni</span><b id="fGiorni">—</b></div>
+      <div><span data-tp="ri16">Totale indicativo</span><b id="fTotale">—</b></div>
     </div>
     <div class="riga due">
       <div class="campo"><label for="fNome">Il tuo nome *</label><input type="text" id="fNome" placeholder="Nome e cognome"></div>
@@ -221,20 +221,20 @@
     </div>
     <div class="riga">
       <div class="campo"><label for="fNote">Note</label><textarea id="fNote" placeholder="Orari particolari, giorni aggiuntivi, altro"></textarea>
-        <span class="aiuto">Per il contratto serviranno un documento d'identità e la patente: li puoi mandare in chat.</span></div>
+        <span class="aiuto" data-tp="ri17">Per il contratto serviranno un documento d'identità e la patente: li puoi mandare in chat.</span></div>
     </div>
     <label class="privacy"><input type="checkbox" id="fPrivacy"> Ho letto l'informativa sulla privacy e acconsento al trattamento dei dati per questa richiesta.</label>
     <div class="invia">
       <button class="btn-wa" id="inviaFurgone" type="button">Invia la prenotazione</button>
-      <span class="nota-invio">La disponibilità te la confermiamo noi in chat.</span>
+      <span class="nota-invio" data-tp="ri18">La disponibilità te la confermiamo noi in chat.</span>
     </div>
   </div>
 </div></section>
 
 <!-- ============ INFORMAZIONI ============ -->
 <section class="blocco" id="informazioni"><div class="wrap">
-  <h2>Informazioni e pratiche</h2>
-  <p class="guida">Sdoganamento, immatricolazione, cambio di proprietà, autosoccorso o il noleggio del carrello: scrivi di cosa si tratta e ti rispondiamo con i passaggi e i costi.</p>
+  <h2 data-tp="ri19">Informazioni e pratiche</h2>
+  <p class="guida" data-tp="ri20">Sdoganamento, immatricolazione, cambio di proprietà, autosoccorso o il noleggio del carrello: scrivi di cosa si tratta e ti rispondiamo con i passaggi e i costi.</p>
   <div class="modulo">
     <div class="riga due">
       <div class="campo"><label for="iTema">Di cosa si tratta</label>
@@ -260,7 +260,7 @@
     <label class="privacy"><input type="checkbox" id="iPrivacy"> Ho letto l'informativa sulla privacy e acconsento al trattamento dei dati per questa richiesta.</label>
     <div class="invia">
       <button class="btn-wa" id="inviaInfo" type="button">Invia la domanda</button>
-      <span class="nota-invio">Rispondiamo di norma entro 24 ore.</span>
+      <span class="nota-invio" data-tp="ri21">Rispondiamo di norma entro 24 ore.</span>
     </div>
   </div>
 </div></section>
