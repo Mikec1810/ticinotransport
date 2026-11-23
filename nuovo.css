@@ -291,6 +291,8 @@ footer .minuti a{color:#6B7183}
 .chiusura .titolo,.chiusura .sotto{margin-left:auto;margin-right:auto}
 .chiusura .azioni{justify-content:center}
 
+.chiusura .orari{margin:22px 0 0;font-size:13px;letter-spacing:.04em;color:#6B7183}
+
 
 /* ===== testata: voci di testo attorno al logo ===== */
 .barra{position:static!important;background:#fff!important;border-bottom:1px solid var(--riga)!important;backdrop-filter:none!important}
