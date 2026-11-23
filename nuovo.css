@@ -687,7 +687,7 @@ section{padding:0}
 
 /* immagini a tutta fascia: stessa larghezza dei blocchi doppi */
 @media(min-width:1220px){
-  .vecchia .page-content .scatto-pagina,.vecchia .page-content .page-figure{margin-left:-140px;margin-right:-140px}
+  .vecchia .page-content .scatto-pagina{margin-left:-140px;margin-right:-140px}
 }
 .vecchia .page-content .scatto-pagina img,.vecchia .page-content .page-figure img{width:100%;display:block;margin:0}
 .vecchia .page-content .scatto-pagina figcaption,.vecchia .page-content .page-figure figcaption{
@@ -718,3 +718,6 @@ section{padding:0}
 .vecchia .page-content h2::before{margin-left:auto;margin-right:auto}
 .vecchia .duetto .testo h2{text-align:left}
 .vecchia .duetto .testo h2::before{margin-left:0;margin-right:0}
+
+/* foto di catalogo: larghe quanto il testo, cosi non si sgranano */
+.vecchia .page-content .page-figure{margin-left:0;margin-right:0;max-width:100%}
