@@ -370,6 +370,14 @@ footer .minuti a{color:#6B7183}
 .firma-chi b{display:block;font-family:var(--display);font-weight:700;font-size:20px;color:var(--carbone)}
 .firma-chi span{display:block;margin-top:5px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--muto)}
 
+/* la foto non si gonfia oltre la risoluzione del file: niente sgranatura */
+@media(min-width:900px){
+  .fianco{align-items:center}
+  .fianco .lato-foto{min-height:0;aspect-ratio:3/2;width:100%;max-width:620px}
+  .fianco:not(.foto-prima) .lato-foto{margin-left:auto}
+  .fianco.foto-prima .lato-foto{margin-right:auto}
+}
+
 /* verifica misure */
 .verifica{max-width:760px;margin-top:44px}
 .cerca{position:relative}
