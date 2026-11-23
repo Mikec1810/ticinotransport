@@ -721,3 +721,4 @@ section{padding:0}
 
 /* foto di catalogo: larghe quanto il testo, cosi non si sgranano */
 .vecchia .page-content .page-figure{margin-left:0;margin-right:0;max-width:100%}
+.vecchia .page-content .scatto-pagina.stretta{margin-left:0;margin-right:0}
