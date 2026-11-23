@@ -374,8 +374,8 @@ footer .minuti a{color:#6B7183}
 @media(min-width:900px){
   .fianco{align-items:center}
   .fianco .lato-foto{min-height:0;aspect-ratio:3/2;width:100%;max-width:620px}
-  .fianco:not(.foto-prima) .lato-foto{margin-left:auto}
-  .fianco.foto-prima .lato-foto{margin-right:auto}
+  .fianco:not(.foto-prima) .lato-foto{margin-left:auto;margin-right:max(24px,calc((100vw - 1280px)/2 + 24px))}
+  .fianco.foto-prima .lato-foto{margin-right:auto;margin-left:max(24px,calc((100vw - 1280px)/2 + 24px))}
 }
 
 /* verifica misure */
