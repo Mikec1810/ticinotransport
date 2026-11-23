@@ -22,14 +22,15 @@
 /* la barra sta in cima alla pagina e se ne va con lo scorrimento */
 @media(max-width:640px){.marchio img{height:30px!important}}
 
-.testatina{background:var(--carbone);color:#fff;padding:64px 0 56px;text-align:center}
+.testatina{background:#fff;color:var(--carbone);padding:62px 0 54px;text-align:center;border-bottom:1px solid var(--riga)}
 .testatina h1{font-family:var(--display);font-size:clamp(32px,5.4vw,52px);font-weight:600;line-height:1.08;margin:0 0 14px;letter-spacing:-.01em}
-.testatina p{max-width:56ch;margin:0 auto;color:rgba(255,255,255,.72);font-size:16px;line-height:1.65}
+.testatina p{max-width:56ch;margin:0 auto;color:#41465A;font-size:16px;line-height:1.65}
 .testatina .via{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:30px}
-.testatina .via a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:#fff;
-  border:1px solid rgba(255,255,255,.28);padding:11px 18px;transition:background .3s,border-color .3s}
-.testatina .via a:hover{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.55)}
-.testatina .via a.wa{background:#25D366;border-color:#25D366;font-weight:600}
+.testatina .via a{font-size:12px;letter-spacing:.14em;text-transform:uppercase;text-decoration:none;color:var(--carbone);
+  border:1px solid var(--riga);padding:11px 18px;transition:background .3s,border-color .3s}
+.testatina .via a:hover{background:#F6F6F9;border-color:var(--accento);color:var(--accento)}
+.testatina .via a.wa{background:#25D366;border-color:#25D366;color:#fff;font-weight:600}
+.testatina .via a.wa:hover{background:#1FB757;border-color:#1FB757;color:#fff}
 
 .schede{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.96);backdrop-filter:blur(10px);border-bottom:1px solid var(--riga)}
 .schede .wrap{display:flex;gap:4px;overflow-x:auto;scrollbar-width:none}
@@ -102,7 +103,7 @@
 </header>
 
 <section class="testatina"><div class="wrap">
-  <h1>Dicci cosa ti serve.</h1>
+  <h1>Il preventivo arriva in pochi minuti.</h1>
   <p>Compila il modulo che fa per te: il messaggio si apre già scritto su WhatsApp e tu non devi spiegare niente due volte. Il preventivo è gratuito e senza impegno.</p>
   <div class="via">
     <a class="wa" href="https://wa.me/41768301847" target="_blank" rel="noopener">Scrivici subito su WhatsApp</a>
