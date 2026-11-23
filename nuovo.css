@@ -686,9 +686,6 @@ section{padding:0}
 .vecchia ul.listino span{white-space:nowrap;font-family:var(--display);font-size:18px;color:var(--carbone)}
 
 /* immagini a tutta fascia: stessa larghezza dei blocchi doppi */
-@media(min-width:1220px){
-  .vecchia .page-content .scatto-pagina{margin-left:-140px;margin-right:-140px}
-}
 .vecchia .page-content .scatto-pagina img,.vecchia .page-content .page-figure img{width:100%;display:block;margin:0}
 .vecchia .page-content .scatto-pagina figcaption,.vecchia .page-content .page-figure figcaption{
   font-size:12.5px;color:#6B7183;margin-top:10px;line-height:1.5}
@@ -722,3 +719,7 @@ section{padding:0}
 /* foto di catalogo: larghe quanto il testo, cosi non si sgranano */
 .vecchia .page-content .page-figure{margin-left:0;margin-right:0;max-width:100%}
 .vecchia .page-content .scatto-pagina.stretta{margin-left:0;margin-right:0}
+
+/* ogni foto larga quanto la riga di testo */
+.vecchia .page-content .scatto-pagina{margin-left:0;margin-right:0;max-width:100%}
+.vecchia .scatto-pagina.schema{padding:14px}
