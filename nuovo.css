@@ -707,3 +707,5 @@ section{padding:0}
 .vecchia .schede>div{background:#fff;padding:26px 28px}
 .vecchia .schede h3{margin:0 0 10px;font-size:19px}
 .vecchia .schede p:last-child{margin-bottom:0}
+.vecchia .scatto-pagina.schema{background:#fff;border:1px solid var(--riga);padding:18px}
+.vecchia .scatto-pagina.schema figcaption{margin:14px 4px 2px}
