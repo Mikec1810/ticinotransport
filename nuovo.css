@@ -380,6 +380,9 @@ footer .minuti a{color:#6B7183}
   .fianco.foto-prima .lato-foto{margin-right:auto;margin-left:max(24px,calc((100vw - 1280px)/2 + 24px))}
 }
 
+.fianco.vendita-home .prezzo-home{font-family:var(--display);font-weight:700;
+  font-size:clamp(30px,3.6vw,44px);color:var(--accento);margin:14px 0 0;letter-spacing:-.02em}
+
 /* verifica misure */
 .verifica{max-width:760px;margin-top:44px}
 .cerca{position:relative}
@@ -739,3 +742,14 @@ section{padding:0}
 .vecchia .page-content .page-gallery img{height:auto!important;aspect-ratio:3/2;object-fit:cover;border-radius:0}
 .vecchia .page-content .page-gallery figcaption{font-size:12.5px;color:#6B7183;margin-top:10px;line-height:1.5}
 @media(max-width:700px){.vecchia .page-content .page-gallery{grid-template-columns:1fr}}
+
+/* ===== annuncio di vendita ===== */
+.vecchia .page-hero p.prezzo-grande,.vecchia .prezzo-grande{font-family:var(--display);font-weight:700;font-size:clamp(34px,5vw,54px);
+  color:var(--accento);margin:18px 0 0;letter-spacing:-.02em}
+.vecchia .galleria-vendita{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin:36px 0 44px}
+@media(min-width:760px){.vecchia .galleria-vendita{grid-template-columns:repeat(3,1fr);gap:12px}}
+.vecchia .galleria-vendita figure{margin:0}
+.vecchia .galleria-vendita img{width:100%;aspect-ratio:1/1;object-fit:cover;display:block;margin:0;
+  border:1px solid var(--riga)}
+.vecchia .nota-piccola{font-size:13.5px;color:#6B7183;margin-top:16px}
+.vecchia ul.listino li b{font-weight:600}

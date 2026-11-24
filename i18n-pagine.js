@@ -60,6 +60,7 @@
     'noleggio-furgoni.html': {de:'Transportervermietung', fr:'Location de fourgons', en:'Van rental', ru:'Аренда фургонов', ar:'تأجير الشاحنات'},
     'autosoccorso-stradale.html': {de:'Pannenhilfe', fr:'Dépannage', en:'Roadside assistance', ru:'Техпомощь', ar:'إنقاذ على الطريق'},
     'richiesta.html': {de:'Kontakt', fr:'Contact', en:'Contact', ru:'Контакты', ar:'اتصل بنا'},
+    'vendita.html': {de:'Zu verkaufen', fr:'À vendre', en:'For sale', ru:'В продаже', ar:'للبيع'},
     'privacy.html': {de:'Datenschutz', fr:'Confidentialité', en:'Privacy', ru:'Конфиденциальность', ar:'الخصوصية'}
   };
 
