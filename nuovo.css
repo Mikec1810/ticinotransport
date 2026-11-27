@@ -362,6 +362,16 @@ footer .minuti a{color:#6B7183}
 /* l'altezza della barra la decide il contenuto: le voci non devono sbordare */
 .barra .principale{height:auto;min-height:104px}
 @media(max-width:980px){.barra .principale{min-height:0}}
+
+/* testata: logo al centro in una colonna sua, cosi le voci non ci finiscono mai sotto
+   (prima era sovrapposto in assoluto e con testi lunghi, es. tedesco, si accavallava) */
+@media(min-width:981px){
+  .barra .principale{display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);column-gap:clamp(24px,3vw,48px)}
+  .barra .principale .logo{position:static;transform:none;grid-column:2;grid-row:1}
+  .barra .principale .voci{flex-wrap:wrap;row-gap:4px;column-gap:clamp(16px,2vw,30px);padding:10px 0}
+  .barra .principale .voci.sx{grid-column:1;grid-row:1;justify-content:flex-start}
+  .barra .principale .voci.dx{grid-column:3;grid-row:1;justify-content:flex-end}
+}
 @media(max-width:640px){.barra .filo .wrap{height:auto;min-height:34px}}
 
 /* chi c'e dietro */
